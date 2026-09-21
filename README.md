@@ -158,7 +158,7 @@ https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=dri
 
 <img width="763" height="77" alt="image" src="https://github.com/user-attachments/assets/e4a3e26b-3dc5-48cd-974a-8d54c2ba87ab" />
 
-Bugs e Issues
+## 📌 Bugs e Issues
 
 Durante a execução dos testes automatizados foram identificados alguns comportamentos inesperados na plataforma.
 
@@ -173,6 +173,8 @@ Para documentar essas ocorrências foi elaborado um arquivo específico de Bugs 
 - Propostas de melhoria para a plataforma.
 
 Esse material auxilia na análise, priorização e correção das falhas identificadas, contribuindo para a evolução contínua da qualidade da plataforma.
+
+## 📌 Passos
 
 1. **Acessar a pasta FasTix:**
 
