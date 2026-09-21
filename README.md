@@ -104,7 +104,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 A suíte automatizada do FasTix foi estruturada para validar não apenas os fluxos funcionais da aplicação, mas também diferentes aspectos de qualidade, comportamento, resiliência e experiência de navegação.
 
-Os 70 cenários automatizados abaixo são todos os testes realizados na Feature Explorar Eventos.
+**Os 70 cenários automatizados abaixo são todos os testes realizados na Feature Explorar Eventos.**
 
 Todos os testes foram classificados considerando diferentes dimensões de teste. Essa abordagem evita tratar conceitos distintos como E2E, Regressão, Acessibilidade e Stress como se fossem categorias equivalentes.
 
