@@ -104,8 +104,6 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 
 
-
-
 | Tipo de Teste                    | O que valida                                                                                                                                                | Exemplos na suíte                                                                                                                                                                                                                                                                                       |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **End-to-End (E2E)**             | Valida jornadas completas atravessando diferentes páginas, componentes e fluxos da aplicação.                                                               | **0001** — acesso à página de eventos; **0011** — busca e visualização do evento “Buffalo Tom em São Paulo”; **0015** — acesso ao Google Maps e retorno ao evento; **0045** — estresse do carrossel → acesso ao evento → retorno à Home; **0057** — recuperação após busca inválida.                    |
@@ -125,13 +123,6 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 | **Monitoramento de Erros**       | Verifica a ocorrência de erros críticos durante a execução e a ausência de sinais de falha da aplicação.                                                    | **0039** — busca com caracteres especiais verificando ausência de `500` e `Error`; **0040** — combinação de números/caracteres verificando ausência de `500`, `Error` e `Exception`; **0063** — monitoramento do console para ausência de erros críticos.                                               |
 | **Integridade Visual**           | Verifica se elementos visuais, imagens, componentes e estrutura visual permanecem íntegros após interações.                                                 | **0051** — elementos visuais em diferentes resoluções; **0054** — comportamento visual do carrossel; **0062** — integridade das imagens da página “Explorar Eventos”; **0070** — integridade visual do footer após múltiplas interações.                                                                |
 | **Persistência de Estado**       | Verifica se o estado da aplicação é mantido ou recuperado adequadamente após navegação, reloads ou interrupções.                                            | **0049** — recuperação após refresh durante interação; **0050** — refresh durante interação contínua; **0057** — recuperação após busca inválida; **0065** — comportamento após múltiplos reloads; **0066** — recuperação após interrupções inesperadas.                                                |
-
-
-
-
-
-
-
 
 
 ---
