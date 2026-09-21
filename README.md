@@ -80,6 +80,28 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ---
 
+
+
+## 🚀 Como executar este projeto 
+
+---
+
+
+## 🧰 Ambiente e rotina diária
+
+---
+
+## 📁 Estrutura do repositório
+
+
+---
+
+## 🧭 A Jornada do usuário
+
+
+---
+
+
 ## 🛠️ Tipos de teste realizados na suíte
 
 | Tipos de Testes |
@@ -103,7 +125,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 | Testes de Persistência de Estado |
 | **Total: 17 tipos de testes** |
 
-## 🎯 Estratégia e cobertura de testes
+## 🎯 Estratégia e cobertura de Testes 
 
 A suíte automatizada do FasTix foi estruturada para validar não apenas os fluxos funcionais da aplicação, mas também diferentes aspectos de qualidade, comportamento, resiliência e experiência de navegação.
 
