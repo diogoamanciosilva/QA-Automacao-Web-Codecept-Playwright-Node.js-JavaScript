@@ -158,11 +158,40 @@ https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=dri
 
 <img width="763" height="77" alt="image" src="https://github.com/user-attachments/assets/e4a3e26b-3dc5-48cd-974a-8d54c2ba87ab" />
 
+Bugs e Issues
+
+Durante a execução dos testes automatizados foram identificados alguns comportamentos inesperados na plataforma.
+
+Para documentar essas ocorrências foi elaborado um arquivo específico de Bugs e Issues, contendo:
+
+- Descrição detalhada de cada problema;
+- Passos para reprodução;
+- Resultado obtido;
+- Resultado esperado;
+- Capturas de tela (screenshots);
+- Link para acesso de vídeos demonstrando os comportamentos encontrados;
+- Propostas de melhoria para a plataforma.
+
+Esse material auxilia na análise, priorização e correção das falhas identificadas, contribuindo para a evolução contínua da qualidade da plataforma.
+
+1. **Acessar a pasta FasTix:**
+
+<img width="428" height="82" alt="image" src="https://github.com/user-attachments/assets/316d58c9-db24-4c62-86a4-59838b8fd9e9" />
+
+ **Link para acesso:** 
+
+https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=drive_link
+
+2. **Acessar a pasta Bugs e Issues:**
+
+<img width="652" height="82" alt="image" src="https://github.com/user-attachments/assets/8cc447bd-915b-4c7b-811d-fcaa727ff221" />
+
+3. **Acessar o arquivo Fastix - Bugs e Issues:**
+
+<img width="701" height="75" alt="image" src="https://github.com/user-attachments/assets/84e327a6-347a-429d-be5a-8b1f7ad4fd08" />
 
 
-
-
-
+   
 
 ---
 
