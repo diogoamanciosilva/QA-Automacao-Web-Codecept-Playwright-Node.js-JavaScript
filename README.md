@@ -39,6 +39,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [📱 Sobre o app](#-sobre-o-app)
 - [🤖 Codecept](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
+- - [⚙️ Estrutura da Suíte de Testes qaFood](#️-estrutura-da-suíte-de-testes-qafood)
 
 - ---
 
