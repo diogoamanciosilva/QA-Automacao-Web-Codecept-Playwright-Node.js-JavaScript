@@ -106,6 +106,82 @@ A suíte automatizada do FasTix foi estruturada para validar não apenas os flux
 
 **Os 70 cenários automatizados abaixo são todos os testes realizados na Feature Explorar Eventos.**
 
+
+| Feature | Testes Automatizados |
+| ------------------------- | ------: |
+| Feature_Explorar Eventos | 70 |
+| 0001 - Acessar a página de eventos (Botão: Explorar eventos) | |
+| 0002 - Acessar a página de eventos (segunda opção de acesso via ícone fast-forward) | |
+| 0003 - Acessar a página de eventos (Botão: Explorar eventos) e verificar a navegação por scroll | |
+| 0004 - Acessar a página de eventos (segunda opção de acesso via ícone fast-forward) e verificar a navegação por scroll | |
+| 0005 - Buscar uma cidade (São Paulo) no campo de pesquisa por evento (Botão: Explorar eventos) | |
+| 0006 - Buscar uma cidade (São Paulo) no campo de pesquisa por evento (segunda opção de acesso via ícone fast-forward) | |
+| 0007 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (Botão: Explorar eventos) | |
+| 0008 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) | |
+| 0009 - Buscar um local (Fabrique Club) no campo de pesquisa (Botão: Explorar eventos) | |
+| 0010 - Buscar um local (Cine Joia) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) | |
+| 0011 - Buscar um evento (Buffalo Tom em São Paulo) e visualizar suas informações no campo de pesquisa (Botão: Explorar eventos) | |
+| 0012 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) | |
+| 0013 - Visualizar os campos 'Sobre o evento', clicar em 'Leia mais' e 'Mostrar menos' | |
+| 0014 - Acessar o campo 'Localização' e abrir o endereço clicando em 'Abrir no Google Maps' | |
+| 0015 - Acessar o endereço no Google Maps e retornar para a página do evento (Buffalo Tom em São Paulo) | |
+| 0016 - Acessar o campo 'Localização', clicar em 'Ver mais' e acessar a página | |
+| 0017 - Acessar a página 'Ver mais' e clicar no ícone abaixo do evento para retornar à página do evento | |
+| 0018 - Acessar a página do evento (Buffalo Tom em São Paulo) e clicar no ícone do Google Maps ao lado do título 'Cine Joia' | |
+| 0019 - Acessar a página do Google Maps, depois, retornar para a página do evento (Buffalo Tom em São Paulo) | |
+| 0020 - Acessar a página de Política de Compra (via acesso superior da página) e verificar a navegação por scroll | |
+| 0021 - Acessar a página de Termos de Uso (via acesso superior da página) e verificar a navegação por scroll | |
+| 0022 - Acessar a página de Política de Compra (via acesso inferior da página) e verificar a navegação por scroll | |
+| 0023 - Acessar a página de Termos de Uso (via acesso inferior da página) e verificar a navegação por scroll | |
+| 0024 - Acessar a página de Meia-Entrada e verificar a navegação por scroll | |
+| 0025 - Acessar a página de Guia Check-in e verificar a navegação por scroll | |
+| 0026 - Acessar as opções 'App Fastix (Recomendado)' e 'Web' do 'Guia Check-in' | |
+| 0027 - Acesso simultâneo entre os campos 'Meia Entrada', 'Política de Compra', 'Termos de Uso' | |
+| 0028 - No campo 'Termos de Uso', acessar o tópico '2. Aceite dos Termos' e acessar o link 'Política de Compra' | |
+| 0029 - No campo 'Termos de Uso', acessar o tópico '2. Aceite dos Termos' e acessar o link 'Política de Meia-entrada e ingressos Acessíveis' | |
+| 0030 - No campo 'Termos de Uso', acessar o tópico '9. Operação, Isenções e Limitação de Responsabilidade' e acessar o link 'Política de Compra' | |
+| 0031 - No campo 'Termos de Uso', acessar o tópico '13. Comunicações Eletrônicas' e acessar o link 'Política de Compra' | |
+| 0032 - No campo 'Política de Compra', acessar o tópico '1. INTRODUÇÃO' e acessar o link 'Termos de Uso' | |
+| 0033 - No campo 'Política de Compra', acessar o tópico '1. INTRODUÇÃO' e acessar o link 'Política de Meia-Entrada e Ingressos Acessíveis' | |
+| 0034 - No campo 'Política de Compra', acessar o tópico '2. SUA CONTA E REGISTRO' e acessar o link 'Termos de Uso' | |
+| 0035 - Validar campo de pesquisa por evento, local e cidade utilizando termo inexistente: 'Testando Fastix' | |
+| 0036 - Validar campo de pesquisa por evento, local e cidade utilizando caracteres especiais | |
+| 0037 - Validar o campo de pesquisa por evento, local e cidade utilizando 10 vezes cada caractere especial | |
+| 0038 - Validar o campo de pesquisa por evento, local e cidade utilizando números | |
+| 0039 - Validar o campo de pesquisa por evento, local e cidade com variações de caracteres especiais | |
+| 0040 - Validar o campo de pesquisa por evento, local e cidade com combinação de números e caracteres especiais | |
+| 0041 - Navegação entre eventos no carrossel utilizando o botão de controle por ícone (Botão voltar) | |
+| 0042 - Navegação entre eventos no carrossel utilizando o botão de controle por ícone (Botão avançar) | |
+| 0043 - Navegação entre eventos no carrossel utilizando os botões de voltar e avançar (10x voltar + 10x avançar) | |
+| 0044 - Navegação de Stress no carrossel + acesso ao evento 'Buffalo Tom em São Paulo' | |
+| 0045 - Navegação de stress no carrossel, acesso ao evento e retorno à home page | |
+| 0046 - Validar estabilidade da busca sob stress | |
+| 0047 - Validar comportamento do sistema sob duplo clique e múltiplos cliques consecutivos | |
+| 0048 - Validar navegação utilizando back e forward do navegador | |
+| 0049 - Validar recuperação da aplicação após refresh durante interação | |
+| 0050 - Stress de refresh durante interação contínua | |
+| 0051 - Validar responsividade da aplicação em dispositivos mobile, tablet e desktop ultrawide | |
+| 0052 - Validar navegação utilizando apenas teclado | |
+| 0053 - Validar atualização correta dos conteúdos do carrossel | |
+| 0054 - Validar comportamento visual, navegação, estabilidade, integridade e stress do carrossel de eventos | |
+| 0055 - Validar acessos simultâneos dos links institucionais, aplicativos e redes sociais no rodapé do evento | |
+| 0056 - Validar abertura e navegação entre múltiplas abas externas e internas | |
+| 0057 - Validar a recuperação do sistema após uma busca inválida e sem resultados | |
+| 0058 - Input extremo: validar comportamento da busca com entradas extremas | |
+| 0059 - Validar tempo de resposta da aplicação | |
+| 0060 - Validar estabilidade da aplicação durante scroll agressivo | |
+| 0061 - Validar integridade do conteúdo dinâmico dos cards de eventos | |
+| 0062 - Validar a integridade das imagens da plataforma na página 'Explorar Eventos' | |
+| 0063 - Validar ausência de erros críticos no console da aplicação | |
+| 0064 - Validar estabilidade da aplicação durante sessão longa | |
+| 0065 - Validar estabilidade da aplicação após múltiplos reloads consecutivos | |
+| 0066 - Validar comportamento da página de explorar eventos após interrupções inesperadas | |
+| 0067 - Validar gerenciamento correto de foco da aplicação na página de 'Explorar eventos' | |
+| 0068 - Validar navegação utilizando apenas TAB na página 'Explorar Eventos' | |
+| 0069 - Validar filtros e navegação da página 'Explorar Eventos' | |
+| 0070 - Validar integridade do footer após múltiplas interações | |
+| **Total** | **70** |
+
 Todos os testes foram classificados considerando diferentes dimensões de teste. Essa abordagem evita tratar conceitos distintos como E2E, Regressão, Acessibilidade e Stress como se fossem categorias equivalentes.
 
 ### 📌 Dimensões de cobertura
