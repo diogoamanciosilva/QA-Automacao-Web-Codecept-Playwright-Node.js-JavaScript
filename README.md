@@ -1,6 +1,6 @@
 ### EM ATUALIZAÇÃO...
 
-## 🤖 Automação Web (FasTix)
+## 🤖 Automação Web Codecept Playwright - JavaScript (FasTix)
 
 <img width="1912" height="741" alt="image" src="https://github.com/user-attachments/assets/8dc7f870-7960-4e7a-99ba-97a38786b6df" />
 
