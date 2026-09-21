@@ -40,7 +40,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🤖 Codecept](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 - [⚙️ Estrutura da Suíte de Testes FasTix](#️-estrutura-da-suíte-de-testes-fastix)
-- [🎯 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
+- [🎯 Tipos de teste realizados na suíte](#-estratégia-e-cobertura-de-testes)
 
 - ---
 
