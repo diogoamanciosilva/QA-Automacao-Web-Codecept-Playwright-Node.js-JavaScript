@@ -100,36 +100,360 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ---
 
-## 🎯 Tipos de teste realizados na suíte
+## 🎯 Estratégia e cobertura de testes
 
-A suíte de testes do qaFood é composta por todos os tipos de testes descritos abaixo:
+A suíte automatizada do FasTix foi estruturada para validar não apenas os fluxos funcionais da aplicação, mas também diferentes aspectos de qualidade, comportamento, resiliência e experiência de navegação.
 
-| Tipo de Teste                    | O que valida                                                                                                                                                | Exemplos na suíte                                                                                                                                                                                                                                                                                       |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **End-to-End (E2E)**             | Valida jornadas completas atravessando diferentes páginas, componentes e fluxos da aplicação.                                                               | **0001** — Acesso à página de eventos; **0011**; Busca e visualização do evento “Buffalo Tom em São Paulo”; **0015**; Acesso ao Google Maps e retorno ao evento; **0045** Estresse do carrossel → acesso ao evento → retorno à Home; **0057**; Recuperação após busca inválida.                    |
-| **Funcionais**                   | Verifica se funcionalidades e comportamentos previstos da aplicação funcionam corretamente.                                                                 | **0001–0004** — acesso à página de eventos; **0005–0012** — buscas por cidade, evento e local; **0013** — “Leia mais/Mostrar menos”; **0014–0019** — localização e Google Maps; **0020–0034** — páginas institucionais e links; **0041–0043** — controles do carrossel; **0069** — filtros e navegação. |
-| **Regressão**                    | Garante que alterações ou novas funcionalidades não introduziram problemas em comportamentos anteriormente funcionais.                                      | **A suíte completa (0001–0070)** pode ser utilizada como suíte de regressão. Destacam-se os fluxos críticos **0001–0034**, navegação/carrossel **0041–0057** e integridade/acessibilidade **0061–0070**.                                                                                                |
-| **Navegação**                    | Valida deslocamento entre páginas, seções, links, controles, carrossel e histórico do navegador.                                                            | **0001–0004** — navegação para Explorar Eventos; **0014–0019** — navegação entre evento, localização e Google Maps; **0020–0034** — navegação entre páginas institucionais; **0041–0045** — navegação no carrossel; **0048** — Back/Forward; **0055–0056** — links e múltiplas abas.                    |
-| **Interface (UI)**               | Verifica a presença, interação e comportamento de elementos visuais e componentes da interface.                                                             | **0013** — expansão/recolhimento de conteúdo; **0026** — opções “App FasTix” e “Web”; **0041–0043** — botões do carrossel; **0051** — elementos da interface em diferentes resoluções; **0061–0062** — cards e imagens; **0070** — integridade do footer.                                               |
-| **Responsividade**               | Avalia o comportamento da interface em diferentes dimensões e dispositivos.                                                                                 | **0051** — aplicação testada em **mobile, tablet e desktop ultrawide**, incluindo overflow, controles, cards, navegação, refresh e footer.                                                                                                                                                              |
-| **Acessibilidade**               | Avalia navegação por teclado, gerenciamento de foco e interação sem depender exclusivamente do mouse.                                                       | **0052** — navegação utilizando teclado; **0067** — gerenciamento de foco; **0068** — navegação utilizando somente **TAB**.                                                                                                                                                                             |
-| **Performance**                  | Avalia o tempo de resposta da aplicação diante das operações executadas.                                                                                    | **0059** — validação do **tempo de resposta da aplicação**.                                                                                                                                                                                                                                             |
-| **Estabilidade**                 | Verifica se a aplicação permanece funcional após operações repetidas, prolongadas ou potencialmente disruptivas.                                            | **0046** — estabilidade da busca sob stress; **0049** — recuperação após refresh; **0050** — múltiplos refreshes; **0054** — estabilidade do carrossel; **0060** — scroll agressivo; **0064** — sessão longa; **0065** — múltiplos reloads; **0066** — interrupções inesperadas.                        |
-| **Estresse (Stress)**            | Avalia o comportamento da aplicação quando submetida a uma quantidade ou frequência elevada de operações.                                                   | **0044** — 44 avanços + 44 retornos no carrossel; **0045** — stress do carrossel associado à jornada E2E; **0046** — busca sob stress; **0047** — duplo/múltiplos cliques; **0050** — refresh contínuo; **0054** — stress do carrossel; **0058** — entradas extremas.                                   |
-| **Robustez**                     | Avalia a capacidade do sistema de lidar com entradas inesperadas, inválidas, extremas ou sequências incomuns de ações sem apresentar comportamento crítico. | **0035** — termo inexistente; **0036–0040** — caracteres especiais, números e combinações; **0046–0047** — operações repetidas/múltiplos cliques; **0057** — recuperação após busca sem resultados; **0058** — input extremo; **0066** — interrupção inesperada.                                        |
-| **Validação de Dados**           | Verifica se dados inseridos, pesquisados, exibidos ou retornados pela aplicação são tratados e apresentados corretamente.                                   | **0005–0012** — busca por cidade, evento e local; **0035** — termo inexistente; **0036–0040** — caracteres especiais, números e combinações; **0057–0058** — buscas inválidas/extremas; **0061** — integridade dos dados dos cards; **0069** — filtros.                                                 |
-| **Integridade**                  | Verifica se informações, componentes e conteúdos permanecem consistentes após diferentes interações.                                                        | **0053** — atualização correta dos conteúdos do carrossel; **0054** — integridade do carrossel após múltiplas operações; **0061** — integridade dos cards de eventos; **0062** — integridade das imagens; **0070** — integridade do footer.                                                             |
-| **Compatibilidade de Navegação** | Avalia se diferentes formas de navegação e interação continuam funcionando corretamente em diferentes contextos de uso.                                     | **0048** — Back/Forward do navegador; **0051** — navegação em diferentes resoluções; **0052** — navegação por teclado; **0055** — links institucionais, aplicativos e redes sociais; **0056** — múltiplas abas internas e externas; **0067–0068** — navegação por foco/TAB.                             |
-| **Monitoramento de Erros**       | Verifica a ocorrência de erros críticos durante a execução e a ausência de sinais de falha da aplicação.                                                    | **0039** — busca com caracteres especiais verificando ausência de `500` e `Error`; **0040** — combinação de números/caracteres verificando ausência de `500`, `Error` e `Exception`; **0063** — monitoramento do console para ausência de erros críticos.                                               |
-| **Integridade Visual**           | Verifica se elementos visuais, imagens, componentes e estrutura visual permanecem íntegros após interações.                                                 | **0051** — elementos visuais em diferentes resoluções; **0054** — comportamento visual do carrossel; **0062** — integridade das imagens da página “Explorar Eventos”; **0070** — integridade visual do footer após múltiplas interações.                                                                |
-| **Persistência de Estado**       | Verifica se o estado da aplicação é mantido ou recuperado adequadamente após navegação, reloads ou interrupções.                                            | **0049** — recuperação após refresh durante interação; **0050** — refresh durante interação contínua; **0057** — recuperação após busca inválida; **0065** — comportamento após múltiplos reloads; **0066** — recuperação após interrupções inesperadas.                                                |
+Os 70 cenários automatizados abaixo são todos os testes realizados na Feature Explorar Eventos.
 
+Todos os testes foram classificados considerando diferentes dimensões de teste. Essa abordagem evita tratar conceitos distintos como E2E, Regressão, Acessibilidade e Stress como se fossem categorias equivalentes.
+
+### 📌 Dimensões de cobertura
+
+| Dimensão                        | Categorias                                                                                  | Objetivo                                                                                              |
+| ------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Escopo**                      | E2E                                                                                         | Validar jornadas completas atravessando diferentes páginas e componentes                              |
+| **Objetivo funcional**          | Funcionais, Validação de Dados, Integridade                                                 | Verificar comportamentos esperados, dados apresentados e consistência das informações                 |
+| **Qualidade da aplicação**      | UI, Responsividade, Acessibilidade, Performance, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais                                       |
+| **Condição / técnica de teste** | Estresse, Compatibilidade de Navegação                                                      | Exercitar a aplicação sob condições repetitivas, intensivas ou diferentes formas de navegação         |
+| **Resiliência**                 | Monitoramento de Erros, Recuperação de Estado                                               | Avaliar comportamento diante de erros, reloads, interrupções e operações inesperadas                  |
+| **Finalidade de execução**      | Regressão                                                                                   | Reexecutar cenários existentes para identificar possíveis impactos causados por alterações no sistema |
+
+---
+
+## 🧪 Cobertura funcional e E2E
+
+### Testes Funcionais
+
+Validam se as funcionalidades disponíveis na aplicação apresentam o comportamento esperado.
+
+**Exemplos:**
+
+* **0001–0004:** acesso à página de eventos através de diferentes pontos da Home;
+* **0005–0012:** pesquisa por eventos, cidades e locais;
+* **0013:** expansão e recolhimento de conteúdo através de "Leia mais/Mostrar menos";
+* **0014–0019:** navegação entre evento, localização e Google Maps;
+* **0020–0034:** acesso e navegação pelas páginas institucionais;
+* **0041–0043:** interação com os controles do carrossel;
+* **0069:** filtragem e navegação.
+
+### Testes End-to-End (E2E)
+
+Validam jornadas completas envolvendo múltiplos componentes ou páginas da aplicação.
+
+**Exemplos:**
+
+* **0001:** Home → Explorar Eventos;
+* **0011:** pesquisa → identificação do evento → acesso à página do evento;
+* **0015:** página do evento → Google Maps → retorno ao fluxo do evento;
+* **0045:** stress do carrossel → acesso ao evento → retorno à Home → nova interação;
+* **0057:** pesquisa inválida → recuperação → pesquisa válida.
+
+> **Observação:** E2E representa o **escopo da jornada**, e não uma categoria funcional isolada. Um mesmo cenário E2E também pode ser funcional, de navegação, de robustez ou de recuperação.
+
+---
+
+## 🧭 Testes de Navegação
+
+Validam a movimentação do usuário entre páginas, componentes, links, histórico do navegador e diferentes pontos de acesso.
+
+**Exemplos:**
+
+* **0001–0004:** diferentes formas de acesso à página de eventos;
+* **0014–0019:** navegação entre evento, localização e Google Maps;
+* **0020–0034:** navegação entre páginas institucionais;
+* **0041–0045:** navegação pelo carrossel;
+* **0048:** utilização dos comandos Back e Forward do navegador;
+* **0055–0056:** navegação através de links e múltiplas abas;
+* **0067–0068:** navegação utilizando foco e teclado.
+
+---
+
+## 🖥️ Testes de Interface (UI)
+
+Avaliam a presença, interação e comportamento dos principais componentes da interface.
+
+**Exemplos:**
+
+* **0013:** expansão/recolhimento de conteúdo;
+* **0026:** validação das opções "Web" e "App FasTix";
+* **0041–0043:** botões de navegação do carrossel;
+* **0051:** componentes da interface em diferentes resoluções;
+* **0061:** cards de eventos;
+* **0062:** imagens;
+* **0070:** integridade dos elementos do footer.
+
+---
+
+## 📱 Testes de Responsividade
+
+Avaliam o comportamento da aplicação em diferentes dimensões de viewport.
+
+O cenário **0051** realiza uma validação específica utilizando:
+
+* **390 × 844 — Mobile**
+* **768 × 1024 — Tablet**
+* **2560 × 1440 — Desktop Ultrawide**
+
+Durante a execução são avaliados elementos como:
+
+* visibilidade de eventos;
+* carrossel;
+* navegação;
+* overflow;
+* componentes da interface;
+* footer;
+* acesso à página do evento;
+* refresh;
+* ausência de mensagens de erro.
+
+---
+
+## ♿ Testes de Acessibilidade
+
+Avaliam a capacidade de interação com a aplicação utilizando mecanismos alternativos ao mouse.
+
+**Exemplos:**
+
+* **0052:** navegação utilizando teclado;
+* **0067:** gerenciamento e comportamento do foco;
+* **0068:** navegação utilizando exclusivamente TAB.
+
+Os cenários verificam elementos como:
+
+* foco;
+* sequência de navegação;
+* utilização de TAB;
+* Shift + TAB;
+* Enter;
+* Space;
+* interação com elementos da interface sem depender exclusivamente do mouse.
+
+---
+
+## ⚡ Testes de Performance
+
+Avaliam o comportamento da aplicação em relação ao tempo de resposta durante operações específicas.
+
+**Exemplo:**
+
+* **0059:** validação relacionada ao tempo de resposta da aplicação.
+
+> A suíte possui uma cobertura de performance **pontual**, não caracterizando uma estratégia completa de performance/load testing. Para um projeto futuro, poderiam ser adicionados testes específicos de carga, volume e throughput.
+
+---
+
+## 🔄 Testes de Estabilidade
+
+Avaliam se a aplicação permanece funcional após repetição de operações, múltiplas interações, reloads ou períodos prolongados de utilização.
+
+**Exemplos:**
+
+* **0046:** estabilidade durante operações repetitivas;
+* **0049:** recuperação após refresh;
+* **0050:** múltiplos refreshes;
+* **0054:** estabilidade do carrossel;
+* **0060:** scroll agressivo;
+* **0064:** sessão prolongada;
+* **0065:** múltiplos reloads;
+* **0066:** recuperação após interrupção inesperada.
+
+---
+
+## 🔥 Testes de Estresse (Stress Testing)
+
+Submetem determinados componentes a operações repetitivas ou intensivas para verificar seu comportamento sob condições mais agressivas.
+
+**Exemplos:**
+
+* **0044:** múltiplos avanços e retornos do carrossel;
+* **0045:** stress do carrossel associado a uma jornada E2E;
+* **0046:** operações repetitivas;
+* **0047:** múltiplas interações/cliques;
+* **0050:** múltiplos refreshes;
+* **0054:** operações repetitivas sobre o carrossel;
+* **0058:** entradas extremas.
+
+> **Importante:** esses cenários caracterizam stress/robustez de componentes da aplicação. Eles não devem ser apresentados como um teste formal de **load/performance**, pois não simulam múltiplos usuários ou carga concorrente de infraestrutura.
+
+---
+
+## 🛡️ Testes de Robustez
+
+Avaliam a capacidade da aplicação de lidar com entradas inesperadas, inválidas, extremas ou sequências incomuns de interação.
+
+**Exemplos:**
+
+* **0035:** pesquisa por termo inexistente;
+* **0036:** caracteres especiais;
+* **0037:** caracteres especiais repetidos;
+* **0038:** entradas numéricas;
+* **0039–0040:** combinações de entradas para validação de comportamento;
+* **0046–0047:** operações repetitivas;
+* **0057:** recuperação após pesquisa inválida;
+* **0058:** entrada extrema;
+* **0066:** interrupção inesperada.
+
+---
+
+## 🔎 Testes de Validação de Dados
+
+Verificam se os dados inseridos, pesquisados, retornados ou apresentados pela aplicação são tratados corretamente.
+
+**Exemplos:**
+
+* **0005–0012:** pesquisa por cidade, evento e local;
+* **0035:** pesquisa sem resultado;
+* **0036–0040:** caracteres especiais, números e combinações;
+* **0057:** recuperação entre pesquisa inválida e válida;
+* **0058:** entrada extrema;
+* **0061:** validação dos dados exibidos nos cards;
+* **0069:** filtros e resultados.
+
+---
+
+## 🔐 Testes de Integridade
+
+Avaliam se os dados e componentes permanecem consistentes após diferentes operações.
+
+**Exemplos:**
+
+* **0053:** validação da alteração de estado do carrossel;
+* **0054:** integridade do carrossel após múltiplas operações;
+* **0061:** consistência dos dados dos cards;
+* **0062:** integridade das imagens;
+* **0070:** integridade do footer após múltiplas interações.
+
+---
+
+## 🌐 Testes de Compatibilidade de Navegação
+
+Verificam se diferentes mecanismos de navegação continuam funcionando corretamente em diferentes contextos de interação.
+
+**Exemplos:**
+
+* **0048:** Back/Forward do navegador;
+* **0051:** navegação em diferentes resoluções;
+* **0052:** navegação por teclado;
+* **0055:** links institucionais, aplicativos e redes sociais;
+* **0056:** utilização de múltiplas abas;
+* **0067–0068:** navegação por foco e teclado.
+
+> Essa categoria representa **compatibilidade entre diferentes mecanismos de navegação**, e não compatibilidade entre diferentes browsers. A suíte atual não demonstra, pelos cenários analisados, uma estratégia completa de cross-browser testing.
+
+---
+
+## 🚨 Testes de Monitoramento de Erros
+
+Monitoram sinais de falhas durante a execução e verificam a ausência de mensagens de erro conhecidas.
+
+**Exemplos:**
+
+* **0039:** ausência de `500` e `Error`;
+* **0040:** ausência de `500`, `Error` e `Exception`;
+* **0053–0054:** ausência de mensagens como `Application error`, `Internal Server Error` e `Unexpected error`;
+* **0063:** monitoramento de erros no console.
+
+---
+
+## 🎨 Testes de Integridade Visual
+
+Avaliam se elementos visuais permanecem íntegros após diferentes interações.
+
+**Exemplos:**
+
+* **0051:** elementos visuais em diferentes resoluções;
+* **0054:** comportamento visual do carrossel após múltiplas operações;
+* **0062:** validação da integridade das imagens;
+* **0070:** integridade visual do footer.
+
+---
+
+## 🔄 Recuperação e Estado da Aplicação
+
+Nos cenários analisados, existem testes relacionados à manutenção e recuperação do estado da aplicação após determinadas operações.
+
+**Exemplos:**
+
+* **0049:** recuperação após refresh;
+* **0050:** comportamento após múltiplos refreshes;
+* **0057:** recuperação após uma pesquisa inválida;
+* **0065:** comportamento após múltiplos reloads;
+* **0066:** recuperação após interrupção inesperada.
+
+> **Precisão técnica:** esses cenários são melhor descritos como **testes de recuperação/resiliência e gerenciamento de estado**. Eles não comprovam, isoladamente, persistência de dados de negócio em banco, sessão ou armazenamento local.
+
+---
+
+# 🔁 Regressão
+
+A **regressão não representa um conjunto separado de cenários**.
+
+Os 70 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após:
+
+* novas funcionalidades;
+* alterações de UI;
+* alterações de navegação;
+* correções de bugs;
+* alterações no carrossel;
+* alterações de responsividade;
+* alterações de componentes;
+* mudanças estruturais nas páginas.
+
+A ideia é verificar se uma alteração introduzida no sistema provocou efeitos colaterais em comportamentos que anteriormente funcionavam.
+
+### Exemplo de estratégia
+
+```text
+Alteração no sistema
+        ↓
+Execução dos testes relacionados
+        ↓
+Execução da suíte de regressão
+        ↓
+Comparação dos resultados
+        ↓
+Identificação de regressões
+        ↓
+RCA / Bug Report
+```
+---
+
+# 📊 Matriz de cobertura da suíte
+
+Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz resumida:
+
+| Dimensão                         | Cenários principais                              | Cobertura |
+| -------------------------------- | ------------------------------------------------ | --------- |
+| **E2E**                          | 0001, 0011, 0015, 0045, 0057                     | 🟢        |
+| **Funcional**                    | 0001–0045, 0069                                  | 🟢        |
+| **Regressão**                    | 0001–0070                                        | 🟢        |
+| **Navegação**                    | 0001–0004, 0014–0034, 0041–0048, 0055–0056       | 🟢        |
+| **UI**                           | 0013, 0026, 0041–0043, 0051, 0061–0062, 0070     | 🟢        |
+| **Responsividade**               | 0051                                             | 🟢        |
+| **Acessibilidade**               | 0052, 0067–0068                                  | 🟢        |
+| **Performance**                  | 0059                                             | 🟡        |
+| **Estabilidade**                 | 0046, 0049–0050, 0054, 0060, 0064–0066           | 🟢        |
+| **Estresse**                     | 0044–0047, 0050, 0054, 0058                      | 🟢        |
+| **Robustez**                     | 0035–0040, 0046–0050, 0057–0058, 0060, 0064–0066 | 🟢        |
+| **Validação de Dados**           | 0005–0012, 0035–0040, 0057–0058, 0061, 0069      | 🟢        |
+| **Integridade**                  | 0053–0054, 0061–0062, 0070                       | 🟢        |
+| **Compatibilidade de Navegação** | 0048, 0051–0052, 0055–0056, 0067–0068            | 🟢        |
+| **Monitoramento de Erros**       | 0039–0040, 0053–0054, 0063                       | 🟢        |
+| **Integridade Visual**           | 0051, 0054, 0062, 0070                           | 🟢        |
+| **Recuperação/Estado**           | 0049–0050, 0057, 0065–0066                       | 🟢        |
+
+**Legenda:**
+🟢 Cobertura claramente demonstrada pelos cenários analisados
+🟡 Cobertura presente, porém pontual e passível de expansão
 
 ---
 
 
-## 🎯 Tipos de teste realizados na suíte
 
-A suíte de testes do qaFood é composta por todos os tipos de testes descritos abaixo:
+
+
+---
+
 
 
