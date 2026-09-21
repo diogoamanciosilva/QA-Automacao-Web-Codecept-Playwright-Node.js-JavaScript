@@ -1,6 +1,6 @@
 ### EM ATUALIZAÇÃO...
 
-## 🤖 Automação Web Codecept - Playwright - Node.js + JavaScript (FasTix)
+## 🤖 Automação Web CodeceptJS - Playwright - Node.js + JavaScript (FasTix)
 
 <img width="1912" height="741" alt="image" src="https://github.com/user-attachments/assets/8dc7f870-7960-4e7a-99ba-97a38786b6df" />
 
@@ -37,7 +37,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
   ## 📑 Índice
 
 - [📱 Sobre o app](#-sobre-o-app)
-- [🤖 ](#-maestro)
+- [🤖 Codecept](#-codecept)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 
 - ---
@@ -52,3 +52,14 @@ Também oferece tecnologia para produtores, com controle total para os organizad
 
 
 ---
+
+## 🤖 CodeceptJS
+
+O **CodeceptJS** utiliza recursos do ecossistema **Node.js e JavaScript**, dessa forma ele integra recursos do ecossistema **Node.js e JavaScript**, integrando o **Playwright** para a execução de testes automatizados em aplicações Web.
+
+### Pré-requisitos para utilização no Windows
+* **Node.js**
+* **JavaScript**
+* **CodeceptJS**
+* **Playwright** para a execução de testes automatizados da aplicação Web da FasTix.
+
