@@ -129,7 +129,7 @@ Configuração do ambiente com a instalação das seguintes tecnologias:
 
 https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=drive_link
 
-2.**Baixar os arquivos:**
+2. **Baixar os arquivos:**
 
 <img width="967" height="81" alt="image" src="https://github.com/user-attachments/assets/47afcefd-877b-4c54-88db-37e26d7a7fc0" />
 
