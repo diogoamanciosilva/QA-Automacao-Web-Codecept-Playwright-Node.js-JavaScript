@@ -6,25 +6,26 @@
 
 A FasTix é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
 
-O projeto consiste em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), baseada na versão de produção ativa publicada em julho de 2026.:
+O projeto consiste em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026:**
 
-**- Testes End-to-End (E2E)
-- Testes Funcionais
-- Testes de Regressão
-- Testes de Navegação
-- Testes de Interface (UI)
-- Testes de Responsividade
-- Testes de Acessibilidade
-- Testes de Performance
-- Testes de Estabilidade
-- Testes de Estresse
-- Testes de Robustez
-- Testes de Validação de Dados
-- Testes de Integridade
-- Testes de Compatibilidade de Navegação
-- Testes de Monitoramento de Erros
-- Testes de Integridade Visual
-- Testes de Persistência de Estado**
+
+**- Testes End-to-End (E2E)**
+**- Testes Funcionais**
+**- Testes de Regressão**
+**- Testes de Navegação**
+**- Testes de Interface (UI)**
+**- Testes de Responsividade**
+**- Testes de Acessibilidade**
+**- Testes de Performance**
+**- Testes de Estabilidade**
+**- Testes de Estresse**
+**- Testes de Robustez**
+**- Testes de Validação de Dados**
+**- Testes de Integridade**
+**- Testes de Compatibilidade de Navegação**
+**- Testes de Monitoramento de Erros**
+**- Testes de Integridade Visual**
+**- Testes de Persistência de Estado**
 
 O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
 
