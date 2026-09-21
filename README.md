@@ -24,7 +24,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 
 A FasTix é uma plataforma voltada à venda, distribuição e intermediação de ingressos, além de oferecer produtos e serviços relacionados ao setor de entretenimento no Brasil.
 
-Atuando como uma ticketeira, a FasTix conecta o público aos organizadores de eventos, a FasTix realiza a intermediação de ingressos e facilita a venda online de entradas para shows de música, festivais, cursos, palestras, exposições e eventos esportivos, independentemente do porte dos produtores de evento (pequeno, médio ou grande).
+Atuando como uma ticketeira, a FasTix conecta o público aos organizadores de eventos, realiza a intermediação de ingressos e facilita a venda online de entradas para shows de música, festivais, cursos, palestras, exposições e eventos esportivos, independentemente do porte dos produtores de evento (pequeno, médio ou grande).
 
 Também oferece tecnologia para produtores, com controle total para os organizadores realizarem a gestão de vendas e o controle de acesso do público no dia do evento (check-in).
 
