@@ -80,7 +80,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ---
 
-## 🛠️ Tipos de teste realizados na suíte
+## 🎯 Tipos de teste realizados na suíte
 
 | Tipos de Testes |
 | ------------------------- |
@@ -107,6 +107,24 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 ---
 
 ## 🚀 Como executar este projeto 
+
+Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção "🛠️ Ambiente e rotina diária" mais abaixo.
+
+### Pré-requisitos
+
+Configuração do ambiente com a instalação das seguintes tecnologias:
+
+- **Node.js**  ([guia oficial de instalação]([https://nodejs.org/pt-br/download[))
+- **npm**
+- **CodeceptJS**  ([guia oficial de instalação](https://codecept.io/installation/))
+- **Playwright** ([guia oficial de instalação](https://playwright.dev/docs/intro))
+
+
+
+
+
+
+
 
 ---
 
