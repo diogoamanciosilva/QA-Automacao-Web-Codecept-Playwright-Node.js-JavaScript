@@ -6,9 +6,9 @@
 
 O projeto consiste em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), baseada na versão de produção ativa publicada em julho de 2026.
 
-A FasTix é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. Atuando como uma ticketeira, ela conecta o público aos organizadores de eventos.
+A FasTix é uma plataforma de comercialização, distribuição e intermediação de ingressos, além de produtos e serviços associados ao mercado de entretenimento no Brasil. 
 
-A FasTix realiza a intermediação de ingressos e facilita a venda online de entradas para shows de música, festivais, cursos, palestras, exposições e eventos esportivos, independentemente do porte dos produtores de evento (pequeno, médio ou grande).
+Atuando como uma ticketeira, ela conecta o público aos organizadores de eventos, a FasTix realiza a intermediação de ingressos e facilita a venda online de entradas para shows de música, festivais, cursos, palestras, exposições e eventos esportivos, independentemente do porte dos produtores de evento (pequeno, médio ou grande).
 
 Também oferece tecnologia para produtores, com controle total para os organizadores realizarem a gestão de vendas e o controle de acesso do público no dia do evento (check-in).
 
