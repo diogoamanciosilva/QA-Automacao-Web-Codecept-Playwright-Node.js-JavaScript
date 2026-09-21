@@ -107,9 +107,9 @@ A suíte automatizada do FasTix foi estruturada para validar não apenas os flux
 **Os 70 cenários automatizados abaixo são todos os testes realizados na Feature Explorar Eventos.**
 
 
-| Feature | Testes Automatizados |
-| ------------------------- | ------: |
-| Feature_Explorar Eventos | 70 |
+| Feature | 
+| ------------------------- | 
+| Feature_Explorar Eventos | 
 | 0001 - Acessar a página de eventos (Botão: Explorar eventos) | |
 | 0002 - Acessar a página de eventos (segunda opção de acesso via ícone fast-forward) | |
 | 0003 - Acessar a página de eventos (Botão: Explorar eventos) e verificar a navegação por scroll | |
