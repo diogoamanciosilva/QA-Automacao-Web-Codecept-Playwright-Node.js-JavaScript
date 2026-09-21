@@ -40,6 +40,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🤖 Codecept](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 - [⚙️ Estrutura da Suíte de Testes qaFood](#️-estrutura-da-suíte-de-testes-fastix)
+- [🎯 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
 
 - ---
 
@@ -98,5 +99,9 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 
 ---
+
+## 🎯 Tipos de teste realizados na suíte
+
+A suíte de testes do qaFood é composta por todos os tipos de testes descritos abaixo:
 
 
