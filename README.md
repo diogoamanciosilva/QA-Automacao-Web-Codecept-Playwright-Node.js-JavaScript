@@ -12,9 +12,9 @@ Atuando como uma ticketeira, ela conecta o público aos organizadores de eventos
 
 Também oferece tecnologia para produtores, com controle total para os organizadores realizarem a gestão de vendas e o controle de acesso do público no dia do evento (check-in).
 
-O site foi desenvolvido pela empresa americana Web Solutions FL (https://www.websolutionsfl.com/).
+O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
 
-Todos os testes e a estrutura deste repositório foram desenvolvidos por Diogo Amancio.
+Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio.**
 
 ---
 
