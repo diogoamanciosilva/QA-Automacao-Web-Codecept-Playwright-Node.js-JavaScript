@@ -114,7 +114,7 @@ Um resumo rápido para quem está clonando este repositório pela primeira vez. 
 
 Configuração do ambiente com a instalação das seguintes tecnologias:
 
-- **Node.js**  ([guia oficial de instalação]([https://nodejs.org/pt-br/download[))
+- **Node.js**  ([guia oficial de instalação](https://nodejs.org/learn/getting-started/an-introduction-to-the-npm-package-manager))
 - **npm**
 - **CodeceptJS**  ([guia oficial de instalação](https://codecept.io/installation/))
 - **Playwright** ([guia oficial de instalação](https://playwright.dev/docs/intro))
