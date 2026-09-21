@@ -28,7 +28,7 @@ O projeto consiste em uma suíte de testes automatizados para o site FasTix (htt
 * **- Testes de Persistência de Estado**
 
 
-O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
+O site foi desenvolvido pela **empresa americana Web Solutions FL** 🇺🇲 (https://www.websolutionsfl.com/).
 
 Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio.**
 
