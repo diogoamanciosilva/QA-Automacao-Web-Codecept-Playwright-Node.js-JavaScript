@@ -126,29 +126,6 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 ---
 
 
-## 🛠️ Tipos de teste realizados na suíte
-
-| Tipos de Testes |
-| ------------------------- |
-| Testes End-to-End (E2E) |
-| Testes Funcionais |
-| Testes de Regressão |
-| Testes de Navegação |
-| Testes de Interface (UI) |
-| Testes de Responsividade |
-| Testes de Acessibilidade |
-| Testes de Performance |
-| Testes de Estabilidade |
-| Testes de Estresse |
-| Testes de Robustez |
-| Testes de Validação de Dados |
-| Testes de Integridade |
-| Testes de Compatibilidade de Navegação |
-| Testes de Monitoramento de Erros |
-| Testes de Integridade Visual |
-| Testes de Persistência de Estado |
-| **Total: 17 tipos de testes** |
-
 ## 🎯 Estratégia e cobertura de Testes 
 
 A suíte automatizada do FasTix foi estruturada para validar não apenas os fluxos funcionais da aplicação, mas também diferentes aspectos de qualidade, comportamento, resiliência e experiência de navegação.
