@@ -8,26 +8,6 @@ A FasTix é uma plataforma de comercialização, distribuição e intermediaçã
 
 O projeto consiste na documentação Gherkin (linguagem para descrever o comportamento do software) e BDD (Behavior-Driven Development), em uma suíte de testes automatizados para o site FasTix (https://fastix.com.br), **baseada na versão de produção ativa publicada em julho de 2026:**
 
-
-* **- Testes End-to-End (E2E)**
-* **- Testes Funcionais**
-* **- Testes de Regressão**
-* **- Testes de Navegação**
-* **- Testes de Interface (UI)**
-* **- Testes de Responsividade**
-* **- Testes de Acessibilidade**
-* **- Testes de Performance**
-* **- Testes de Estabilidade**
-* **- Testes de Estresse**
-* **- Testes de Robustez**
-* **- Testes de Validação de Dados**
-* **- Testes de Integridade**
-* **- Testes de Compatibilidade de Navegação**
-* **- Testes de Monitoramento de Erros**
-* **- Testes de Integridade Visual**
-* **- Testes de Persistência de Estado**
-
-
 O site foi desenvolvido pela **empresa americana Web Solutions FL** (https://www.websolutionsfl.com/).
 
 Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio.**
