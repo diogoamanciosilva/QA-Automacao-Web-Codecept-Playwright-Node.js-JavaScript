@@ -81,12 +81,12 @@ O **CodeceptJS** utiliza recursos do ecossistema **Node.js e JavaScript**, dessa
 
 ## ⚙️ Estrutura da Suíte de Testes FasTix
 
-A suíte de testes da FasTix é **organizada em 6 Features**, seguindo a jornada do usuário no site, desde o login, passando pela exploração de eventos, pelo acesso ao suporte e à ajuda, pela tela inicial, pela publicação de eventos, pela compra de ingressos e pela criação de uma conta.
+A suíte de testes da FasTix é **organizada em 6 Features** composto por 586 testes, seguindo a jornada do usuário no site, desde o login, passando pela exploração de eventos, pelo acesso ao suporte e à ajuda, pela tela inicial, pela publicação de eventos, pela compra de ingressos e pela criação de uma conta.
 
 | Feature                   |  Testes Automatizados |
 | ------------------------- | ------: |
 | Feature_Explorar Eventos            |      70 |
-| Feature_LSuporte e Ajuda            |      75 |
+| Feature_Suporte e Ajuda            |      75 |
 | Feature_Tela Inicial          |      164 |
 | Feature_Publicar Eventos|      98 |
 | Feature_Comprar Ingressos           |      127 |
