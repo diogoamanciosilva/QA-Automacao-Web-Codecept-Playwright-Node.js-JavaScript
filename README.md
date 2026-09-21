@@ -119,6 +119,21 @@ Configuração do ambiente com a instalação das seguintes tecnologias:
 - **CodeceptJS**  ([guia oficial de instalação](https://codecept.io/installation/))
 - **Playwright** ([guia oficial de instalação](https://playwright.dev/docs/intro))
 
+### Passos
+
+1. **Acessar a pasta FasTix:**
+
+<img width="428" height="82" alt="image" src="https://github.com/user-attachments/assets/316d58c9-db24-4c62-86a4-59838b8fd9e9" />
+
+ **Link para acesso:** 
+
+https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=drive_link
+
+2.**Baixar os arquivos:**
+
+<img width="967" height="81" alt="image" src="https://github.com/user-attachments/assets/47afcefd-877b-4c54-88db-37e26d7a7fc0" />
+
+
 
 
 
