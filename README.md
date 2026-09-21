@@ -134,6 +134,29 @@ https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=dri
 <img width="967" height="81" alt="image" src="https://github.com/user-attachments/assets/47afcefd-877b-4c54-88db-37e26d7a7fc0" />
 
 
+### Plano de Testes
+
+Para garantir uma cobertura abrangente das funcionalidades da plataforma, o projeto foi dividido em seis Features, cada uma responsável por validar um conjunto específico de comportamentos do sistema.
+
+Todos os cenários foram documentados utilizando a linguagem Gherkin, (por meio das palavras-chave Dado, Quando, Então e E) pensando na facilidade de comunicação para as equipes de desenvolvimento, qualidade (QA), produto e demais áreas envolvidas da FasTix.
+
+### Passos
+
+1. **Acessar a pasta FasTix:**
+
+<img width="428" height="82" alt="image" src="https://github.com/user-attachments/assets/316d58c9-db24-4c62-86a4-59838b8fd9e9" />
+
+ **Link para acesso:** 
+
+https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=drive_link
+
+2. **Acessar a pasta Plano de Testes:**
+
+<img width="657" height="70" alt="image" src="https://github.com/user-attachments/assets/0232dcb1-a49a-40af-8970-360a14aa6bdf" />
+
+3. **Acessar o arquivo FasTix - Plano de Testes:**
+
+<img width="763" height="77" alt="image" src="https://github.com/user-attachments/assets/e4a3e26b-3dc5-48cd-974a-8d54c2ba87ab" />
 
 
 
