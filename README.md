@@ -110,7 +110,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção "🛠️ Ambiente e rotina diária" mais abaixo.
 
-### Pré-requisitos
+### 📌 Pré-requisitos
 
 Configuração do ambiente com a instalação das seguintes tecnologias:
 
@@ -119,7 +119,7 @@ Configuração do ambiente com a instalação das seguintes tecnologias:
 - **CodeceptJS**  ([guia oficial de instalação](https://codecept.io/installation/))
 - **Playwright** ([guia oficial de instalação](https://playwright.dev/docs/intro))
 
-### Passos
+### 📌 Passos
 
 1. **Acessar a pasta FasTix:**
 
@@ -134,7 +134,7 @@ https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=dri
 <img width="967" height="81" alt="image" src="https://github.com/user-attachments/assets/47afcefd-877b-4c54-88db-37e26d7a7fc0" />
 
 
-### Plano de Testes
+### 📌 Plano de Testes
 
 Para garantir uma cobertura abrangente das funcionalidades da plataforma, o projeto foi dividido em seis Features, cada uma responsável por validar um conjunto específico de comportamentos do sistema.
 
