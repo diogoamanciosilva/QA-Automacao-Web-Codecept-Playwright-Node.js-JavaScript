@@ -37,7 +37,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
   ## 📑 Índice
 
 - [📱 Sobre o app](#-sobre-o-app)
-- [🤖 Codecept](#-codecept)
+- [🤖 Codecept](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 
 - ---
