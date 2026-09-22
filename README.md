@@ -457,7 +457,9 @@ Cada Feature possui um conjunto de cenários que cobre desde o caminho feliz at�
 
 A suíte automatizada do FasTix foi estruturada para validar não apenas os fluxos funcionais da aplicação, mas também diferentes aspectos de qualidade, comportamento, resiliência e experiência de navegação.
 
-**Os 70 cenários automatizados abaixo são todos os testes realizados na Feature Explorar Eventos.**
+Abaixo, estão evidenciadas toda a estrutura, a estratégia e a cobertura de testes realizadas em cada Feature do projeto FasTix.
+
+## 🎯 Feature Suporte e Ajuda
 
 
 | Feature | 
@@ -871,6 +873,389 @@ Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz re
 | **Monitoramento de Erros**       | 0039–0040, 0053–0054, 0063                       | 🟢        |
 | **Integridade Visual**           | 0051, 0054, 0062, 0070                           | 🟢        |
 | **Recuperação/Estado**           | 0049–0050, 0057, 0065–0066                       | 🟢        |
+
+**Legenda:**
+🟢 Cobertura claramente demonstrada pelos cenários analisados
+🟡 Cobertura presente, porém pontual e passível de expansão
+
+---
+
+## 🎯  Suporte e Ajuda
+
+| Feature |
+| ------------------------- |
+| Feature_Suporte e Ajuda |
+| 0001 - Acessar a página de Suporte e Ajuda pela página principal |
+| 0002 - Acessar a página de Suporte e Ajuda e navegar até o footer |
+| 0003 - Acessar o contato da Fastix via Instagram |
+| 0004 - Acessar o contato da Fastix via Email (5 cliques consecutivos) |
+| 0005 - Acessar o contato da Fastix via WhatsApp |
+| 0006 - Preencher o formulário completo de contato |
+| 0007 - Impedir envio da mensagem quando o campo "NOME" não é preenchido |
+| 0008 - Impedir envio da mensagem quando o campo "EMAIL" não é preenchido |
+| 0009 - Impedir envio da mensagem quando o campo "MENSAGEM" não é preenchido |
+| 0010 - Impedir envio da mensagem quando nenhum campo é preenchido |
+| 0011 - E-mail sem o @ — bloqueio do envio |
+| 0012 - Aceitar e-mail com @, mas manter envio bloqueado sem validação humana |
+| 0013 - Validar preenchimento de todos os campos com caracteres especiais |
+| 0014 - Validar preenchimento individual dos campos com 10x cada caractere especial |
+| 0015 - Clicar no card "Como solicitar reembolso?" |
+| 0016 - Clicar nos cards "Como solicitar reembolso?" e "O que preciso levar no dia do evento?" |
+| 0017 - Clicar nos cards reembolso, evento e "Como vender ingressos pela FasTix?" |
+| 0018 - Clicar nos cards reembolso, evento, venda e "Onde compro ingresso sem taxa?" |
+| 0019 - Clicar e acessar o botão iOS |
+| 0020 - Clicar e acessar o botão Android |
+| 0021 - Clicar e acessar o Guia Check-in |
+| 0022 - Clicar e acessar os Termos e Condições de Uso |
+| 0023 - Clicar e acessar a Política de Compra |
+| 0024 - Clicar e acessar a Meia Entrada |
+| 0025 - Clicar no ícone do LinkedIn na Central de Ajuda |
+| 0026 - Clicar no ícone do Instagram na Central de Ajuda |
+| 0027 - Clicar no ícone do X na Central de Ajuda |
+| 0028 - Clicar no ícone de Email (Contato) na Central de Ajuda |
+| 0029 - Clicar no link WebSolutionsFL na Central de Ajuda |
+| 0030 - Navegação por teclado até o botão Suporte e Ajuda |
+| 0031 - Validar acessibilidade e navegação via TAB em todos os campos do formulário |
+| 0032 - Validação visual do foco na página de Suporte e Ajuda |
+| 0033 - Garantir acesso e funcionalidade dos elementos do footer via navegação por TAB |
+| 0034 - Persistência do formulário após scroll (stress test 10x) |
+| 0035 - Validação de campos obrigatórios com espaços vazios |
+| 0036 - Validação do limite máximo do campo Nome |
+| 0037 - Validação do limite máximo do campo Mensagem (estabilidade) |
+| 0038 - Validar limite máximo do campo Código do Pedido |
+| 0039 - Validação do limite máximo do campo Email (estabilidade) |
+| 0040 - Colagem de conteúdo no campo Mensagem do formulário |
+| 0041 - Atualização (reload) da página durante preenchimento do formulário |
+| 0042 - Validar estabilidade da aplicação durante navegação repetitiva (3x) |
+| 0043 - Validar estabilidade sob navegação repetitiva com liberação de memória (20x) |
+| 0044 - Validar estabilidade durante navegações repetitivas com monitoramento de console/rede (20x) |
+| 0045 - Detecção de memory leak visual no fluxo de suporte (20x) |
+| 0046 - Validar performance e estabilidade da navegação para a página de suporte (10 ciclos) |
+| 0047 - Responsividade da página de suporte (Desktop, Laptop, Tablet, Mobile) |
+| 0048 - Clique múltiplo nos botões de contato Instagram, Email e WhatsApp (10x) |
+| 0049 - Estabilidade visual durante scroll contínuo (20x) |
+| 0050 - Validar acessibilidade e integridade de todos os links da página |
+| 0051 - Navegação para páginas externas com verificação de status HTTP |
+| 0052 - Validar retorno correto ao utilizar o botão voltar do navegador (múltiplas páginas) |
+| 0053 - Validar navegação e retorno correto das páginas do menu superior |
+| 0054 - Validar navegação e retorno via botões Entrar, Criar Conta e Voltar |
+| 0055 - Fluxo completo de navegação e retorno (navegador + menu + Entrar/Criar Conta) |
+| 0056 - Validação de estabilidade após múltiplos acessos (5x) |
+| 0057 - Validação de estabilidade após múltiplos acessos ao footer (5x, com liberação de memória) |
+| 0058 - Validar stress de clique nos cards da página (5 loops × 4 cards) |
+| 0059 - Validação visual do footer da página |
+| 0060 - Validação visual do footer com responsividade (Desktop e Mobile) |
+| 0061 - Observabilidade do console e falhas de rede |
+| 0062 - Observabilidade realista de console, rede e UI |
+| 0063 - Validar performance da página via Navigation Timing API |
+| 0064 - Validação de Lazy loading do footer |
+| 0065 - Validar estabilidade do formulário por execuções repetidas (Anti-Flaky, 3x) |
+| 0066 - Teste anti-flaky do formulário com métricas de estabilidade e retries (5x) |
+| 0067 - Validação de fallback sem imagens na página |
+| 0068 - Validação de eventos no DataLayer |
+| 0069 - Validação de contrato de eventos no dataLayer (schema e sequência) |
+| 0070 - Validação de SEO title e meta description |
+| 0071 - Validar SEO da página com keywords obrigatórias e opcionais |
+| 0072 - Validação de OG tags |
+| 0073 - Validar consistência das OG tags entre browser e crawler headless |
+| 0074 - Garantir acessibilidade básica dos campos do formulário (label ou ARIA) |
+| 0075 - Validar exposição de scripts e possíveis leaks de dados sensíveis no HTML |
+| **Total** | **75** |
+
+Assim como na Feature Explorar Eventos, todos os testes foram classificados considerando diferentes dimensões de teste, evitando tratar conceitos distintos (E2E, Regressão, Acessibilidade, Stress, SEO, Segurança) como categorias equivalentes.
+
+### 📌 Dimensões de cobertura
+
+| Dimensão | Categorias | Objetivo |
+| --- | --- | --- |
+| **Escopo** | E2E | Validar jornadas completas atravessando múltiplas páginas |
+| **Objetivo funcional** | Funcionais, Validação de Dados, Integridade | Verificar comportamentos esperados, dados apresentados e consistência das informações |
+| **Qualidade da aplicação** | UI, Responsividade, Acessibilidade, Performance, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais |
+| **Condição / técnica de teste** | Estresse, Compatibilidade de Navegação | Exercitar a aplicação sob condições repetitivas, intensivas ou diferentes formas de navegação |
+| **Resiliência** | Monitoramento de Erros, Recuperação de Estado | Avaliar comportamento diante de erros, reloads e interrupções |
+| **Observabilidade e Contrato** | Analytics (dataLayer), SEO / Metadados | Verificar se dados de rastreamento e metadados de página seguem um contrato/schema esperado — dimensão específica desta feature, ausente na Explorar Eventos |
+| **Segurança** | Exposição de dados sensíveis | Verificar ausência de vazamento de credenciais, tokens ou chaves no HTML/scripts renderizados — dimensão específica desta feature |
+| **Finalidade de execução** | Regressão | Reexecutar cenários existentes para identificar impactos causados por alterações no sistema |
+
+---
+
+## 🧪 Cobertura funcional e E2E
+
+### Testes Funcionais
+
+Validam se as funcionalidades disponíveis na página apresentam o comportamento esperado.
+
+**Exemplos:**
+
+* **0001–0006:** acesso à página e aos canais de contato (Instagram, Email, WhatsApp), preenchimento completo do formulário;
+* **0015–0018:** interação com os cards de ajuda ("Como solicitar reembolso?", "O que levar no dia do evento?", etc.);
+* **0019–0024:** acesso a páginas institucionais (iOS, Android, Guia Check-in, Termos, Política de Compra, Meia Entrada);
+* **0025–0029:** ícones e links do footer (LinkedIn, Instagram, X, Email, WebSolutionsFL);
+* **0040:** colagem de conteúdo no campo Mensagem.
+
+### Testes End-to-End (E2E)
+
+Validam jornadas completas envolvendo múltiplos componentes ou páginas.
+
+**Exemplos:**
+
+* **0021–0024:** Suporte → página institucional específica;
+* **0052–0055:** navegação para páginas externas/internas → retorno à página de Suporte, incluindo fluxos de Entrar e Criar Conta;
+* **0073:** comparação entre a renderização vista pelo browser e a servida a um crawler headless — atravessa camada de frontend e de servidor.
+
+> **Observação:** assim como na Feature Explorar Eventos, E2E representa o **escopo da jornada**, não uma categoria funcional isolada.
+
+---
+
+## 🧭 Testes de Navegação
+
+**Exemplos:**
+
+* **0001–0005:** diferentes formas de acesso à página e aos canais de contato;
+* **0015–0029:** navegação por cards de ajuda, páginas institucionais e ícones do footer;
+* **0052–0055:** botão voltar do navegador, menu superior, e botões Entrar/Criar Conta.
+
+---
+
+## 🖥️ Testes de Interface (UI)
+
+**Exemplos:**
+
+* **0015–0018:** overlays dos cards de ajuda;
+* **0025–0029:** ícones de redes sociais e contato no footer;
+* **0032:** indicação visual de foco;
+* **0059–0060:** integridade visual do footer.
+
+---
+
+## 📱 Testes de Responsividade
+
+**Exemplos:**
+
+* **0047:** validação em 4 resoluções — Desktop (1920×1080), Laptop (1366×768), Tablet (768×1024), Mobile (375×667);
+* **0060:** footer especificamente validado em Desktop (1280×720) e Mobile (375×812).
+
+---
+
+## ♿ Testes de Acessibilidade
+
+**Exemplos:**
+
+* **0030:** navegação via TAB até o link "Suporte e Ajuda";
+* **0031:** navegação via TAB por todos os campos do formulário (fluxo único de até 80 tabs);
+* **0032:** validação visual do indicador de foco (outline, box-shadow, ring);
+* **0033:** acesso ao footer via TAB (até 120 tabs), validando que links possuem `href` funcional;
+* **0074:** presença de `label`/`aria-label` nos campos do formulário.
+
+---
+
+## ⚡ Testes de Performance
+
+**Exemplos:**
+
+* **0046:** tempo de navegação por 10 ciclos, com limite de 3000ms por ciclo;
+* **0063:** métricas via Navigation Timing API (`domContentLoaded`, `TTFB`, `responseTime`), com thresholds definidos;
+* **0064:** comportamento de lazy loading do footer.
+
+> Assim como na feature de referência, a cobertura de performance é **pontual**, focada em tempo de navegação e carregamento — não caracteriza uma estratégia completa de load/stress de infraestrutura.
+
+---
+
+## 🔄 Testes de Estabilidade
+
+**Exemplos:**
+
+* **0034:** persistência do formulário após 10 ciclos de scroll;
+* **0041:** recuperação após reload duplo durante preenchimento;
+* **0042–0043:** navegação repetitiva (3x e 20x);
+* **0049:** scroll contínuo (20 ciclos);
+* **0056–0057:** múltiplos acessos consecutivos (5x), incluindo variante com footer e liberação forçada de memória;
+* **0065–0066:** testes anti-flaky do formulário, incluindo cálculo de taxa de flakiness (`flakinessRate`) com limite de 10%.
+
+---
+
+## 🔥 Testes de Estresse (Stress Testing)
+
+**Exemplos:**
+
+* **0004:** 5 cliques consecutivos no link de e-mail;
+* **0014:** preenchimento com 10 repetições de cada caractere especial, em loop;
+* **0034:** 10 ciclos de scroll com validação de persistência;
+* **0043–0045:** 20 ciclos de navegação, com monitoramento de erros e detecção de memory leak visual;
+* **0048:** 10 ciclos de clique simulado nos botões de contato (com neutralização de `href` para evitar navegação real);
+* **0058:** 5 loops × 4 cards = 20 interações de clique.
+
+> **Importante:** assim como na Explorar Eventos, esses cenários caracterizam stress/robustez de componentes da página — não simulam carga concorrente de múltiplos usuários nem substituem uma ferramenta dedicada de load testing.
+
+---
+
+## 🛡️ Testes de Robustez
+
+**Exemplos:**
+
+* **0007–0010:** bloqueio de envio com campos individualmente ou totalmente vazios;
+* **0011–0012:** e-mail malformado (sem `@`) e e-mail válido sem validação humana (captcha);
+* **0013–0014:** conjunto amplo de caracteres especiais (incluindo símbolos matemáticos, moedas, acentuação) em todos os campos;
+* **0035:** campos preenchidos apenas com espaços em branco;
+* **0036–0039:** limites máximos de caracteres por campo (Nome, Mensagem, Código do Pedido, Email), validando truncamento real via manipulação do `value` nativo do input;
+* **0040:** colagem de conteúdo extenso;
+* **0067:** comportamento da página com todas as imagens bloqueadas (fallback).
+
+---
+
+## 🔎 Testes de Validação de Dados
+
+**Exemplos:**
+
+* **0007–0014:** validação de campos obrigatórios e formato de e-mail;
+* **0035–0039:** limites de caracteres e valor real armazenado em cada campo;
+* **0050:** integridade dos `href` de 10 links distintos (Instagram, Email, WhatsApp, iOS, Android, LinkedIn, X/Twitter, WebSolutionsFL);
+* **0069–0070:** schema de eventos do dataLayer e presença de metadados de SEO.
+
+---
+
+## 🔐 Testes de Integridade
+
+**Exemplos:**
+
+* **0045:** ausência de crescimento anormal do DOM entre ciclos (indício de memory leak);
+* **0049:** variação controlada de elementos de UI durante scroll contínuo;
+* **0050:** ausência de links vazios ou quebrados;
+* **0059–0060:** integridade estrutural do footer (altura, largura, itens renderizados);
+* **0064:** presença de links no footer após o carregamento progressivo (lazy loading).
+
+---
+
+## 🌐 Testes de Compatibilidade de Navegação
+
+**Exemplos:**
+
+* **0052:** botão voltar do navegador, testado contra 4 páginas institucionais distintas;
+* **0053–0054:** navegação e retorno via menu superior e via botões Entrar/Criar Conta;
+* **0055:** combinação de todos os mecanismos de navegação (voltar do navegador + menu + Entrar/Criar Conta) em um único fluxo.
+
+> Assim como na feature de referência, essa categoria trata de **diferentes mecanismos de navegação** dentro do mesmo navegador — não caracteriza uma estratégia de teste cross-browser.
+
+---
+
+## 🚨 Testes de Monitoramento de Erros
+
+**Exemplos:**
+
+* **0044:** captura de erros de console, `pageerror` e falhas de rede durante 20 ciclos, com filtros para ruído conhecido (Cloudflare challenge, erro pré-existente de SSR `React #418`) e limite de 5 erros críticos;
+* **0056–0057:** ausência de textos como "404", "500", "Application error" após múltiplos acessos;
+* **0061–0062:** monitoramento dedicado de console e falhas de rede (`requestfailed`) em um fluxo único.
+
+---
+
+## 🎨 Testes de Integridade Visual
+
+**Exemplos:**
+
+* **0032:** indicador visual de foco;
+* **0045:** estabilidade do número de elementos de UI entre ciclos;
+* **0049:** variação de botões/inputs durante scroll contínuo;
+* **0059–0060:** estrutura visual do footer, incluindo responsividade.
+
+---
+
+## 🔄 Recuperação e Estado da Aplicação
+
+**Exemplos:**
+
+* **0041:** recuperação do formulário após dois reloads consecutivos;
+* **0065–0066:** testes anti-flaky com retry automático (até 2 tentativas por execução) e cálculo formal de taxa de flakiness.
+
+> **Precisão técnica:** assim como destacado na feature de referência, esses cenários validam **recuperação/resiliência da interface**, não persistência de dados de negócio em backend — o formulário nunca é de fato submetido com sucesso em nenhum cenário desta suíte (o botão permanece desabilitado sem validação humana, cenário 0012).
+
+---
+
+## 📊 Observabilidade e Contrato (dimensão nova nesta feature)
+
+Avaliam se eventos de rastreamento e metadados da página seguem um contrato/schema esperado — categoria não presente na Feature Explorar Eventos.
+
+**Exemplos:**
+
+* **0068:** presença de eventos no `dataLayer` relacionados a "Suporte"/"contact" após o clique;
+* **0069:** validação de **schema completo** do evento `gtm.linkClick` (campos obrigatórios `gtm.elementText`, `gtm.elementUrl`, `gtm.triggers`), sequência esperada de eventos (`gtm.js` → `gtm.dom` → `gtm.load` → `gtm.linkClick` → `gtm.historyChange`), e ausência de eventos duplicados.
+
+---
+
+## 🔍 Testes de SEO e Metadados (dimensão nova nesta feature)
+
+**Exemplos:**
+
+* **0070:** presença e tamanho de `title` e `meta description` (limite de 160 caracteres);
+* **0071:** presença de keywords obrigatórias (`fastix`) e opcionais (`ingressos`, `suporte`, `ajuda`), com cálculo de score percentual;
+* **0072:** presença e tamanho mínimo de tags Open Graph (`og:title`, `og:description`, `og:url`);
+* **0073:** **consistência entre o HTML servido ao navegador e o HTML servido a um crawler** (simulado com User-Agent do Googlebot) — verifica se a aplicação faz pré-renderização correta de metadados para SEO.
+
+---
+
+## 🔒 Testes de Segurança (dimensão nova nesta feature)
+
+**Exemplo:**
+
+* **0075:** varredura do HTML renderizado (na Home e na página de Suporte) em busca de padrões sensíveis (`api_key`, `secret`, `token`, `password`, `bearer`, `jwt`, entre outros) e de scripts inline suspeitos.
+
+---
+
+# 🔁 Regressão
+
+A **regressão não representa um conjunto separado de cenários**.
+
+Os 75 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após:
+
+* alterações no formulário de contato ou em suas validações;
+* alterações nos cards da Central de Ajuda;
+* alterações no footer ou em seus links;
+* alterações de navegação entre Suporte e outras páginas do site;
+* mudanças em tags de SEO/Open Graph;
+* mudanças na configuração de eventos de Analytics (dataLayer);
+* alterações estruturais na página que possam impactar acessibilidade.
+
+### Exemplo de estratégia
+
+```text
+Alteração no sistema
+        ↓
+Execução dos testes relacionados
+        ↓
+Execução da suíte de regressão
+        ↓
+Comparação dos resultados
+        ↓
+Identificação de regressões
+        ↓
+RCA / Bug Report
+```
+
+---
+
+# 📊 Matriz de cobertura da suíte
+
+| Dimensão | Cenários principais | Cobertura |
+| --- | --- | --- |
+| **E2E** | 0021–0024, 0052–0055, 0073 | 🟢 |
+| **Funcional** | 0001–0029, 0040 | 🟢 |
+| **Regressão** | 0001–0075 | 🟢 |
+| **Navegação** | 0001–0029, 0052–0055 | 🟢 |
+| **UI** | 0015–0018, 0025–0029, 0032, 0059–0060 | 🟢 |
+| **Responsividade** | 0047, 0060 | 🟢 |
+| **Acessibilidade** | 0030–0033, 0074 | 🟢 |
+| **Performance** | 0046, 0063, 0064 | 🟡 |
+| **Estabilidade** | 0034, 0037, 0041–0045, 0049, 0056–0057, 0065–0066 | 🟢 |
+| **Estresse** | 0004, 0014, 0034, 0043–0045, 0048, 0058 | 🟢 |
+| **Robustez** | 0007–0014, 0035–0040, 0067 | 🟢 |
+| **Validação de Dados** | 0007–0014, 0035–0039, 0050, 0069–0070 | 🟢 |
+| **Integridade** | 0045, 0049–0050, 0059–0060, 0064 | 🟢 |
+| **Compatibilidade de Navegação** | 0052–0055 | 🟢 |
+| **Monitoramento de Erros** | 0044, 0056–0057, 0061–0062 | 🟢 |
+| **Integridade Visual** | 0032, 0045, 0049, 0059–0060 | 🟢 |
+| **Recuperação/Estado** | 0041, 0065–0066 | 🟢 |
+| **Observabilidade / Analytics** | 0068–0069 | 🟢 |
+| **SEO / Metadados** | 0070–0073 | 🟢 |
+| **Segurança** | 0075 | 🟡 |
 
 **Legenda:**
 🟢 Cobertura claramente demonstrada pelos cenários analisados
