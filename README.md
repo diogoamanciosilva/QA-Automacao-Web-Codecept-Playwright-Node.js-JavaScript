@@ -176,21 +176,29 @@ Esse material auxilia na análise, priorização e correção das falhas identif
 
 ## 📌 Passos
 
-1. **Acessar a pasta FasTix:**
+1. **Realizar o Download ZIP do projeto:**
 
-<img width="428" height="82" alt="image" src="https://github.com/user-attachments/assets/316d58c9-db24-4c62-86a4-59838b8fd9e9" />
+<img width="561" height="514" alt="image" src="https://github.com/user-attachments/assets/10871055-d5c6-41a5-a4d0-8e526f80e294" />
 
- **Link para acesso:** 
+2. **Acessar a pasta Arquivos JavaScript (Testes Automatizados):**
 
-https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=drive_link
+<img width="476" height="52" alt="image" src="https://github.com/user-attachments/assets/13155047-2c6c-4ee7-9d37-1a50a949154c" />
 
 2. **Acessar a pasta Bugs e Issues:**
 
-<img width="652" height="82" alt="image" src="https://github.com/user-attachments/assets/8cc447bd-915b-4c7b-811d-fcaa727ff221" />
+<img width="216" height="42" alt="image" src="https://github.com/user-attachments/assets/91cbd849-f82d-4be4-ae24-621a5ae02119" />
 
 3. **Acessar o arquivo Fastix - Bugs e Issues:**
 
-<img width="701" height="75" alt="image" src="https://github.com/user-attachments/assets/84e327a6-347a-429d-be5a-8b1f7ad4fd08" />
+<img width="370" height="46" alt="image" src="https://github.com/user-attachments/assets/da8f8465-a105-485a-a154-acbbcf0eedf0" />
+
+4. **Ao acessar o arquivo, ao final da explicação de cada Bug/Issue, será exibido um link que direciona para as evidências em vídeo:**
+
+<img width="1187" height="267" alt="image" src="https://github.com/user-attachments/assets/1fc384ab-666b-444d-a1fb-1216f6fb9f48" />
+
+5. **Após acessar a pasta "Bugs e Issues", será possível visualizar a pasta abaixo, na qual estão todos os vídeos:**
+
+<img width="797" height="102" alt="image" src="https://github.com/user-attachments/assets/a77a55d7-3064-443e-9756-763a2c42438d" />
 
 
    
