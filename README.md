@@ -112,7 +112,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ## ▶️ Como executar este projeto 
 
-Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção "🛠️ Ambiente e rotina diária" mais abaixo.
+Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção **🧰 Ambiente e rotina diária** mais abaixo.
 
 ## 📌 Pré-requisitos
 
