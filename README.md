@@ -455,9 +455,31 @@ Cada Feature possui um conjunto de cenários que cobre desde o caminho feliz at�
 
 ## 🎯 Estratégia e cobertura de Testes 
 
-A suíte automatizada do FasTix foi estruturada para validar não apenas os fluxos funcionais da aplicação, mas também diferentes aspectos de qualidade, comportamento, resiliência e experiência de navegação.
+Estratégia e Cobertura de Testes
 
-Abaixo, estão evidenciadas toda a estrutura, a estratégia e a cobertura de testes realizadas em cada Feature do projeto FasTix.
+Em resumo: a suíte automatizada do FasTix reúne 586 testes distribuídos em 6 Features, cobrindo toda a jornada do usuário na plataforma — do primeiro acesso à compra de ingressos — sob 17 dimensões de qualidade diferentes, não apenas validação funcional. A cobertura foi dimensionada por risco de negócio: as áreas com maior impacto em receita e alcance de usuários (Tela Inicial e Comprar Ingressos) concentram o maior volume de testes.
+
+A FasTix é uma plataforma de venda, distribuição e intermediação de ingressos, atuando como ticketeira para produtores de eventos de todos os portes — shows, festivais, cursos, palestras, exposições e eventos esportivos. Além da venda ao público, oferece aos organizadores ferramentas de gestão de vendas e controle de acesso (check-in) no dia do evento. Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e operação em tempo real, o que torna qualquer falha silenciosa potencialmente cara — seja em receita, confiança do produtor ou experiência do público na entrada do evento.
+
+### Distribuição da cobertura
+
+| Feature                     | Testes Automatizados | Papel na jornada |
+| ---------------------------- | --------------------: | --- |
+| Feature_Tela Inicial         |                   164 | Ponto de entrada — maior raio de impacto de qualquer instabilidade |
+| Feature_Comprar Ingressos    |                   127 | Fluxo que gera receita diretamente |
+| Feature_Publicar Eventos     |                    98 | Ferramenta de gestão para produtores |
+| Feature_Suporte e Ajuda      |                    75 | Canal de contato, SEO e institucional |
+| Feature_Explorar Eventos     |                    70 | Busca e navegação por carrossel |
+| Feature_Criar Conta          |                    52 | Onboarding de novos usuários |
+| **Total**                    |               **586** | — |
+
+A distribuição não é uniforme por decisão, não por lacuna: Tela Inicial e Comprar Ingressos concentram o maior volume porque representam, respectivamente, o ponto de contato de praticamente todo usuário e o fluxo com impacto financeiro direto — qualquer regressão ali tem o maior raio de dano possível ao negócio.
+
+Abordagem técnica
+
+Cada Feature é testada sob um subconjunto relevante de 17 dimensões de qualidade — funcional, E2E, navegação, interface, responsividade, acessibilidade, performance, estabilidade, estresse, robustez, validação de dados, integridade, compatibilidade de navegação, monitoramento de erros, contrato de eventos de Analytics, SEO/metadados e segurança — aplicadas conforme o que cada parte da aplicação efetivamente arrisca quebrar, não como um checklist genérico repetido igualmente em toda a plataforma. Um fluxo de checkout demanda rigor em cálculo de valores e estabilidade sob múltiplas interações; uma página institucional de suporte demanda mais atenção a acessibilidade, SEO e integridade de links externos. Essa adaptação por contexto é o que diferencia uma suíte estruturada por risco de uma simples réplica de casos de teste entre páginas.
+
+O conjunto completo funciona como base de regressão contínua: qualquer alteração na plataforma pode ser validada contra os 586 cenários existentes antes de chegar ao usuário final, ao produtor de evento ou à operação de check-in.
 
 ### 🔍 Feature  Suporte e Ajuda
 
