@@ -430,6 +430,10 @@ MeuProjeto/
 
 A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro da FasTix. Diferente de um fluxo estritamente linear, a plataforma atende dois perfis de usuário com caminhos próprios — o comprador de ingressos e o produtor de eventos — além de uma camada de suporte acessível a qualquer momento:
 
+```text
+Fluxo do Comprador:
+Tela Inicial → Explorar Eventos → Criar Conta / Login → Comprar Ingressos → Pagamento e Confirmação
+```
 
 ```text
 Fluxo do Produtor:
@@ -447,14 +451,6 @@ As informações a seguir apresentam a estrutura completa da suíte de testes da
 Cada Feature possui um conjunto de cenários que cobre desde o caminho feliz até casos de borda, testes de estresse, acessibilidade, performance e segurança, permitindo visualizar de forma clara o que é validado em cada etapa — desde a descoberta do evento na Tela Inicial até a confirmação do pagamento na etapa de Comprar Ingressos, passando pelo suporte ao usuário e pela publicação de novos eventos por produtores.
 
 ---
-
-
-
-
-
-
-
-
 
 
 ## 🎯 Estratégia e cobertura de Testes 
