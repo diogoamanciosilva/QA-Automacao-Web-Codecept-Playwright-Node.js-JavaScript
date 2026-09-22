@@ -179,17 +179,6 @@ Para documentar essas ocorrências foi elaborado um arquivo específico de Bugs 
 |Propostas de melhoria para a plataforma         |     
 
 
-
-| **Total**                 | 
-
-- Descrição detalhada de cada problema;
-- Passos para reprodução;
-- Resultado obtido;
-- Resultado esperado;
-- Capturas de tela (screenshots);
-- Link para acesso de vídeos demonstrando os comportamentos encontrados;
-- Propostas de melhoria para a plataforma.
-
 Esse material auxilia na análise, priorização e correção das falhas identificadas, contribuindo para a evolução contínua da qualidade da plataforma.
 
 1. **Acessar a pasta Bugs e Issues:**
