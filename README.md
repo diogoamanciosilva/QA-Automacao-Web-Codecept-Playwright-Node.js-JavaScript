@@ -211,11 +211,214 @@ O ambiente de testes combina:
 * **CodeceptJS**
 * **Playwright:Para a execução de testes automatizados da aplicação Web da FasTix.**
 
+## ⚙️ Configuração do Ambiente (Windows)
 
+### Instalação do CodeceptJS com Playwright
+
+### 1. Instalar o Node.js
+
+O CodeceptJS depende do Node.js para funcionar.
+
+1. Acesse: https://nodejs.org/
+2. Execute o instalador utilizando as configurações padrão.
+
+### 2. Verificar a instalação
+
+```bash
+node -v
+```
+
+Em seguida:
+
+```bash
+npm -v
+```
+
+> ⚠️ **Importante:** se ambos os comandos retornarem uma versão, a instalação foi concluída com sucesso.
+
+### 3. Criar o projeto
+
+```bash
+mkdir MeuProjeto
+cd MeuProjeto
+```
+
+### 4. Inicializar o projeto Node.js
+
+```bash
+npm init -y
+```
+
+Esse comando cria automaticamente o arquivo:
+
+```text
+package.json
+```
+
+### 5. Instalar o CodeceptJS
+
+```bash
+npm install codeceptjs --save-dev
+```
+
+### 6. Instalar o Playwright
+
+Instale a biblioteca:
+
+```bash
+npm install playwright --save-dev
+```
+
+Depois instale os navegadores utilizados pelo Playwright:
+
+```bash
+npx playwright install
+```
+
+### 7. Inicializar o CodeceptJS
+
+```bash
+npx codeceptjs init
+```
+
+### 8. Configurar o assistente
+
+| Pergunta | Resposta |
+|----------|----------|
+| **Where are your tests located?** | `./tests` |
+| **What helpers do you want to use?** | `Playwright` |
+| **Where is your application running?** | `https://fastix.com.br` *(ou a URL da aplicação)* |
+| **Browser in which testing will be performed** | `chromium` |
+| **Do you want to generate example tests?** | `Yes` |
+| **Do you want to use TypeScript?** | `No` *(caso utilize JavaScript)* |
+
+---
+
+> ⚠️ **Importante:** a pasta `output/` armazena screenshots, vídeos e relatórios de falhas gerados automaticamente durante a execução dos testes — não deve ser versionada no repositório (adicione ao `.gitignore`).
+
+### 9. Criar um teste de exemplo
+
+Crie o arquivo:
+
+```text
+tests/teste_inicial_test.js
+```
+
+```javascript
+Feature("Teste Inicial");
+
+Scenario("Abrir o Google", ({ I }) => {
+  I.amOnPage("https://www.google.com");
+  I.see("Google");
+});
+```
+
+### 10. Verificação final
+
+Execute:
+
+```bash
+npx codeceptjs run
+```
+
+> ⚠️ **Importante:** se o teste for executado sem erros, o ambiente foi configurado corretamente.
+
+---
+
+## ✅ Uso
+
+Após configurar o ambiente e instalar todas as dependências, utilize os comandos abaixo para executar os testes automatizados.
+
+### Executar todos os testes automatizados
+
+Executa todas as Features e todos os cenários de teste do projeto FasTix.
+
+```bash
+npx codeceptjs run
+```
+
+### Executar uma Feature específica
+
+Executa todos os cenários pertencentes a uma Feature específica.
+
+```bash
+npx codeceptjs run --grep "nome_da_feature"
+```
+
+Exemplo:
+
+```bash
+npx codeceptjs run --grep "suporteeajuda"
+```
+
+Abaixo, segue a lista dos comandos para a execução de cada uma das seis Features específicas do projeto:
+
+```bash
+# 1 - Feature Explorar Eventos
+npx codeceptjs run --grep "explorareventos"
+
+# 2 - Feature Suporte e Ajuda
+npx codeceptjs run --grep "suporteeajuda"
+
+# 3 - Feature Tela Inicial
+npx codeceptjs run --grep "telainicial"
+
+# 4 - Feature Publicar Eventos
+npx codeceptjs run --grep "publicareventos"
+
+# 5 - Feature Comprar Ingressos
+npx codeceptjs run --grep "compraringressos"
+
+# 6 - Feature Criar Conta
+npx codeceptjs run --grep "criarconta"
+```
+
+### Executar um cenário específico de uma Feature
+
+Executa apenas um cenário de teste.
+
+```bash
+npx codeceptjs run --grep "nome_da_feature + número_do_cenário"
+```
+
+Exemplo:
+
+```bash
+npx codeceptjs run --grep "suporteeajuda33"
+```
+
+### Exibir cada passo da execução
+
+```bash
+npx codeceptjs run --steps
+```
+
+### Executar em modo detalhado
+
+```bash
+npx codeceptjs run --verbose
+```
+
+### Executar em modo detalhado exibindo todos os passos
+
+```bash
+npx codeceptjs run --steps --verbose
+```
 
 ---
 
 ## 📁 Estrutura do repositório
+
+```text
+MeuProjeto/
+├── tests/
+│   └── example_test.js
+├── output/
+├── steps_file.js
+├── codecept.conf.js
+├── package.json
+└── node_modules/
+```
 
 
 ---
