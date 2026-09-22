@@ -428,6 +428,24 @@ MeuProjeto/
 
 ## 🧭 A Jornada do usuário
 
+A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro da FasTix. Diferente de um fluxo estritamente linear, a plataforma atende dois perfis de usuário com caminhos próprios — o comprador de ingressos e o produtor de eventos — além de uma camada de suporte acessível a qualquer momento:
+
+```text
+Fluxo do Comprador:
+Tela Inicial → Explorar Eventos → Criar Conta / Login → Comprar Ingressos → Pagamento e Confirmação
+```
+
+Fluxo do Produtor:
+Tela Inicial → Publicar Eventos → Login (Google / Apple / E-mail) → Gerenciamento de Eventos e Equipes
+
+Suporte e Ajuda: acessível a qualquer momento da jornada, funcionando como camada transversal de apoio ao usuário.
+```
+
+Os testes não validam apenas funcionalidades isoladas, mas também simulam comportamentos e situações próximas da utilização real de uma plataforma de venda de ingressos desde a descoberta de um evento na página inicial, passando pela pesquisa e seleção do evento certo, a criação de conta ou autenticação, a escolha e o pagamento dos ingressos, até a possibilidade de o mesmo usuário se tornar um produtor e publicar seus próprios eventos.
+
+As informações a seguir apresentam a estrutura completa da suíte de testes da FasTix, organizada em seis Features que representam, em conjunto, a jornada do usuário na plataforma.
+
+Cada Feature possui um conjunto de cenários que cobre desde o caminho feliz até casos de borda, testes de estresse, acessibilidade, performance e segurança, permitindo visualizar de forma clara o que é validado em cada etapa — desde a descoberta do evento na Tela Inicial até a confirmação do pagamento na etapa de Comprar Ingressos, passando pelo suporte ao usuário e pela publicação de novos eventos por produtores.
 
 ---
 
