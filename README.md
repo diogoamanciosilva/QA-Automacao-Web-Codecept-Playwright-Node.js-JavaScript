@@ -28,8 +28,6 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [✅ Uso](#-uso)
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
-
-- 
 - [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
 
 - ---
