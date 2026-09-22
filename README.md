@@ -27,6 +27,9 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🧰 Ambiente e rotina diária](#-ambiente-e-rotina-diária)
 - [✅ Uso](#-uso)
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
+- [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
+
+- 
 - [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
 
 - ---
