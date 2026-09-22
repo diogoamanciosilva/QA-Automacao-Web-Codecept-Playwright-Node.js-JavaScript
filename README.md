@@ -14,12 +14,16 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 
 ---
 
+#-como-executar-este-projeto
+
   ## 📑 Índice
 
 - [📱 Sobre o app](#-sobre-o-app)
 - [🤖 Codecept](#-codeceptjs)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 - [⚙️ Estrutura da Suíte de Testes FasTix](#️-estrutura-da-suíte-de-testes-fastix)
+- [📝 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
+- [▶️ Como executar este projeto](#-como-executar-este-projeto)
 - [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
 
 - ---
@@ -106,7 +110,7 @@ Dessa maneira, seguindo a jornada do usuário no site, desde o login, passando p
 
 ---
 
-## 🚀 Como executar este projeto 
+## ▶️ Como executar este projeto 
 
 Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção "🛠️ Ambiente e rotina diária" mais abaixo.
 
