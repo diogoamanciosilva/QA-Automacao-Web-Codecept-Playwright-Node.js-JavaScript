@@ -459,7 +459,7 @@ A suíte automatizada do FasTix foi estruturada para validar não apenas os flux
 
 Abaixo, estão evidenciadas toda a estrutura, a estratégia e a cobertura de testes realizadas em cada Feature do projeto FasTix.
 
-## 🎯 Feature Suporte e Ajuda
+### 🔍 Feature  Suporte e Ajuda
 
 
 | Feature | 
@@ -880,7 +880,7 @@ Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz re
 
 ---
 
-## 🎯  Suporte e Ajuda
+## 🔍 Feature Suporte e Ajuda
 
 | Feature |
 | ------------------------- |
