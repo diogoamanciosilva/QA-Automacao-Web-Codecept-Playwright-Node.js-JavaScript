@@ -428,7 +428,7 @@ MeuProjeto/
 
 ## 🧭 A Jornada do usuário
 
-A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro da FasTix. Diferente de um fluxo estritamente linear, a plataforma atende dois perfis de usuário com caminhos próprios — o comprador de ingressos e o produtor de eventos — além de uma camada de suporte acessível a qualquer momento:
+A suíte tem como objetivo automatizar e validar a jornada completa do usuário dentro da FasTix. Diferente de um fluxo estritamente linear, a plataforma atende dois perfis de usuário com caminhos próprios o comprador de ingressos e o produtor de eventos além de uma camada de suporte acessível a qualquer momento:
 
 ```text
 Fluxo do Comprador:
@@ -457,9 +457,13 @@ Cada Feature possui um conjunto de cenários que cobre desde o caminho feliz at�
 
 Estratégia e Cobertura de Testes
 
-Em resumo: a suíte automatizada do FasTix reúne 586 testes distribuídos em 6 Features, cobrindo toda a jornada do usuário na plataforma — do primeiro acesso à compra de ingressos — sob 17 dimensões de qualidade diferentes, não apenas validação funcional. A cobertura foi dimensionada por risco de negócio: as áreas com maior impacto em receita e alcance de usuários (Tela Inicial e Comprar Ingressos) concentram o maior volume de testes.
+Em resumo: a suíte automatizada do FasTix reúne 586 testes distribuídos em 6 Features, cobrindo toda a jornada do usuário na plataforma — do primeiro acesso à compra de ingressos sob 17 dimensões de qualidade diferentes, não apenas validação funcional. 
 
-A FasTix é uma plataforma de venda, distribuição e intermediação de ingressos, atuando como ticketeira para produtores de eventos de todos os portes — shows, festivais, cursos, palestras, exposições e eventos esportivos. Além da venda ao público, oferece aos organizadores ferramentas de gestão de vendas e controle de acesso (check-in) no dia do evento. Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e operação em tempo real, o que torna qualquer falha silenciosa potencialmente cara — seja em receita, confiança do produtor ou experiência do público na entrada do evento.
+A cobertura foi dimensionada por risco de negócio: as áreas com maior impacto em receita e alcance de usuários (Tela Inicial e Comprar Ingressos) concentram o maior volume de testes.
+
+A FasTix é uma plataforma de venda, distribuição e intermediação de ingressos, atuando como ticketeira para produtores de eventos de todos os portes como shows, festivais, cursos, palestras, exposições e eventos esportivos. Além da venda ao público, oferece aos organizadores ferramentas de gestão de vendas e controle de acesso (check-in) no dia do evento. 
+
+Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e operação em tempo real, o que torna qualquer falha silenciosa potencialmente cara — seja em receita, confiança do produtor ou experiência do público na entrada do evento.
 
 ### Distribuição da cobertura
 
