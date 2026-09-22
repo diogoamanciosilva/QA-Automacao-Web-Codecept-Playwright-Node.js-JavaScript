@@ -215,14 +215,14 @@ O ambiente de testes combina:
 
 ### Instalação do CodeceptJS com Playwright
 
-### 1. Instalar o Node.js
+### 📍 1. Instalar o Node.js
 
 O CodeceptJS depende do Node.js para funcionar.
 
 1. Acesse: https://nodejs.org/
 2. Execute o instalador utilizando as configurações padrão.
 
-### 2. Verificar a instalação
+### 📍 2. Verificar a instalação
 
 ```bash
 node -v
@@ -236,14 +236,14 @@ npm -v
 
 > ⚠️ **Importante:** se ambos os comandos retornarem uma versão, a instalação foi concluída com sucesso.
 
-### 3. Criar o projeto
+### 📍 3. Criar o projeto
 
 ```bash
 mkdir MeuProjeto
 cd MeuProjeto
 ```
 
-### 4. Inicializar o projeto Node.js
+### 📍 4. Inicializar o projeto Node.js
 
 ```bash
 npm init -y
@@ -255,13 +255,13 @@ Esse comando cria automaticamente o arquivo:
 package.json
 ```
 
-### 5. Instalar o CodeceptJS
+### 📍 5. Instalar o CodeceptJS
 
 ```bash
 npm install codeceptjs --save-dev
 ```
 
-### 6. Instalar o Playwright
+### 📍 6. Instalar o Playwright
 
 Instale a biblioteca:
 
@@ -275,13 +275,13 @@ Depois instale os navegadores utilizados pelo Playwright:
 npx playwright install
 ```
 
-### 7. Inicializar o CodeceptJS
+### 📍 7. Inicializar o CodeceptJS
 
 ```bash
 npx codeceptjs init
 ```
 
-### 8. Configurar o assistente
+### 📍 8. Configurar o assistente
 
 | Pergunta | Resposta |
 |----------|----------|
@@ -296,7 +296,7 @@ npx codeceptjs init
 
 > ⚠️ **Importante:** a pasta `output/` armazena screenshots, vídeos e relatórios de falhas gerados automaticamente durante a execução dos testes — não deve ser versionada no repositório (adicione ao `.gitignore`).
 
-### 9. Criar um teste de exemplo
+### 📍 9. Criar um teste de exemplo
 
 Crie o arquivo:
 
@@ -313,7 +313,7 @@ Scenario("Abrir o Google", ({ I }) => {
 });
 ```
 
-### 10. Verificação final
+### 📍 10. Verificação final
 
 Execute:
 
@@ -329,7 +329,7 @@ npx codeceptjs run
 
 Após configurar o ambiente e instalar todas as dependências, utilize os comandos abaixo para executar os testes automatizados.
 
-### Executar todos os testes automatizados
+### 📍 Executar todos os testes automatizados
 
 Executa todas as Features e todos os cenários de teste do projeto FasTix.
 
@@ -337,7 +337,7 @@ Executa todas as Features e todos os cenários de teste do projeto FasTix.
 npx codeceptjs run
 ```
 
-### Executar uma Feature específica
+### 📍 Executar uma Feature específica
 
 Executa todos os cenários pertencentes a uma Feature específica.
 
@@ -373,7 +373,7 @@ npx codeceptjs run --grep "compraringressos"
 npx codeceptjs run --grep "criarconta"
 ```
 
-### Executar um cenário específico de uma Feature
+### 📍 Executar um cenário específico de uma Feature
 
 Executa apenas um cenário de teste.
 
@@ -387,19 +387,19 @@ Exemplo:
 npx codeceptjs run --grep "suporteeajuda33"
 ```
 
-### Exibir cada passo da execução
+### 📍 Exibir cada passo da execução
 
 ```bash
 npx codeceptjs run --steps
 ```
 
-### Executar em modo detalhado
+### 📍 Executar em modo detalhado
 
 ```bash
 npx codeceptjs run --verbose
 ```
 
-### Executar em modo detalhado exibindo todos os passos
+### 📍 Executar em modo detalhado exibindo todos os passos
 
 ```bash
 npx codeceptjs run --steps --verbose
