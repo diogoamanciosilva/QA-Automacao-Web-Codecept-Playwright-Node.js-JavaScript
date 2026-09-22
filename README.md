@@ -24,6 +24,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [⚙️ Estrutura da Suíte de Testes FasTix](#️-estrutura-da-suíte-de-testes-fastix)
 - [📝 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
 - [▶️ Como executar este projeto](#%EF%B8%8F-como-executar-este-projeto)
+- [🧰 Ambiente e rotina diária](#-ambiente-e-rotina-diária)
 - [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
 
 - ---
