@@ -121,6 +121,19 @@ Configuração do ambiente com a instalação das seguintes tecnologias:
 
 ## 📌 Passos
 
+1. **Realizar o Download ZIP do projeto:**
+
+<img width="561" height="514" alt="image" src="https://github.com/user-attachments/assets/10871055-d5c6-41a5-a4d0-8e526f80e294" />
+
+
+<img width="561" height="42" alt="image" src="https://github.com/user-attachments/assets/0ae1955b-8166-46cc-a81e-ee4553c8df63" />
+
+
+
+
+
+
+
 1. **Acessar a pasta FasTix:**
 
 <img width="428" height="82" alt="image" src="https://github.com/user-attachments/assets/316d58c9-db24-4c62-86a4-59838b8fd9e9" />
