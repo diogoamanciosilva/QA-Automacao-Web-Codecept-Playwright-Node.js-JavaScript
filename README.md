@@ -123,28 +123,9 @@ Configuração do ambiente com a instalação das seguintes tecnologias:
 
 1. **Realizar o Download ZIP do projeto:**
 
-<img width="561" height="514" alt="image" src="https://github.com/user-attachments/assets/10871055-d5c6-41a5-a4d0-8e526f80e294" />
 
+2. **Acessar a pasta Arquivos JavaScript (Testes Automatizados):**
 
-<img width="561" height="42" alt="image" src="https://github.com/user-attachments/assets/0ae1955b-8166-46cc-a81e-ee4553c8df63" />
-
-
-
-
-
-
-
-1. **Acessar a pasta FasTix:**
-
-<img width="428" height="82" alt="image" src="https://github.com/user-attachments/assets/316d58c9-db24-4c62-86a4-59838b8fd9e9" />
-
- **Link para acesso:** 
-
-https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=drive_link
-
-2. **Baixar os arquivos:**
-
-<img width="967" height="81" alt="image" src="https://github.com/user-attachments/assets/47afcefd-877b-4c54-88db-37e26d7a7fc0" />
 
 
 ## 📌 Plano de Testes
@@ -153,23 +134,23 @@ Para garantir uma cobertura abrangente das funcionalidades da plataforma, o proj
 
 Todos os cenários foram documentados utilizando a linguagem Gherkin, (por meio das palavras-chave Dado, Quando, Então e E) pensando na facilidade de comunicação para as equipes de desenvolvimento, qualidade (QA), produto e demais áreas envolvidas da FasTix.
 
-## 📌 Passos
 
-1. **Acessar a pasta FasTix:**
+1. **Acessar a pasta Plano de Testes:**
 
-<img width="428" height="82" alt="image" src="https://github.com/user-attachments/assets/316d58c9-db24-4c62-86a4-59838b8fd9e9" />
 
- **Link para acesso:** 
 
-https://drive.google.com/drive/folders/1vr-T3OeIc5nADg2-C8myAwznxTokm7fp?usp=drive_link
+2. **Acessar o arquivo FasTix - Plano de Testes:**
 
-2. **Acessar a pasta Plano de Testes:**
 
-<img width="657" height="70" alt="image" src="https://github.com/user-attachments/assets/0232dcb1-a49a-40af-8970-360a14aa6bdf" />
 
-3. **Acessar o arquivo FasTix - Plano de Testes:**
 
-<img width="763" height="77" alt="image" src="https://github.com/user-attachments/assets/e4a3e26b-3dc5-48cd-974a-8d54c2ba87ab" />
+
+3. **Consultar o Plano de Testes:**
+<img width="1832" height="912" alt="image" src="https://github.com/user-attachments/assets/c94c67b6-ffdc-45b9-a551-8fad18126a02" />
+
+
+
+
 
 ## 📌 Bugs e Issues
 
@@ -187,31 +168,7 @@ Para documentar essas ocorrências foi elaborado um arquivo específico de Bugs 
 
 Esse material auxilia na análise, priorização e correção das falhas identificadas, contribuindo para a evolução contínua da qualidade da plataforma.
 
-## 📌 Passos
 
-1. **Realizar o Download ZIP do projeto:**
-
-<img width="561" height="514" alt="image" src="https://github.com/user-attachments/assets/10871055-d5c6-41a5-a4d0-8e526f80e294" />
-
-2. **Acessar a pasta Arquivos JavaScript (Testes Automatizados):**
-
-<img width="476" height="52" alt="image" src="https://github.com/user-attachments/assets/13155047-2c6c-4ee7-9d37-1a50a949154c" />
-
-2. **Acessar a pasta Bugs e Issues:**
-
-<img width="216" height="42" alt="image" src="https://github.com/user-attachments/assets/91cbd849-f82d-4be4-ae24-621a5ae02119" />
-
-3. **Acessar o arquivo Fastix - Bugs e Issues:**
-
-<img width="370" height="46" alt="image" src="https://github.com/user-attachments/assets/da8f8465-a105-485a-a154-acbbcf0eedf0" />
-
-4. **Ao acessar o arquivo, ao final da explicação de cada Bug/Issue, será exibido um link que direciona para as evidências em vídeo:**
-
-<img width="1187" height="267" alt="image" src="https://github.com/user-attachments/assets/1fc384ab-666b-444d-a1fb-1216f6fb9f48" />
-
-5. **Após acessar a pasta "Bugs e Issues", será possível visualizar a pasta abaixo, na qual estão todos os vídeos:**
-
-<img width="797" height="102" alt="image" src="https://github.com/user-attachments/assets/a77a55d7-3064-443e-9756-763a2c42438d" />
 
 
    
