@@ -201,8 +201,17 @@ Esse material auxilia na análise, priorização e correção das falhas identif
 
 ---
 
-
 ## 🧰 Ambiente e rotina diária
+
+O ambiente de testes combina:
+
+### Pré-requisitos para utilização no Windows
+* **Node.js**
+* **JavaScript**
+* **CodeceptJS**
+* **Playwright:Para a execução de testes automatizados da aplicação Web da FasTix.**
+
+
 
 ---
 
