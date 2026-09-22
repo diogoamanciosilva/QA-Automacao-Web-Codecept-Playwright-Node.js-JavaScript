@@ -166,15 +166,15 @@ Todos os cenários foram documentados utilizando a linguagem Gherkin, (por meio 
 
 Durante a execução dos testes automatizados foram identificados alguns comportamentos inesperados na plataforma.
 
-Para documentar essas ocorrências foi elaborado um arquivo específico de Bugs e Issues, contendo:
+Para documentar essas ocorrências foi elaborado um arquivo específico de Bugs e Issues, contendo as seguintes evidências de testes:
 
-- Descrição detalhada de cada problema;
-- Passos para reprodução;
-- Resultado obtido;
-- Resultado esperado;
-- Capturas de tela (screenshots);
-- Link para acesso de vídeos demonstrando os comportamentos encontrados;
-- Propostas de melhoria para a plataforma.
+**- Descrição detalhada de cada problema;**
+**- Passos para reprodução;**
+**- Resultado obtido;**
+**- Resultado esperado;**
+**- Capturas de tela (screenshots);**
+**- Link para acesso de vídeos demonstrando os comportamentos encontrados;**
+**- Propostas de melhoria para a plataforma.**
 
 Esse material auxilia na análise, priorização e correção das falhas identificadas, contribuindo para a evolução contínua da qualidade da plataforma.
 
