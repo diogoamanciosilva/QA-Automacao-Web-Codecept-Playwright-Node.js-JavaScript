@@ -124,8 +124,12 @@ Configuração do ambiente com a instalação das seguintes tecnologias:
 1. **Realizar o Download ZIP do projeto:**
 
 
+<img width="565" height="495" alt="image" src="https://github.com/user-attachments/assets/2f573976-f5fc-4681-9681-cfe38c46cbe6" />
+
+
 2. **Acessar a pasta Arquivos JavaScript (Testes Automatizados):**
 
+<img width="512" height="75" alt="image" src="https://github.com/user-attachments/assets/381c1dfa-930c-487b-a173-1e1a1d6d8540" />
 
 
 ## 📌 Plano de Testes
@@ -137,19 +141,17 @@ Todos os cenários foram documentados utilizando a linguagem Gherkin, (por meio 
 
 1. **Acessar a pasta Plano de Testes:**
 
+<img width="507" height="72" alt="image" src="https://github.com/user-attachments/assets/acc7b565-33c0-404d-92ba-4a62872f65c4" />
 
 
-2. **Acessar o arquivo FasTix - Plano de Testes:**
+2. **Acessar o arquivo FasTix - Plano de Testes.docx:**
 
-
-
+<img width="596" height="55" alt="image" src="https://github.com/user-attachments/assets/41cc0bbf-1210-4ab5-8918-bf120793e16a" />
 
 
 3. **Consultar o Plano de Testes:**
-<img width="1832" height="912" alt="image" src="https://github.com/user-attachments/assets/c94c67b6-ffdc-45b9-a551-8fad18126a02" />
 
-
-
+<img width="1817" height="915" alt="image" src="https://github.com/user-attachments/assets/0623268e-849b-4e04-9a19-1e5cca74de99" />
 
 
 ## 📌 Bugs e Issues
@@ -168,10 +170,20 @@ Para documentar essas ocorrências foi elaborado um arquivo específico de Bugs 
 
 Esse material auxilia na análise, priorização e correção das falhas identificadas, contribuindo para a evolução contínua da qualidade da plataforma.
 
+1. **Acessar a pasta Bugs e Issues:**
+
+<img width="507" height="57" alt="image" src="https://github.com/user-attachments/assets/28eaf619-5e42-423f-bbfb-18e625c82d78" />
 
 
+2. **Acessar o arquivo FasTix - Bugs e Issues.docx:**
 
-   
+<img width="520" height="52" alt="image" src="https://github.com/user-attachments/assets/2f109dba-4ac1-4402-94d7-57959eacbab6" />
+
+
+3. **Consultar o Bugs e Issues:**
+
+<img width="1801" height="910" alt="image" src="https://github.com/user-attachments/assets/a4fc4703-d22f-4169-b7f4-5639a2eca8bb" />
+
 
 ---
 
