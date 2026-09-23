@@ -1262,7 +1262,7 @@ Avaliam se eventos de rastreamento e metadados da página seguem um contrato/sch
 
 ---
 
-# 🔁 Regressão
+## 🔁 Regressão
 
 A **regressão não representa um conjunto separado de cenários**.
 
@@ -1294,7 +1294,7 @@ RCA / Bug Report
 
 ---
 
-# 📊 Matriz de cobertura da suíte
+## 📊 Matriz de cobertura da suíte
 
 | Dimensão | Cenários principais | Cobertura |
 | --- | --- | --- |
@@ -1607,7 +1607,7 @@ Assim como nas Features Explorar Eventos e Suporte e Ajuda, todos os testes fora
 
 ---
 
-# 🔁 Regressão
+## 🔁 Regressão
 
 A **regressão não representa um conjunto separado de cenários**.
 
@@ -1639,7 +1639,7 @@ RCA / Bug Report
 
 ---
 
-# 📊 Matriz de cobertura da suíte
+## 📊 Matriz de cobertura da suíte
 
 | Dimensão | Cenários principais | Cobertura |
 | --- | --- | --- |
@@ -1972,7 +1972,7 @@ Avaliam o sistema de papéis e permissões granulares por seção do evento — 
 
 ---
 
-# 🔁 Regressão
+## 🔁 Regressão
 
 A **regressão não representa um conjunto separado de cenários**.
 
@@ -2003,7 +2003,7 @@ RCA / Bug Report
 
 ---
 
-# 📊 Matriz de cobertura da suíte
+## 📊 Matriz de cobertura da suíte
 
 | Dimensão | Cenários principais | Cobertura |
 | --- | --- | --- |
