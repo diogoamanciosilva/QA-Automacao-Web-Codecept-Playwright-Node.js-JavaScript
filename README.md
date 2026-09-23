@@ -2568,20 +2568,318 @@ Portanto, os GAPs identificados nos **127 cenários analisados** devem ser inter
 
 ## 🔍 Feature Criar Conta
 
+| Feature |
+| ------------------------- |
+| Feature_Criar Conta |
+| 0001 - Na tela principal, clicar no botão 'Criar Conta' |
+| 0002 - Acessar a página e tentar criar conta sem preencher nenhum campo |
+| 0003 - Preencher apenas 'Nome' e tentar criar conta |
+| 0004 - Preencher 'Nome' e 'CPF/CNPJ' e tentar criar conta |
+| 0005 - Preencher 'Nome', 'CPF/CNPJ' e 'Email' e tentar criar conta |
+| 0006 - Preencher 'Nome', 'CPF/CNPJ', 'Email' e 'Celular' e tentar criar conta |
+| 0007 - Preencher 'Nome', 'CPF/CNPJ', 'Email', 'Celular' e 'Senha' sem clicar em 'Criar Conta' |
+| 0008 - Preencher apenas 'CPF/CNPJ' e clicar em 'Criar Conta' |
+| 0009 - Preencher apenas 'Email' e clicar em 'Criar Conta' |
+| 0010 - Preencher apenas 'Celular' e clicar em 'Criar Conta' |
+| 0011 - Preencher apenas 'Senha' e clicar em 'Criar Conta' |
+| 0012 - Clicar no botão 'Entrar com Apple' |
+| 0013 - Clicar no botão 'Entrar com Google' |
+| 0014 - Clicar no checkbox 'Sou estrangeiro' (marcar e desmarcar) |
+| 0015 - Clicar no checkbox 'Receber emails' (marcar e desmarcar) |
+| 0016 - Interagir múltiplas vezes com os checkboxes 'Sou estrangeiro' e 'Receber emails' |
+| 0017 - Validar comportamento do combobox de DDD com três cliques consecutivos |
+| 0018 - Validar todos os DDDs/códigos de país disponíveis no combobox (varredura completa) |
+| 0019 - Clicar no seletor de idioma (abrir dropdown 'BR') |
+| 0020 - Selecionar o idioma 'Español' |
+| 0021 - Selecionar o idioma 'English' |
+| 0022 - Alterar idioma para Español e clicar em 'Recibir correos electrónicos' |
+| 0023 - Alterar idioma para Español e clicar em 'Soy extranjero' |
+| 0024 - Alterar idioma para English e clicar em 'Receive emails' |
+| 0025 - Alterar idioma para English e clicar em 'I'm a foreigner' |
+| 0026 - Clicar no botão 'Voltar' |
+| 0027 - Alterar idioma para Español e clicar em 'Volver' |
+| 0028 - Alterar idioma para English e clicar em 'Back' |
+| 0029 - Clicar em 'Entrar' e acessar a tela de login |
+| 0030 - Clicar em 'Entrar', acessar login, e retornar via 'Criar Conta' |
+| 0031 - Idioma Español: clicar em 'Iniciar sesión' |
+| 0032 - Idioma Español: 'Iniciar sesión' e depois 'Crear cuenta' |
+| 0033 - Idioma English: clicar em 'Sign in' |
+| 0034 - Idioma English: 'Sign in' e depois 'Create an Account' |
+| 0035 - Validar persistência dos dados do formulário após refresh |
+| 0036 - Validar persistência do idioma (English, Português, Español) após refresh |
+| 0037 - Validar bloqueio de múltiplos cliques no botão 'Criar Conta' |
+| 0038 - Validar campo de e-mail com formato inválido |
+| 0039 - Validar campo CPF com quantidade inválida de dígitos |
+| 0040 - Validar campo celular com quantidade inválida de números |
+| 0041 - Validar senha com quantidade insuficiente de caracteres (1 a 5, varredura) |
+| 0042 - Validar navegação utilizando a tecla TAB |
+| 0043 - Validar envio do formulário utilizando a tecla ENTER |
+| 0044 - Validar consistência dos placeholders após troca de idioma (PT/EN/ES) |
+| 0045 - Validar consistência das mensagens de erro após troca de idioma (PT/EN/ES) |
+| 0046 - Validar acesso direto à URL '/signup' |
+| 0047 - Validar comportamento ao retornar utilizando o botão Voltar do navegador |
+| 0048 - Validar múltiplas abas simultâneas na tela de cadastro |
+| 0049 - Validar comportamento após múltiplos hard refresh consecutivos |
+| 0050 - Validar ausência de quebra visual após troca de idioma |
+| 0051 - Validar retorno seguro após cancelamento do login via Google |
+| 0052 - Validar retorno seguro após cancelamento do login via Apple |
+| **Total** | **52** |
+
+Assim como nas Features anteriores, todos os testes foram classificados por dimensão, evitando tratar conceitos distintos como categorias equivalentes. Esta Feature introduz **uma dimensão específica de grande profundidade** — Internacionalização — e reutiliza a dimensão de Integração com Provedores Externos já vista na Publicar Eventos, mas aplicada a um fluxo diferente (cadastro, não login social completo).
+
+### 📌 Dimensões de cobertura
+
+| Dimensão | Categorias | Objetivo |
+| --- | --- | --- |
+| **Escopo** | E2E | Validar jornadas completas atravessando diferentes páginas e componentes |
+| **Objetivo funcional** | Funcionais, Validação de Dados, Integridade | Verificar comportamentos esperados, dados apresentados e consistência das informações |
+| **Qualidade da aplicação** | UI, Acessibilidade, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais |
+| **Condição / técnica de teste** | Estresse, Compatibilidade de Navegação | Exercitar a aplicação sob condições repetitivas ou diferentes formas de navegação |
+| **Resiliência** | Monitoramento de Erros, Recuperação de Estado | Avaliar comportamento diante de erros, reloads e cancelamentos de fluxo |
+| **Internacionalização (i18n)** | Labels, placeholders, mensagens de erro, persistência de idioma | Validar a consistência da aplicação em Português, English e Español — dimensão de maior profundidade nesta feature |
+| **Integração com Provedores Externos** | SSO (Google/Apple) | Validar o início e o cancelamento seguro de fluxos de autenticação social |
+| **Finalidade de execução** | Regressão | Reexecutar cenários existentes para identificar impactos de alterações no sistema |
 
 ---
 
+## 🧪 Cobertura funcional e E2E
+
+### Testes Funcionais
+
+**Exemplos:**
+
+* **0001–0011:** acesso à página e preenchimento progressivo dos campos do formulário;
+* **0014–0016:** checkboxes de "Sou estrangeiro" e "Receber emails";
+* **0017–0018:** combobox de código de país/DDD;
+* **0019–0025:** seletor de idioma e seus reflexos nos checkboxes.
+
+### Testes End-to-End (E2E)
+
+**Exemplos:**
+
+* **0001:** Home → Criar Conta;
+* **0029–0030:** Criar Conta → Login → Criar Conta (ida e volta entre as duas telas de autenticação);
+* **0031–0034:** troca de idioma → navegação para login → validação do texto do botão no idioma selecionado;
+* **0051–0052:** início de OAuth (Google/Apple) → cancelamento → retorno garantido a `/signup`.
+
+> **Observação:** assim como nas features de referência, E2E representa o **escopo da jornada**, não uma categoria isolada.
+
+---
+
+## 🧭 Testes de Navegação
+
+**Exemplos:**
+
+* **0001, 0026–0034:** acesso à página, botão Voltar, e alternância entre Criar Conta e Login (nos três idiomas);
+* **0046:** acesso direto via URL, sem passar pela Home;
+* **0047:** navegação via botão Voltar do navegador.
+
+---
+
+## 🖥️ Testes de Interface (UI)
+
+**Exemplos:**
+
+* **0014–0016:** estado visual dos checkboxes (`data-state="checked"/"unchecked"`);
+* **0017–0018:** abertura/fechamento do combobox de DDD e validação do atributo `aria-expanded`;
+* **0019–0021:** menu dropdown de seleção de idioma.
+
+---
+
+## ♿ Testes de Acessibilidade
+
+**Exemplos:**
+
+* **0042:** navegação completa pelo formulário usando exclusivamente a tecla TAB, validando a ordem lógica de foco entre Nome → CPF/CNPJ → checkboxes;
+* **0043:** envio do formulário usando a tecla ENTER como alternativa ao clique no botão.
+
+---
+
+## 🔄 Testes de Estabilidade
+
+**Exemplos:**
+
+* **0037:** disparo de 5 cliques rápidos no botão de submit, validando que o sistema não gera múltiplas requisições (limite de 5 `requests` capturadas via interceptação de rede);
+* **0048:** duas abas abertas simultaneamente na mesma tela, cada uma preenchida com dados diferentes, validando que uma não interfere na outra;
+* **0049:** 5 ciclos de hard refresh (incluindo limpeza de cache, `localStorage` e `sessionStorage`) sem perda de funcionalidade da página.
+
+---
+
+## 🔥 Testes de Estresse (Stress Testing)
+
+**Exemplos:**
+
+* **0016:** múltiplos cliques alternados nos dois checkboxes em sequência;
+* **0018:** varredura de mais de 200 códigos de país no combobox de DDD, um teste orientado a dados que cobre virtually a lista inteira de países disponíveis;
+* **0037:** 5 cliques quase simultâneos no botão de submit;
+* **0041:** 5 variações de senha inválida (1 a 5 caracteres) em loop, cada uma reiniciando o formulário;
+* **0049:** 5 ciclos de hard refresh consecutivos.
+
+> **Importante:** o cenário 0018 é o teste de maior volume de dados desta suíte — mais de 200 iterações sobre uma lista real de códigos de país, incluindo tratamento de erro e reabertura do dropdown caso a busca não responda de primeira.
+
+---
+
+## 🛡️ Testes de Robustez
+
+**Exemplos:**
+
+* **0002–0011:** todas as combinações de preenchimento parcial do formulário (só nome, nome+CPF, apenas CPF, apenas email, apenas celular, apenas senha);
+* **0038:** e-mail sem `@` nem domínio válido, validado via `checkValidity()` do HTML5;
+* **0039:** CPF com 9 dígitos (quantidade inválida);
+* **0040:** celular com apenas 5 dígitos.
+
+---
+
+## 🔎 Testes de Validação de Dados
+
+**Exemplos:**
+
+* **0038–0041:** formato de e-mail, quantidade de dígitos do CPF, quantidade de dígitos do celular, e tamanho mínimo de senha;
+* **0044:** correspondência exata entre o texto dos placeholders e o idioma selecionado (ex: "Nome" em PT, "Full name" em EN, "Nombre completo" em ES);
+* **0045:** presença das palavras-chave de erro esperadas em cada idioma (`obrigatório`/`required`/`obligatorio`).
+
+---
+
+## 🔐 Testes de Integridade
+
+**Exemplos:**
+
+* **0035:** o formulário preserva os dados digitados após um refresh, **ou** os limpa completamente — o teste aceita ambos os comportamentos como válidos, mas falha explicitamente se o resultado for um estado **parcial** (inconsistente);
+* **0036:** o idioma selecionado permanece o mesmo após refresh, testado em cadeia para os três idiomas (PT → EN → ES, cada troca seguida de reload);
+* **0044–0045:** consistência de texto entre idiomas, sem "vazamento" de mensagens do idioma anterior no DOM.
+
+---
+
+## 🌐 Testes de Compatibilidade de Navegação
+
+**Exemplos:**
+
+* **0047:** botão Voltar do navegador, validando se o formulário mantém ou perde os dados (o teste documenta o comportamento atual sem presumir um resultado específico como certo ou errado);
+* **0048:** duas abas do navegador abertas na mesma URL simultaneamente.
+
+---
+
+## 🚨 Testes de Monitoramento de Erros
+
+**Exemplos:**
+
+* **0037:** ausência de mensagens como "Too many requests" ou "Erro interno" mesmo sob cliques rápidos repetidos;
+* **0040:** verificação (não bloqueante) da presença de uma mensagem textual explícita de celular inválido, registrando um alerta caso a mensagem não apareça, sem falhar o teste por esse motivo isolado.
+
+---
+
+## 🎨 Testes de Integridade Visual
+
+**Exemplo:**
+
+* **0050:** verificação de que o `body` da página mantém dimensões válidas (`width`/`height` positivos) após cada troca de idioma, nos três idiomas testados em sequência.
+
+---
+
+## 🔄 Recuperação e Estado da Aplicação
+
+**Exemplos:**
+
+* **0035:** estado do formulário após refresh;
+* **0047:** estado do formulário após navegação para outra página e retorno via botão Voltar;
+* **0049:** estabilidade da página após múltiplos hard refreshes com limpeza agressiva de cache.
+
+---
+
+## 🔗 Testes de Integração com Provedores Externos
+
+**Exemplos:**
+
+* **0012–0013:** início do fluxo de login social (Google e Apple), validando o redirecionamento para o domínio correto do provedor (`accounts.google.com`, `appleid.apple.com`);
+* **0051–0052:** cancelamento do fluxo OAuth e retorno seguro à página `/signup`, validando que o formulário permanece acessível e funcional mesmo após uma tentativa de login social interrompida.
+
+> Assim como observado na Feature Publicar Eventos, esta suíte trata o redirecionamento correto para o provedor externo como critério de sucesso — sem tentar completar a autenticação de fato, já que isso está fora do controle da aplicação sob teste.
+
+---
+
+## 🌍 Testes de Internacionalização — i18n (dimensão de maior profundidade nesta feature)
+
+Avaliam a consistência da aplicação em três idiomas — Português, English e Español — através de múltiplas camadas: rótulos de botões, checkboxes, placeholders de campos, mensagens de erro, e persistência da escolha de idioma.
+
+**Exemplos:**
+
+* **0019–0021:** seleção de cada idioma via dropdown;
+* **0022–0025:** verificação de que os checkboxes ("Receber emails"/"Recibir correos electrónicos"/"Receive emails", "Sou estrangeiro"/"Soy extranjero"/"I'm a foreigner") respondem corretamente após a troca de idioma;
+* **0027–0028, 0031–0034:** botões de navegação (Voltar/Volver/Back, Entrar/Iniciar sesión/Sign in) traduzidos corretamente e funcionais em cada idioma;
+* **0036:** persistência do idioma escolhido através de três refreshes consecutivos, validando que o idioma **não volta ao padrão** a cada reload;
+* **0044:** os placeholders dos campos mudam corretamente entre os três idiomas, incluindo a observação de que o campo "CPF/CNPJ" (`document`) pode não ser exibido nos idiomas EN/ES — um comportamento de negócio documentado, não assumido como erro;
+* **0045:** as mensagens de erro de validação também mudam de idioma corretamente, com verificação cruzada para garantir que mensagens do idioma anterior não permaneçam visíveis no DOM.
+
+> Esta é, de longe, a dimensão mais elaborada da suíte: nenhuma outra Feature testa 3 idiomas em paralelo através de 4 camadas diferentes (rótulos, placeholders, mensagens de erro, persistência). O nível de detalhe aqui — como a observação sobre o campo `document` desaparecer em outros idiomas — é o tipo de achado que só aparece quando o teste é desenhado para **descobrir** comportamento, não apenas confirmar uma expectativa fixa.
+
+---
+
+# 🔁 Regressão
+
+A **regressão não representa um conjunto separado de cenários**.
+
+Os 52 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após:
+
+* alterações no formulário de cadastro ou em suas validações;
+* alterações no fluxo de autenticação social (Google/Apple);
+* alterações nos textos, traduções ou no sistema de internacionalização;
+* alterações no combobox de código de país;
+* mudanças na navegação entre Criar Conta e Login.
+
+### Exemplo de estratégia
+
+```text
+Alteração no sistema
+        ↓
+Execução dos testes relacionados
+        ↓
+Execução da suíte de regressão
+        ↓
+Comparação dos resultados
+        ↓
+Identificação de regressões
+        ↓
+RCA / Bug Report
+```
+
+---
+
+# 📊 Matriz de cobertura da suíte
+
+| Dimensão | Cenários principais | Cobertura |
+| --- | --- | --- |
+| **E2E** | 0001, 0029–0034, 0051–0052 | 🟢 |
+| **Funcional** | 0001–0025 | 🟢 |
+| **Regressão** | 0001–0052 | 🟢 |
+| **Navegação** | 0001, 0026–0034, 0046–0047 | 🟢 |
+| **UI** | 0014–0021 | 🟢 |
+| **Responsividade** | — | 🔴 não coberta nesta feature |
+| **Acessibilidade** | 0042–0043 | 🟢 |
+| **Performance** | — | 🔴 não coberta nesta feature |
+| **Estabilidade** | 0037, 0048–0049 | 🟢 |
+| **Estresse** | 0016, 0018, 0037, 0041, 0049 | 🟢 |
+| **Robustez** | 0002–0011, 0038–0040 | 🟢 |
+| **Validação de Dados** | 0038–0041, 0044–0045 | 🟢 |
+| **Integridade** | 0035–0036, 0044–0045 | 🟢 |
+| **Compatibilidade de Navegação** | 0047–0048 | 🟢 |
+| **Monitoramento de Erros** | 0037, 0040 | 🟢 |
+| **Integridade Visual** | 0050 | 🟡 |
+| **Recuperação/Estado** | 0035, 0047, 0049 | 🟢 |
+| **Integração com Provedores Externos** | 0012–0013, 0051–0052 | 🟢 |
+| **Internacionalização (i18n)** | 0019–0025, 0027–0028, 0031–0034, 0036, 0044–0045, 0050 | 🟢 |
+
+**Legenda:**
+🟢 Cobertura claramente demonstrada pelos cenários analisados
+🟡 Cobertura presente, porém pontual e passível de expansão
+🔴 Não coberta pelos cenários desta feature (Responsividade e Performance já cobertas em outras Features da suíte)
 
 
+## 💡 Observações finais comparando com as outras Features
 
-
-
-
-
-
-
-
-
+1. **Dimensão de internacionalização sem precedente nas demais Features**: nenhuma outra Feature da suíte testa 3 idiomas em paralelo com esse nível de profundidade — rótulos, placeholders, mensagens de erro e persistência são todos verificados cruzadamente, incluindo a checagem ativa de que texto do idioma anterior não "vaza" para o DOM após a troca.
+2. **Tratamento maduro de OAuth reaproveitado da Publicar Eventos**: os cenários 0012, 0013, 0051 e 0052 seguem o mesmo padrão de boa prática já visto na outra feature — validar o redirecionamento correto para o provedor, sem tentar completar a autenticação de fato.
+3. **Testes que documentam comportamento em vez de assumir um resultado fixo**: os cenários 0035 (persistência após refresh) e 0047 (estado após botão Voltar) aceitam mais de um resultado como válido, desde que o sistema não fique em um estado **inconsistente** — essa é uma abordagem mais madura de QA do que apenas afirmar "o campo deve estar vazio" ou "o campo deve estar preenchido" sem confirmar qual é o comportamento de negócio pretendido.
+4. **Lacunas em relação às outras Features**: assim como a Publicar Eventos, esta Feature não cobre Responsividade nem Performance de forma dedicada — ambas já demonstradas em outras Features da suíte (Explorar Eventos e Suporte e Ajuda). O cenário 0050 toca em integridade visual, mas de forma pontual (dimensões do `body`), não substituindo testes de responsividade em múltiplos viewports.
 
 
 ---
