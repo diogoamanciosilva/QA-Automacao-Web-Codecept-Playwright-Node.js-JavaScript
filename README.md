@@ -2093,3 +2093,96 @@ RCA / Bug Report
 
 
 
+
+
+
+
+
+
+---
+
+## 🐞 Bugs Encontrados
+
+
+
+
+---
+
+## 🔗 Bug × Feature × Causa Raiz
+
+
+---
+
+
+
+
+
+
+---
+## 📊 Análise da Suíte de Testes
+
+
+
+---
+
+
+
+
+##  🕵🏻‍♂️ Root Cause Analysis (RCA) 
+
+
+
+
+
+
+
+
+---
+
+## 🔗 Bug × Feature × Causa Raiz
+
+
+
+
+---
+## 📊 Análise da Suíte de Testes
+
+
+---
+
+## 🧪 Metodologia de teste
+
+
+
+
+---
+
+## 🚧 Limitações e escopo
+
+
+
+
+---
+
+## 🚀 Próximos passos (CI/CD)
+
+
+---
+
+## 💡 Aprendizados técnicos
+
+
+---
+
+
+## ✅ Contato
+
+ 
+| LinkedIn                   |  https://www.linkedin.com/in/diogoamanciosilva/ |
+| ------------------------- | ------: |
+
+| E-mail                   |  diogoamanciosilva@gmail.com/ |
+| ------------------------- | ------: |
+
+
+
