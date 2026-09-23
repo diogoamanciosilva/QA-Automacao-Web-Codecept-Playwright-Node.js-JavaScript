@@ -513,6 +513,8 @@ Essa adaptação por contexto é o que diferencia uma suíte estruturada por ris
 
 O conjunto completo funciona como base de regressão contínua: qualquer alteração na plataforma pode ser validada contra os 586 cenários existentes antes de chegar ao usuário final, ao produtor de evento ou à operação de check-in.
 
+---
+
 ### 🔍 Feature  Suporte e Ajuda
 
 
