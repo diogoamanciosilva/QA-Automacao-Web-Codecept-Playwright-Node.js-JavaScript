@@ -1681,8 +1681,6 @@ Portanto, o GAP não caracteriza um defeito da aplicação, mas uma oportunidade
 
 ## 🔍 Feature Publicar Eventos
 
-## 🔍 Feature Publicar Eventos
-
 | Feature |
 | ------------------------- |
 | Feature_Publicar Eventos |
