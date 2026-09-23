@@ -1681,4 +1681,366 @@ Portanto, o GAP não caracteriza um defeito da aplicação, mas uma oportunidade
 
 ## 🔍 Feature Publicar Eventos
 
+## 🔍 Feature Publicar Eventos
 
+| Feature |
+| ------------------------- |
+| Feature_Publicar Eventos |
+| 0001 - Acessar a página de Publicar Eventos pela página principal |
+| 0002 - Clicar na página Publicar Eventos via login do Gmail |
+| 0003 - Inserir o e-mail de login por meio do login do Gmail |
+| 0004 - Inserir o e-mail de login por meio do login da Apple |
+| 0005 - Acessar a página de Publicar Eventos e realizar o Login |
+| 0006 - Logado na página 'Producer', clicar nos botões 'Eventos', 'Equipes' e 'Dashboard' |
+| 0007 - Clicar no filtro 'Período: Ano Atual' |
+| 0008 - Clicar no filtro e selecionar a opção 'Eventos Futuros' |
+| 0009 - Clicar no filtro e selecionar a opção 'Eventos Passados' |
+| 0010 - Clicar no filtro e selecionar a opção 'Ano atual' |
+| 0011 - Clicar no filtro e selecionar a opção 'Ano anterior' |
+| 0012 - Clicar no filtro e selecionar a opção 'Mês atual' |
+| 0013 - Clicar no filtro e selecionar a opção 'Mês anterior' |
+| 0014 - Clicar no filtro e selecionar a opção 'Definir período' |
+| 0015 - Acessar o filtro e clicar em todas as opções disponíveis |
+| 0016 - Acessar o filtro e selecionar datas de início e fim no calendário via 'Definir período' |
+| 0017 - Acessar o filtro e avançar o mês exibido no calendário |
+| 0018 - Acessar o filtro e retornar o mês exibido no calendário |
+| 0019 - Estresse: avançar e retroceder rapidamente vários meses no calendário do filtro |
+| 0020 - Clicar no botão 'Novo Evento' e acessar a página de criação |
+| 0021 - Clicar no botão 'Salvar configurações' no final da página |
+| 0022 - Preencher 'Buscar endereço' com o nome da casa de eventos 'Carioca Club' |
+| 0023 - Preencher endereço com nome e clicar na sugestão exibida pelo sistema |
+| 0024 - Preencher endereço completo da casa de eventos 'Carioca Club' |
+| 0025 - Preencher endereço completo e clicar na sugestão exibida e confirmada |
+| 0026 - Preencher apenas o CEP da casa de eventos |
+| 0027 - Preencher apenas o CEP e clicar na sugestão exibida e confirmada |
+| 0028 - Preencher apenas o nome do estado 'Minas Gerais' |
+| 0029 - Preencher nome do estado e clicar na confirmação exibida pelo sistema |
+| 0030 - Preencher apenas o nome da cidade 'Belo Horizonte' |
+| 0031 - Preencher nome da cidade e validar seleção/limpeza da sugestão |
+| 0032 - Preencher CEP sem casa de eventos associada e confirmar |
+| 0033 - Preencher número inexistente sem registro e confirmar a busca |
+| 0034 - Preencher números e caracteres especiais sem registro e confirmar a busca |
+| 0035 - Estresse: preencher números/caracteres especiais e confirmar a busca 5x seguidas |
+| 0036 - Acessar o campo 'Detalhes do Local' após selecionar endereço válido |
+| 0037 - Ativar e desativar a opção 'Mostrar Endereço' após selecionar endereço válido |
+| 0038 - Visualizar o mapa em tela cheia após selecionar endereço válido |
+| 0039 - Alternar a visualização do mapa entre Satélite e Mapa |
+| 0040 - Validar a exibição dos controles Satélite, Mapa e Câmera |
+| 0041 - Clicar no campo 'Limite de Ingressos' |
+| 0042 - Validar campo 'Limite de Ingressos' sem preenchimento |
+| 0043 - Validar campo 'Limite de Ingressos' com preenchimento |
+| 0044 - Validar campo 'Limite de Ingressos' com preenchimento via stepper (setas) |
+| 0045 - Estresse controlado no campo 'Limite de Ingressos' com valores positivos |
+| 0046 - Estresse controlado no campo 'Limite de Ingressos' com valores negativos |
+| 0047 - Validar limpeza do campo 'Limite de Ingressos' após atualização da página |
+| 0048 - Preencher 'Limite de Ingressos' e validar persistência após atualização da página |
+| 0049 - Exibir calendário ao acessar o campo 'Início do Evento' |
+| 0050 - Exibir calendário ao acessar o campo 'Fim do Evento' |
+| 0051 - Exibir calendário ao acessar o campo 'Encerrar Vendas' |
+| 0052 - Selecionar data no calendário do campo 'Início do Evento' |
+| 0053 - Selecionar data no calendário do campo 'Fim do Evento' |
+| 0054 - Selecionar data no calendário do campo 'Encerrar Vendas' (valida dependência de datas anteriores) |
+| 0055 - Navegar para meses posteriores no campo 'Início do Evento' |
+| 0056 - Navegar para meses anteriores no campo 'Início do Evento' |
+| 0057 - Navegar para meses posteriores no campo 'Fim do Evento' |
+| 0058 - Navegar para meses anteriores no campo 'Fim do Evento' |
+| 0059 - Navegar para meses posteriores no campo 'Encerrar Vendas' |
+| 0060 - Navegar para meses anteriores no campo 'Encerrar Vendas' |
+| 0061 - Alterar Horas, Minutos e Segundos no campo 'Início do Evento' |
+| 0062 - Alterar Horas, Minutos e Segundos no campo 'Fim do Evento' |
+| 0063 - Alterar Horas, Minutos e Segundos no campo 'Encerrar Vendas' |
+| 0064 - Preencher data e horário nos três campos (Início, Fim, Encerrar Vendas) |
+| 0065 - Estresse: acesso simultâneo preenchendo data/horário nos três campos, 5 iterações |
+| 0066 - Fluxo completo: preencher data e horário nos três campos |
+| 0067 - Fluxo completo com estresse de preenchimento de data/hora (15 execuções) |
+| 0068 - Fluxo completo com estresse + reset de calendário (50 cliques de navegação) |
+| 0069 - Fluxo completo com estresse de múltiplas aberturas de modal (20x) |
+| 0070 - Fluxo completo com estresse de modal + estresse de input no campo de horas |
+| 0071 - Fluxo completo com estresse E2E + modal (10 iterações) |
+| 0072 - Estresse multiusuário: 3 sessões simultâneas preenchendo data/hora |
+| 0073 - Validar obrigatoriedade dos campos ao salvar sem nenhum preenchimento |
+| 0074 - Preencher apenas 'Nome do evento' e salvar configurações |
+| 0075 - Preencher apenas 'Descrição Curta' e salvar configurações |
+| 0076 - Preencher apenas 'Descrição do Evento' e salvar configurações |
+| 0077 - Preencher apenas 'Início do Evento' e salvar configurações |
+| 0078 - Edição da descrição do evento (negrito, itálico, títulos, listas, imagem, link) |
+| 0079 - Inserir e manipular link no campo 'Descrição do Evento' |
+| 0080 - Abrir modal de imagem e interagir com o botão 'Selecionar' |
+| 0081 - Interagir com upload de Capa Vertical |
+| 0082 - Interagir com upload de Capa Horizontal |
+| 0083 - Visualizar e clicar na opção 'Gerenciar Equipes' |
+| 0084 - Clicar em 'Pesquisar equipe' e realizar uma busca |
+| 0085 - Acessar 'Pesquisar equipe' e criar via 'Nova Equipe' |
+| 0086 - Clicar em 'Salvar' sem preencher campos obrigatórios da equipe |
+| 0087 - Preencher 'Nome da Equipe' e tentar salvar sem membros |
+| 0088 - Clicar no campo 'Adicionar' (membro à equipe) |
+| 0089 - Tentar adicionar membro sem preencher campos obrigatórios |
+| 0090 - Clicar e acessar o campo 'Controle de acesso' |
+| 0091 - Acessar 'Controle de acesso' e clicar nos 'Templates' de perfil disponíveis |
+| 0092 - Selecionar templates de perfil no controle de acesso (Agente, Marketing, Staff, Acesso Total) |
+| 0093 - Selecionar nível de acesso na seção 'Visão Geral' |
+| 0094 - Alterar nível de acesso na seção 'Visão Geral' entre múltiplas opções |
+| 0095 - Alterar permissões de acesso para todas as seções do evento |
+| 0096 - Estresse na alteração de permissões de acesso (5 ciclos completos) |
+| 0097 - Estresse integrado: perfis + permissões por seção (2 ciclos) |
+| 0098 - Alterar perfis e permissões por seção, validar estado final e fechar o modal |
+| **Total** | **98** |
+
+Assim como na Feature Explorar Eventos, todos os testes foram classificados por dimensão de teste, evitando tratar conceitos distintos como categorias equivalentes. Esta Feature introduz **quatro dimensões específicas** que não existiam na Explorar Eventos, refletindo a maior complexidade funcional da página (integrações externas, editor de conteúdo e um sistema de permissões).
+
+### 📌 Dimensões de cobertura
+
+| Dimensão | Categorias | Objetivo |
+| --- | --- | --- |
+| **Escopo** | E2E | Validar jornadas completas atravessando diferentes páginas e componentes |
+| **Objetivo funcional** | Funcionais, Validação de Dados, Integridade | Verificar comportamentos esperados, dados apresentados e consistência das informações |
+| **Qualidade da aplicação** | UI, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais |
+| **Condição / técnica de teste** | Estresse | Exercitar a aplicação sob condições repetitivas ou intensivas |
+| **Resiliência** | Recuperação de Estado | Avaliar comportamento diante de reloads |
+| **Integração com Provedores Externos** | SSO (Google/Apple), Google Maps/Places | Validar integrações com serviços de terceiros — dimensão específica desta feature |
+| **Editor de Conteúdo (WYSIWYG)** | Formatação de texto, links, mídia embutida | Validar o editor rico de descrição do evento — dimensão específica desta feature |
+| **Controle de Acesso (RBAC)** | Perfis, permissões por seção, templates | Validar o sistema de papéis e permissões de equipe — dimensão específica desta feature |
+| **Concorrência Multiusuário** | Sessões simultâneas | Validar comportamento sob uso concorrente real (múltiplas sessões de browser) — dimensão específica desta feature |
+| **Finalidade de execução** | Regressão | Reexecutar cenários existentes para identificar impactos de alterações no sistema |
+
+---
+
+## 🧪 Cobertura funcional e E2E
+
+### Testes Funcionais
+
+**Exemplos:**
+
+* **0001–0006:** acesso à página e autenticação;
+* **0007–0019:** filtro de período no dashboard;
+* **0020–0021:** criação de novo evento e salvamento;
+* **0041–0048:** campo de limite de ingressos;
+* **0049–0063:** campos de data/hora (Início, Fim, Encerrar Vendas);
+* **0073–0082:** campos de configuração do evento (nome, descrições, capas);
+* **0083–0090:** gestão de equipes.
+
+### Testes End-to-End (E2E)
+
+**Exemplos:**
+
+* **0001, 0005:** Home → Publicar Eventos → Login;
+* **0020:** login → dashboard → criação de novo evento;
+* **0064, 0066:** preenchimento completo dos três campos de data/hora em sequência;
+* **0083–0098:** criação de equipe → adicionar membro → configurar controle de acesso → validar estado final — a jornada mais longa da suíte, atravessando 4 sub-fluxos distintos.
+
+> **Observação:** assim como na feature de referência, E2E representa o **escopo da jornada**, não uma categoria isolada.
+
+---
+
+## 🧭 Testes de Navegação
+
+**Exemplos:**
+
+* **0001–0006:** diferentes pontos de acesso e autenticação;
+* **0007–0019:** navegação pelo dropdown e calendário do filtro de período;
+* **0020:** navegação até a criação de evento;
+* **0049–0060:** abertura e navegação por mês nos três campos de data/hora;
+* **0083:** navegação até "Gerenciar Equipes".
+
+---
+
+## 🖥️ Testes de Interface (UI)
+
+**Exemplos:**
+
+* **0038–0040:** controles do mapa (tela cheia, Satélite/Mapa, câmera);
+* **0078:** toolbar de formatação do editor (negrito, itálico, H1/H2/H3, listas, imagem, link);
+* **0080–0082:** modais de upload de imagem e capas;
+* **0091–0094:** dropdowns de seleção de perfil e nível de acesso.
+
+---
+
+## 🔄 Testes de Estabilidade
+
+**Exemplos:**
+
+* **0047–0048:** persistência/limpeza de campo após reload;
+* **0068:** estabilidade após reset de calendário (50 cliques de navegação seguidos);
+* **0072:** estabilidade sob 3 sessões simultâneas.
+
+---
+
+## 🔥 Testes de Estresse (Stress Testing)
+
+Esta Feature tem a cobertura de estresse mais extensa da suíte, com uma escalada progressiva de complexidade:
+
+**Exemplos:**
+
+* **0015:** todas as opções do filtro de período em sequência;
+* **0017–0019:** navegação rápida repetida no calendário do filtro;
+* **0034–0035:** entrada extrema no campo de endereço, repetida 5x;
+* **0045–0046:** interações repetidas no stepper do campo de limite (valores positivos e negativos);
+* **0065, 0067:** preenchimento repetido de data/hora (5x e 15x);
+* **0068–0071:** combinações crescentes de estresse — reset de calendário, múltiplas aberturas de modal, estresse de input, e E2E completo em 10 iterações;
+* **0072:** estresse multiusuário com 3 sessões `Playwright` paralelas;
+* **0096–0097:** estresse de alteração de permissões (5 e 2 ciclos completos, cobrindo múltiplas seções e perfis).
+
+> **Importante:** assim como na feature de referência, esses cenários caracterizam robustez de componentes sob uso intensivo — não substituem uma ferramenta dedicada de load testing com carga real de múltiplos usuários de produção (com exceção do cenário 0072, que é o único desta suíte a usar sessões de browser genuinamente paralelas via `session()`).
+
+---
+
+## 🛡️ Testes de Robustez
+
+**Exemplos:**
+
+* **0026–0032:** buscas parciais de endereço (CEP isolado, estado isolado, cidade isolada) sem nome de estabelecimento;
+* **0033:** número inexistente sem nenhum registro correspondente;
+* **0034–0035:** string com mais de 90 caracteres combinando números e símbolos especiais;
+* **0042:** campo obrigatório vazio (`aria-invalid`);
+* **0046:** valor negativo no stepper de limite de ingressos.
+
+---
+
+## 🔎 Testes de Validação de Dados
+
+**Exemplos:**
+
+* **0022–0032:** diferentes formatos de entrada no campo de endereço (nome, endereço completo, CEP, estado, cidade) e a sugestão retornada pelo Google Places;
+* **0042–0046:** validação de `aria-invalid` e mensagens de erro no campo de limite de ingressos;
+* **0073–0077:** obrigatoriedade de campos ao salvar configurações do evento, testando um campo preenchido por vez;
+* **0086–0087, 0089:** validação de campos obrigatórios na criação de equipe e adição de membros.
+
+---
+
+## 🔐 Testes de Integridade
+
+**Exemplos:**
+
+* **0036:** alternância dupla do painel "Detalhes do Local" sem quebra de estado;
+* **0037:** consistência entre o switch "Mostrar Endereço" e os campos ocultos de latitude/longitude;
+* **0047–0048:** integridade do campo de limite após reload;
+* **0095, 0098:** validação do estado final de todas as seções de permissão após múltiplas alterações, confirmando que o valor exibido corresponde à última seleção feita.
+
+---
+
+## 🎨 Testes de Integridade Visual
+
+**Exemplos:**
+
+* **0038–0040:** carregamento visual do mapa e seus controles em diferentes configurações;
+* **0078:** estado visual ativo dos botões da toolbar (classe `bg-secondary`) refletindo a formatação aplicada.
+
+---
+
+## 🔄 Recuperação e Estado da Aplicação
+
+**Exemplos:**
+
+* **0047:** campo de limite exibe erro de validação após ser esvaziado, mesmo após reload;
+* **0048:** valor preenchido é reavaliado corretamente após atualização da página.
+
+---
+
+## 🔗 Testes de Integração com Provedores Externos (dimensão nova nesta feature)
+
+Avaliam o comportamento da aplicação ao integrar com serviços de terceiros — autenticação social e geolocalização.
+
+**Exemplos:**
+
+* **0002–0004:** login social via Google e Apple, incluindo o tratamento de bloqueios esperados do próprio Google (`signin/rejected`, "Esse navegador ou app pode não ser seguro") como resultado **válido** de um ambiente de automação, não como falha do teste;
+* **0022–0035:** integração com o autocomplete do Google Places, incluindo casos de entrada sem correspondência;
+* **0038–0040:** iframe do Google Maps incorporado, com verificação condicional de controles (o teste se adapta caso um controle não esteja disponível na configuração atual do mapa).
+
+> **Observação técnica:** os cenários 0003 e 0004 são particularmente sofisticados do ponto de vista de QA — eles reconhecem que a automação de login de terceiros (Google/Apple) é frequentemente **bloqueada intencionalmente** por essas plataformas como proteção antibot, e tratam esse bloqueio como confirmação de que a integração está funcionando (a aplicação redirecionou corretamente para o provedor), não como um erro do fluxo.
+
+---
+
+## 📝 Testes do Editor de Conteúdo — WYSIWYG (dimensão nova nesta feature)
+
+**Exemplos:**
+
+* **0078:** aplicação e remoção de formatação (negrito, itálico, cabeçalhos H1/H2/H3, listas ordenadas/não ordenadas), inserção de imagem e link, com verificação do estado visual ativo de cada botão;
+* **0079:** inserção, edição e remoção de link via modal dedicado, incluindo o comportamento do campo após a remoção.
+
+---
+
+## 🔒 Testes de Controle de Acesso — RBAC (dimensão nova nesta feature)
+
+Avaliam o sistema de papéis e permissões granulares por seção do evento — a área de maior complexidade de regras de negócio da suíte.
+
+**Exemplos:**
+
+* **0090–0092:** acesso ao painel de controle e seleção de templates de perfil pré-definidos (Agente, Marketing, Staff, Acesso Total);
+* **0093–0094:** alteração do nível de acesso na seção "Visão Geral" entre os quatro níveis (Somente Leitura, Acesso Total, Sem Acesso), incluindo múltiplas trocas em sequência;
+* **0095:** aplicação do fluxo completo de 4 níveis de permissão a **todas** as seções disponíveis do evento, descobertas dinamicamente via DOM em vez de hardcoded;
+* **0096–0098:** estresse e validação cruzada entre múltiplos perfis (Agente, Marketing, Staff, Acesso Total) e todas as seções, com verificação de estado final e fechamento correto do modal.
+
+> Esta é a dimensão mais elaborada tecnicamente da suíte: os cenários usam retry automático (até 3 tentativas por seleção), descoberta dinâmica de seções via `grabTextFromAll`, e validação de estado final iterando sobre todas as combinações perfil × seção — um padrão de teste orientado a dados (data-driven), não apenas scripted.
+
+---
+
+# 🔁 Regressão
+
+A **regressão não representa um conjunto separado de cenários**.
+
+Os 98 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após:
+
+* alterações no fluxo de autenticação (própria ou social);
+* alterações na integração com Google Maps/Places;
+* alterações nos campos de configuração do evento;
+* alterações no editor de descrição (WYSIWYG);
+* alterações no sistema de permissões e papéis de equipe;
+* mudanças nos componentes de calendário/date-picker.
+
+### Exemplo de estratégia
+
+```text
+Alteração no sistema
+        ↓
+Execução dos testes relacionados
+        ↓
+Execução da suíte de regressão
+        ↓
+Comparação dos resultados
+        ↓
+Identificação de regressões
+        ↓
+RCA / Bug Report
+```
+
+---
+
+# 📊 Matriz de cobertura da suíte
+
+| Dimensão | Cenários principais | Cobertura |
+| --- | --- | --- |
+| **E2E** | 0001, 0005, 0020, 0064, 0066, 0083–0098 | 🟢 |
+| **Funcional** | 0001–0021, 0041–0063, 0073–0090 | 🟢 |
+| **Regressão** | 0001–0098 | 🟢 |
+| **Navegação** | 0001–0019, 0049–0060, 0083 | 🟢 |
+| **UI** | 0038–0040, 0078, 0080–0082, 0091–0094 | 🟢 |
+| **Responsividade** | — | 🔴 não coberta nesta feature |
+| **Acessibilidade** | — | 🔴 não coberta nesta feature |
+| **Performance** | — | 🔴 não coberta nesta feature |
+| **Estabilidade** | 0047–0048, 0068, 0072 | 🟢 |
+| **Estresse** | 0015, 0017–0019, 0034–0035, 0045–0046, 0065, 0067–0072, 0096–0097 | 🟢 |
+| **Robustez** | 0026–0035, 0042, 0046 | 🟢 |
+| **Validação de Dados** | 0022–0032, 0042–0046, 0073–0077, 0086–0089 | 🟢 |
+| **Integridade** | 0036–0037, 0047–0048, 0095, 0098 | 🟢 |
+| **Compatibilidade de Navegação** | — | 🔴 não coberta nesta feature |
+| **Monitoramento de Erros** | — | 🔴 não coberta nesta feature |
+| **Integridade Visual** | 0038–0040, 0078 | 🟢 |
+| **Recuperação/Estado** | 0047–0048 | 🟢 |
+| **Integração com Provedores Externos** | 0002–0004, 0022–0035, 0038–0040 | 🟢 |
+| **Editor WYSIWYG** | 0078–0079 | 🟢 |
+| **Controle de Acesso (RBAC)** | 0090–0098 | 🟢 |
+| **Concorrência Multiusuário** | 0072 | 🟡 |
+
+**Legenda:**
+🟢 Cobertura claramente demonstrada pelos cenários analisados
+🟡 Cobertura presente, porém pontual e passível de expansão
+🔴 Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex: Acessibilidade/Responsividade já cobertas na Explorar Eventos e Suporte e Ajuda)
+
+---
+
+## 💡 Observações finais comparando com as outras Features
+
+1. **Maior complexidade de regras de negócio da suíte**: diferente das Features anteriores, esta lida com dependências entre campos (ex: cenário 0054 valida que "Encerrar Vendas" não pode ser anterior a datas já definidas) e com um sistema de permissões multidimensional (perfil × seção × nível de acesso).
+2. **Uso extensivo de dados dinâmicos**: vários cenários (0095, 0097, 0098) descobrem as seções disponíveis via DOM em tempo de execução em vez de usar uma lista fixa — isso torna os testes mais resilientes a mudanças de conteúdo, mas também significa que a suíte depende da estrutura do DOM permanecer semanticamente consistente (`label`/`for`).
+3. **Tratamento maduro de bloqueios de terceiros**: os cenários de login social (0003, 0004) são um exemplo de boa prática de QA — reconhecem que um bloqueio antibot do Google/Apple é um resultado esperado em ambiente automatizado, evitando falsos negativos.
+4. **Lacunas em relação às outras Features**: Responsividade, Acessibilidade, Performance, Compatibilidade de Navegação e Monitoramento de Erros — bem cobertas na Explorar Eventos e/ou Suporte e Ajuda — não aparecem nesta Feature. Dado o alto número de campos de formulário e modais complexos aqui, a ausência de testes de acessibilidade (navegação por teclado, foco) é a lacuna mais relevante a considerar para expansão futura.
