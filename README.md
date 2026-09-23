@@ -29,6 +29,11 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
 - [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
+- [🔍 Feature Explorar Eventos ](#-feature-explorar-eventos)
+- [🔍 Feature Suporte e Ajuda ](#-feature--suporte-e-ajuda)
+- [🔍 Feature Suporte e Ajuda ](#-feature-tela-inicial)
+
+
 
 - ---
 
@@ -515,7 +520,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 ---
 
-### 🔍 Feature Explorar Eventos
+### 🔍 Feature  Suporte e Ajuda
 
 
 | Feature | 
