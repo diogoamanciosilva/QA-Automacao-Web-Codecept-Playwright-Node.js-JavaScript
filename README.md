@@ -2513,8 +2513,6 @@ RCA / Bug Report
 ```
 
 
-
-
 ## 📊 Matriz de cobertura da suíte
 
 | Dimensão | Cenários principais | Cobertura |
@@ -2551,6 +2549,17 @@ RCA / Bug Report
 | 🟡 | Cobertura presente, porém pontual e passível de expansão |
 | 🔴 | Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex.: Acessibilidade/Responsividade já cobertas em outras áreas da suíte) |
 
+
+
+> ⚠️ **Importante:** **Lacunas e limitações de cobertura**
+
+Com base nos **127 cenários analisados** da Feature **Comprar Ingressos**, foram identificadas algumas lacunas de cobertura. Como os testes foram realizados em **ambiente de produção** e não houve acesso ao fluxo end-to-end completo da compra, a validação foi realizada somente até a **etapa de seleção da forma de pagamento**. Dessa forma, não foi possível executar cenários pós-compra, como **confirmação do pagamento, validação de dados bancários, pagamento via QR Code/PIX, recebimento do recibo por e-mail e geração do ingresso virtual**.
+
+Além dessa limitação de fluxo, os 127 cenários analisados não apresentam cobertura explícita para **Responsividade, Acessibilidade, Cross-Browser, Monitoramento de Erros/Console, Contrato de Eventos de Analytics, SEO e Metadados**. Essas ausências representam **GAPs de cobertura da Feature**, e não necessariamente defeitos da aplicação.
+
+A cobertura de **Performance/Tempo de Resposta** é pontual, com um cenário específico para validação do tempo de exibição do QR Code PIX, não caracterizando uma estratégia ampla de testes de performance. Da mesma forma, **Cross-Browser** permanece sem cobertura explícita, pois os cenários de múltiplas abas, Back, Refresh e navegação não demonstram execução em diferentes navegadores. Isso é diferente de **Compatibilidade de Navegação**, que está contemplada pelos cenários **0114, 0116, 0119–0121 e 0126–0127**.
+
+Portanto, os GAPs identificados nos **127 cenários analisados** devem ser interpretados considerando tanto as limitações impostas pelo ambiente de produção quanto a ausência de acesso às etapas posteriores da jornada de compra.
 
 
 
