@@ -2036,7 +2036,7 @@ RCA / Bug Report
 
 ---
 
-## > ⚠️ **Importante:** **Observações finais comparando com as outras Features:**
+> ⚠️ **Importante:** **Observações finais comparando com as outras Features:**
 
 1. **Maior complexidade de regras de negócio da suíte**: Diferente das Features anteriores, esta lida com dependências entre campos (ex: cenário 0054 valida que "Encerrar Vendas" não pode ser anterior a datas já definidas) e com um sistema de permissões multidimensional (perfil × seção × nível de acesso).
 2. **Uso extensivo de dados dinâmicos**: Vários cenários (0095, 0097, 0098) descobrem as seções disponíveis via DOM em tempo de execução em vez de usar uma lista fixa, isso torna os testes mais resilientes a mudanças de conteúdo, mas também significa que a suíte depende da estrutura do DOM permanecer semanticamente consistente (`label`/`for`).
