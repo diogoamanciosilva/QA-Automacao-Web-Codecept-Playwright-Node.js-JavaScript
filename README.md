@@ -2031,10 +2031,13 @@ RCA / Bug Report
 
 
 
-  **Legenda:**
-  🟢 Cobertura claramente demonstrada pelos cenários analisados
-  🟡 Cobertura presente, porém pontual e passível de expansão
-  🔴 Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex: Acessibilidade/Responsividade já cobertas na Explorar Eventos e Suporte e Ajuda)
+### Legenda
+
+| Indicador | Classificação |
+| ------------------------- | ------------------------- |
+| 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
+| 🟡 | Cobertura presente, porém pontual e passível de expansão |
+| 🔴 | Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex.: Acessibilidade/Responsividade já cobertas na Explorar Eventos e Suporte e Ajuda) |
 
 ---
 
