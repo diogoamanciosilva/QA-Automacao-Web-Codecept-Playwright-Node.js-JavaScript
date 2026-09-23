@@ -30,7 +30,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
 - [🎯 Estratégia e cobertura de Testes ](#-estratégia-e-cobertura-de-testes)
 - [🔍 Feature Explorar Eventos ](#-feature-explorar-eventos)
-- [🔍 Feature Suporte e Ajuda ](#-feature--suporte-e-ajuda)
+- [🔍 Feature Suporte e Ajuda ](#-feature-suporte-e-ajuda)
 - [🔍 Feature Tela Inicial ](#-feature-tela-inicial)
 
 
