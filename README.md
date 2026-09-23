@@ -1317,9 +1317,357 @@ RCA / Bug Report
 
 ---
 
+## 🔍 Feature Tela Inicial
 
+| Feature |
+| ------------------------- |
+| Feature_Tela Inicial |
+| 0001 - Acessar "Explorar Eventos" |
+| 0002 - Acessar "Publicar Eventos" |
+| 0003 - Acessar "Suporte e Ajuda" |
+| 0004 - Acessar botão de idioma |
+| 0005 - Acessar o botão de idioma e clicar na opção Português |
+| 0006 - Acessar o botão de idioma e clicar na opção Español |
+| 0007 - Acessar o botão de idioma e clicar na opção English |
+| 0008 - Acessar o botão de "Entrar" |
+| 0009 - Acessar o botão de "Criar Conta" |
+| 0010 - Acessar o botão de busca (Search / Command Palette ⌘K) |
+| 0011 - Acessar o botão "Explorar eventos" |
+| 0012 - Acessar o botão "Pesquisar evento, local..." |
+| 0013 - Navegação no carrossel utilizando o botão de controle por ícone |
+| 0014 - Navegação sequencial no carrossel com múltiplos cliques (10x) |
+| 0015 - Navegação no carrossel com seleção de evento (THE WHITE BUFFALO em SÃO PAULO) |
+| 0016 - Navegação sequencial no carrossel (esquerda 10x + direita 10x) |
+| 0017 - Clicar no botão "Criar Conta" |
+| 0018 - Clicar no botão "Publicar evento" |
+| 0019 - Clicar em "Criar Conta" próximo ao título "Vendendo tickets online? Nós podemos ajudar" |
+| 0020 - Clicar no botão iOS no footer |
+| 0021 - Clicar no botão Android no footer |
+| 0022 - Clicar no Guia Check-in no footer |
+| 0023 - Clicar em Termos e Condições de Uso no footer |
+| 0024 - Clicar em Política de Compra no footer |
+| 0025 - Clicar em Meia Entrada no footer |
+| 0026 - Clicar no ícone do LinkedIn no footer |
+| 0027 - Clicar no ícone do Instagram no footer |
+| 0028 - Clicar no ícone do Twitter no footer (ícone desatualizado) |
+| 0029 - Clicar no ícone de Email no footer |
+| 0030 - Clicar no link WebSolutionsFL no footer |
+| 0031 - Validar que todos os links principais retornam status 200 (Broken Links) |
+| 0032 - Validar abertura correta de links externos sem navegação real (Instagram) |
+| 0033 - Validar alteração completa de idioma para English |
+| 0034 - Validar alteração de idioma para English e comportamento após atualização da página |
+| 0035 - Validar alteração completa de idioma para Español |
+| 0036 - Validar acessibilidade e navegação via TAB nos elementos interativos e no footer |
+| 0037 - Validar estrutura visual, landmarks e atributos principais da home |
+| 0038 - Validar contraste visual mínimo dos componentes críticos |
+| 0039 - Validar foco visível ao navegar via teclado |
+| 0040 - Validar abertura do menu de idioma via ENTER |
+| 0041 - Diagnosticar comportamento do atalho CTRL + K |
+| 0042 - Validar comportamento funcional do atalho CTRL + K |
+| 0043 - Validar estrutura principal, navegação e responsividade da Home (Desktop/Tablet/Mobile) |
+| 0044 - Validar que o header não sofre quebra visual em diferentes resoluções |
+| 0045 - Validar carregamento inicial da home em menos de 3 segundos |
+| 0046 - Validar estabilidade do carrossel após 100 navegações consecutivas (esquerda + direita) |
+| 0047 - Validar carregamento dinâmico de eventos durante scroll (Lazy Loading) |
+| 0048 - Validar estabilidade do botão "Explorar Eventos" em execuções repetidas (10x, anti-flaky) |
+| 0049 - Validar presença de título da página (SEO) |
+| 0050 - Validar presença de meta description (SEO) |
+| 0051 - Validar presença de atributo alt em imagens |
+| 0052 - Validar ausência de informações sensíveis no frontend |
+| 0053 - Validar ausência de informações sensíveis no frontend (variante com padrões nomeados) |
+| 0054 - Validar ausência de erro interno exposto e exibição de mensagem amigável |
+| 0055 - Validar padronização visual dos botões CTA |
+| 0056 - Validar consistência dos links do footer |
+| 0057 - Pesquisar evento existente |
+| 0058 - Pesquisar evento inexistente |
+| 0059 - Pesquisar utilizando caracteres especiais |
+| 0060 - Validar debounce da busca |
+| 0061 - Validar ausência de erros no console durante navegação |
+| 0062 - Validar resposta da API de eventos |
+| 0063 - Validar comportamento da interface sem carregamento de imagens |
+| 0064 - Validar disparo de evento analytics ao clicar em Explorar Eventos |
+| **Total** | **64** |
 
+Assim como nas Features Explorar Eventos e Suporte e Ajuda, todos os testes foram classificados considerando diferentes dimensões de teste, evitando tratar conceitos distintos (E2E, Regressão, Acessibilidade, Stress, SEO, Segurança) como categorias equivalentes.
 
+### 📌 Dimensões de cobertura
+
+| Dimensão | Categorias | Objetivo |
+| --- | --- | --- |
+| **Escopo** | E2E | Validar jornadas completas atravessando múltiplas páginas a partir da Home |
+| **Objetivo funcional** | Funcionais, Validação de Dados, Integridade | Verificar comportamentos esperados, dados apresentados e consistência das informações |
+| **Qualidade da aplicação** | UI, Responsividade, Acessibilidade, Performance, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais |
+| **Condição / técnica de teste** | Estresse, Compatibilidade de Navegação | Exercitar a aplicação sob condições repetitivas, intensivas ou diferentes mecanismos de interação |
+| **Resiliência** | Monitoramento de Erros, Recuperação de Estado | Avaliar comportamento diante de erros, reloads e persistência de preferências |
+| **Observabilidade e Contrato** | Analytics (dataLayer), SEO / Metadados | Verificar se dados de rastreamento e metadados de página seguem o esperado |
+| **Segurança** | Exposição de dados sensíveis, mensagens de erro | Verificar ausência de vazamento de credenciais/tokens e de mensagens técnicas expostas ao usuário |
+| **Finalidade de execução** | Regressão | Reexecutar cenários existentes para identificar impactos causados por alterações no sistema |
+
+---
+
+## 🧪 Cobertura funcional e E2E
+
+### Testes Funcionais
+
+**Exemplos:**
+
+* **0001–0012:** acesso direto aos principais pontos de entrada da Home (Explorar Eventos, Publicar Eventos, Suporte e Ajuda, seletor de idioma, Entrar, Criar Conta, busca);
+* **0017–0030:** cliques em CTAs e links institucionais/footer (iOS, Android, Guia Check-in, Termos, Política de Compra, Meia Entrada, redes sociais, WebSolutionsFL);
+* **0040:** abertura do menu de idioma via tecla ENTER;
+* **0057:** pesquisa e acesso a um evento existente.
+
+### Testes End-to-End (E2E)
+
+**Exemplos:**
+
+* **0015:** navegação no carrossel → seleção do evento "THE WHITE BUFFALO em SÃO PAULO" → validação da URL de destino;
+* **0020–0025:** Home → páginas institucionais via footer;
+* **0057:** Home → busca → seleção do evento → página de detalhes;
+* **0062:** validação da origem dos dados (API ou SSR) ao carregar a página de eventos — atravessa frontend e camada de rede;
+* **0064:** clique em "Explorar Eventos" → navegação → validação do evento correspondente no dataLayer.
+
+> **Observação:** assim como nas features de referência, E2E representa o **escopo da jornada**, não uma categoria funcional isolada.
+
+---
+
+## 🧭 Testes de Navegação
+
+**Exemplos:**
+
+* **0001–0012:** diferentes pontos de acesso a partir da Home;
+* **0013–0016:** navegação entre eventos no carrossel (esquerda, direita, sequencial e combinada);
+* **0017–0030:** navegação via CTAs e via links do footer;
+* **0057–0058:** navegação decorrente da busca (evento encontrado ou não).
+
+---
+
+## 🖥️ Testes de Interface (UI)
+
+**Exemplos:**
+
+* **0013–0016:** resposta visual do carrossel aos cliques de navegação;
+* **0020–0030:** ícones e botões do footer (redes sociais, apps, institucionais);
+* **0055:** padronização visual entre os botões CTA "Explorar Eventos" e "Publicar Eventos" (cor, borda, tipografia);
+* **0056:** consistência visual dos links do footer (cor, tamanho e peso de fonte).
+
+---
+
+## 📱 Testes de Responsividade
+
+**Exemplos:**
+
+* **0043:** validação híbrida da estrutura da Home em Desktop (1920×1080), Tablet (768×1024) e Mobile (375×812);
+* **0044:** header validado especificamente contra quebra visual nas mesmas três resoluções.
+
+---
+
+## ♿ Testes de Acessibilidade
+
+**Exemplos:**
+
+* **0036:** navegação via TAB cobrindo desde o topo da página até todos os itens do footer (até 100 tabs por elemento-alvo);
+* **0037:** presença de landmarks (`header`, `main`/`role="main"`, `footer`, `nav`) e atributos globais (`lang`, `title`, viewport);
+* **0038:** contraste entre texto e fundo nos componentes críticos, incluindo validação de estado hover;
+* **0039:** indicador visual de foco (outline/box-shadow) nos principais elementos interativos;
+* **0040:** abertura do menu de idioma via ENTER, com validação das três opções disponíveis;
+* **0051:** presença de atributo `alt` em todas as imagens da página.
+
+---
+
+## ⚡ Testes de Performance
+
+**Exemplos:**
+
+* **0045:** tempo total de carregamento da Home, com limite de 3000ms;
+* **0060:** validação de debounce da busca — quantidade de requisições disparadas durante digitação contínua, com limite máximo aceitável.
+
+> Assim como nas features de referência, a cobertura de performance é **pontual**, focada em tempo de carregamento e comportamento de digitação — não caracteriza uma estratégia completa de load testing.
+
+---
+
+## 🔄 Testes de Estabilidade
+
+**Exemplos:**
+
+* **0034:** persistência (ou não) do idioma selecionado após refresh, com verificação estrutural da página em ambos os cenários;
+* **0046:** 200 interações consecutivas no carrossel (100 esquerda + 100 direita) com verificação de visibilidade a cada clique;
+* **0047:** carregamento dinâmico de eventos durante scroll, monitorando header/body a cada ciclo;
+* **0048:** execução repetida (10x) do clique em "Explorar Eventos" a partir da Home, validando navegação em todas as tentativas (anti-flaky);
+* **0061:** monitoramento de console e rede durante um fluxo completo de navegação (Home → Eventos → voltar → busca → fechar busca).
+
+---
+
+## 🔥 Testes de Estresse (Stress Testing)
+
+**Exemplos:**
+
+* **0014:** 10 cliques consecutivos no botão esquerdo do carrossel;
+* **0016:** 10 cliques à esquerda seguidos de 10 cliques à direita no carrossel;
+* **0046:** 200 cliques consecutivos no carrossel (o cenário de maior volume da suíte).
+
+> **Importante:** assim como nas features de referência, esses cenários caracterizam stress/robustez de componente de UI — não simulam carga concorrente de múltiplos usuários.
+
+---
+
+## 🛡️ Testes de Robustez
+
+**Exemplos:**
+
+* **0059:** pesquisa utilizando uma sequência extensa de caracteres especiais, validando que o campo e o modal de busca continuam funcionais e que nenhum erro interno é exposto;
+* **0063:** comportamento completo da interface (navegação, footer, conteúdo) com todas as requisições de imagem bloqueadas.
+
+---
+
+## 🔎 Testes de Validação de Dados
+
+**Exemplos:**
+
+* **0031:** varredura de todos os links de header/footer, validando ausência de links quebrados e de respostas 404;
+* **0032:** validação do `href` e do `target` do link do Instagram sem disparar navegação real;
+* **0049–0051:** presença e validade de `title`, `meta description` e `alt` de imagens;
+* **0056:** validação individual de `href`, visibilidade e estilo de cada link do footer.
+
+---
+
+## 🔐 Testes de Integridade
+
+**Exemplos:**
+
+* **0037:** integridade estrutural e semântica da Home (landmarks, atributos globais, elementos críticos);
+* **0044:** integridade visual do header nas três resoluções testadas;
+* **0056:** integridade de todos os links do footer (href válido, visível, com estilo dentro dos padrões esperados).
+
+---
+
+## 🚨 Testes de Monitoramento de Erros
+
+**Exemplos:**
+
+* **0037:** captura de erros de console durante um `page.reload()`;
+* **0054:** verificação de ausência de mensagens técnicas (stack trace, exceptions, erros de banco) e presença de mensagem amigável ao acessar uma URL inexistente;
+* **0061:** monitoramento dedicado de console (`error`) e de respostas de rede com status ≥ 500 durante um fluxo de navegação completo.
+
+---
+
+## 🎨 Testes de Integridade Visual
+
+**Exemplos:**
+
+* **0038:** diferenciação visual entre texto e fundo nos componentes críticos;
+* **0044:** ausência de quebra visual do header entre resoluções;
+* **0055:** consistência visual entre os botões CTA;
+* **0056:** consistência visual dos links do footer (tamanho e peso de fonte dentro de valores permitidos).
+
+---
+
+## 🔄 Recuperação e Estado da Aplicação
+
+**Exemplo:**
+
+* **0034:** comportamento da aplicação após refresh com idioma alterado — o cenário aceita e documenta ambos os resultados possíveis (persistência ou retorno ao padrão PT-BR), tratando a ausência de persistência como comportamento atual conhecido da aplicação, não como falha automática do teste.
+
+> **Precisão técnica:** diferente da Feature Suporte e Ajuda (onde a recuperação trata de resiliência de formulário), aqui a dimensão de recuperação está associada à **persistência de preferência de idioma** entre sessões/reloads.
+
+---
+
+## 📊 Observabilidade e Contrato
+
+**Exemplo:**
+
+* **0064:** validação da existência do `window.dataLayer`, seguida da checagem de que ao menos um evento relacionado ao clique em "Explorar Eventos" foi registrado após a navegação.
+
+> Cobertura mais enxuta que a da Feature Suporte e Ajuda (que valida o schema completo do evento `gtm.linkClick`) — aqui a validação é de **presença do evento**, não de contrato detalhado de campos.
+
+---
+
+## 🔍 Testes de SEO e Metadados
+
+**Exemplos:**
+
+* **0049:** presença e conteúdo não vazio da tag `<title>`;
+* **0050:** presença e conteúdo não vazio da `meta description`;
+* **0051:** ausência de imagens sem atributo `alt` — tratado aqui como parte da cobertura de SEO/acessibilidade, listado separadamente da checagem de acessibilidade em 0036–0040.
+
+---
+
+## 🔒 Testes de Segurança
+
+**Exemplos:**
+
+* **0052–0053:** varredura do HTML renderizado em busca de padrões sensíveis (`api_key`, `secret`, `token`, `bearer`, `private_key`, `access_token`, `authorization`), com duas implementações independentes dos mesmos critérios;
+* **0054:** acesso a uma URL inexistente, validando ausência de mensagens técnicas expostas (stack trace, exceptions, erros de SQL/banco) e presença de mensagem amigável ao usuário.
+
+---
+
+# 🔁 Regressão
+
+A **regressão não representa um conjunto separado de cenários**.
+
+Os 64 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após:
+
+* alterações nos CTAs, botões de navegação ou seletor de idioma da Home;
+* alterações no carrossel de eventos (navegação, renderização, lazy loading);
+* alterações no footer ou em seus links institucionais e de redes sociais;
+* mudanças na lógica de busca (debounce, tratamento de caracteres especiais, mensagens de "nenhum resultado");
+* mudanças em tags de SEO (title, meta description, alt de imagens);
+* mudanças na configuração de eventos de Analytics (dataLayer);
+* alterações estruturais na página que possam impactar acessibilidade ou responsividade.
+
+### Exemplo de estratégia
+
+```text
+Alteração no sistema
+        ↓
+Execução dos testes relacionados
+        ↓
+Execução da suíte de regressão
+        ↓
+Comparação dos resultados
+        ↓
+Identificação de regressões
+        ↓
+RCA / Bug Report
+```
+
+---
+
+# 📊 Matriz de cobertura da suíte
+
+| Dimensão | Cenários principais | Cobertura |
+| --- | --- | --- |
+| **E2E** | 0015, 0020–0025, 0057, 0062, 0064 | 🟢 |
+| **Funcional** | 0001–0012, 0017–0030, 0040, 0057 | 🟢 |
+| **Regressão** | 0001–0064 | 🟢 |
+| **Navegação** | 0001–0030, 0057–0058 | 🟢 |
+| **UI** | 0013–0016, 0020–0030, 0055–0056 | 🟢 |
+| **Responsividade** | 0043–0044 | 🟡 |
+| **Acessibilidade** | 0036–0040, 0051 | 🟢 |
+| **Performance** | 0045, 0060 | 🟡 |
+| **Estabilidade** | 0034, 0046–0048, 0061 | 🟢 |
+| **Estresse** | 0014, 0016, 0046 | 🟢 |
+| **Robustez** | 0059, 0063 | 🟡 |
+| **Validação de Dados** | 0031–0032, 0049–0051, 0056 | 🟢 |
+| **Integridade** | 0037, 0044, 0056 | 🟢 |
+| **Compatibilidade de Navegação** | — | 🔴 |
+| **Monitoramento de Erros** | 0037, 0054, 0061 | 🟢 |
+| **Integridade Visual** | 0038, 0044, 0055–0056 | 🟢 |
+| **Recuperação/Estado** | 0034 | 🟡 |
+| **Observabilidade / Analytics** | 0064 | 🟡 |
+| **SEO / Metadados** | 0049–0051 | 🟢 |
+| **Segurança** | 0052–0054 | 🟢 |
+
+**Legenda:**
+🟢 Cobertura claramente demonstrada pelos cenários analisados
+🟡 Cobertura presente, porém pontual e passível de expansão
+🔴 Cobertura não observada nos cenários desta feature
+
+> **Nota comparativa:** 
+
+A ausência de cenários de **Compatibilidade de Navegação na Feature Tela Inicial** representa uma lacuna de cobertura, decorrente do escopo e das condições de teste. 
+
+A suíte foi elaborada e executada exclusivamente em ambiente de produção, utilizando o Google Chrome. Não foram contemplados cenários específicos de histórico de navegação, como Back/Forward, retorno entre páginas e múltiplas navegações, nem testes Cross-Browser com Chrome, Edge, Firefox ou Safari.
+
+Portanto, o GAP não caracteriza um defeito da aplicação, mas uma oportunidade de ampliação da cobertura de testes, distinguindo Compatibilidade de Navegação de Compatibilidade entre Navegadores (Cross-Browser).
 
 ---
 
