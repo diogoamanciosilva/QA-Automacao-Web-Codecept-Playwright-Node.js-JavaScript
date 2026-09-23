@@ -2072,8 +2072,481 @@ RCA / Bug Report
 
 ## 🔍 Feature Comprar Ingressos
 
+| Feature                                                                                                                                     |                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| Feature_Comprar Ingressos                                                                                                                   |                              |
+| 0001 - Acessar evento sem login e visualizar disponibilidade de ingressos                                                                   |                              |
+| 0002 - Tentar realizar a compra de ingresso sem selecionar nenhuma quantidade                                                               |                              |
+| 0003 - Redirecionamento para login ao tentar comprar ingressos sem autenticação                                                             |                              |
+| 0004 - Redirecionar para login ao tentar comprar ingressos sem autenticação, realizar o login para finalizar a compra                       |                              |
+| 0005 - Redirecionar para login ao tentar comprar quantidade máxima de ingressos sem autenticação, realizar o login para finalizar a compra  |                              |
+| 0006 - Funcionalidade, impedir seleção acima do limite máximo de 5 ingressos                                                                |                              |
+| 0007 - Impedir que a quantidade de ingressos fique abaixo de zero, mesmo com múltiplas tentativas de diminuição                             |                              |
+| 0008 - Comprar a primeira opção de ingresso disponível (Meia Estudante) sem autenticação                                                    |                              |
+| 0009 - Comprar a segunda opção de ingresso disponível (Meia Solidária) sem autenticação                                                     |                              |
+| 0010 - Comprar a terceira opção de ingresso disponível (Inteira) sem autenticação                                                           |                              |
+| 0011 - Comprar todos os tipos de ingressos validando limite mínimo                                                                          |                              |
+| 0012 - Comprar ingressos validando limite mínimo por tipo                                                                                   |                              |
+| 0013 - Comprar ingressos validando request e response                                                                                       |                              |
+| 0014 - Validar payload da compra de ingressos no endpoint de pedidos                                                                        |                              |
+| 0015 - Validar valor total da compra de ingressos no pedido                                                                                 |                              |
+| 0016 - Validar headers de autenticação na requisição de compra                                                                              |                              |
+| 0017 - Garantir que os dados exibidos na UI sejam idênticos ao payload enviado na criação do pedido                                         |                              |
+| 0018 - Validar que múltiplos cliques no botão Comprar ingressos não geram pedidos duplicados                                                |                              |
+| 0019 - Validar persistência dos ingressos selecionados após login                                                                           |                              |
+| 0020 - Impedir seleção acima do limite máximo de ingressos — Boundary Value (limite superior)                                               |                              |
+| 0021 - Validar precisão do cálculo do valor total com taxa de 15% de conveniência                                                           |                              |
+| 0022 - Resetar seleção de ingressos ao atualizar a página                                                                                   |                              |
+| 0023 - Consistência de comportamento em múltiplas abas independentes                                                                        |                              |
+| 0024 - Validação de segurança contra manipulação de valor no checkout                                                                       |                              |
+| 0025 - Reset do carrinho após falha de login                                                                                                |                              |
+| 0026 - Pagamento com cartão de crédito com dados completos (CPF)                                                                            |                              |
+| 0027 - Pagamento com cartão de crédito com dados completos (CNPJ)                                                                           |                              |
+| 0028 - Exibir mensagens de erro ao preencher dados inválidos no formulário de pagamento (CPF)                                               |                              |
+| 0029 - Exibir mensagens de erro ao preencher dados inválidos no formulário de pagamento (CNPJ)                                              |                              |
+| 0030 - Validar exibição de erros ao tentar pagar sem preencher os campos obrigatórios com cartão de crédito                                 |                              |
+| 0031 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Número do cartão                                                      |                              |
+| 0032 - Exibir mensagens de erro ao tentar pagar sem preencher o campo data de vencimento do cartão                                          |                              |
+| 0033 - Exibir mensagens de erro ao tentar pagar sem preencher o campo código de segurança (CVV) do cartão                                   |                              |
+| 0034 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Nome do Titular como aparece do cartão                                |                              |
+| 0035 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Documento do Titular (CPF)                                            |                              |
+| 0036 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Documento do Titular (CNPJ)                                           |                              |
+| 0037 - Exibir mensagens de erro ao tentar pagar sem preencher o campo E-mail                                                                |                              |
+| 0038 - Pagamento com cartão de Débito Virtual CAIXA com dados completos (CPF)                                                               |                              |
+| 0039 - Pagamento com cartão de Débito Virtual CAIXA com dados completos (CNPJ)                                                              |                              |
+| 0040 - Cartão de Débito Virtual CAIXA, exibir mensagens de erro ao preencher dados inválidos no formulário de pagamento (CPF)               |                              |
+| 0041 - Cartão de Débito Virtual CAIXA, exibir mensagens de erro ao preencher dados inválidos no formulário de pagamento (CNPJ)              |                              |
+| 0042 - Validar exibição de erros ao tentar pagar sem preencher os campos obrigatórios do Cartão de Débito Virtual CAIXA                     |                              |
+| 0043 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Número do Cartão de Débito Virtual CAIXA                              |                              |
+| 0044 - Exibir mensagens de erro ao tentar pagar sem preencher o campo data de vencimento do Cartão de Débito Virtual CAIXA                  |                              |
+| 0045 - Exibir mensagem 'Dado obrigatório' ao tentar pagar sem preencher o campo código de segurança (CVV) do Cartão de Débito Virtual CAIXA |                              |
+| 0046 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Nome do Titular como aparece do Cartão de Débito Virtual CAIXA        |                              |
+| 0047 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Documento do Titular (CPF) do Cartão de Débito Virtual CAIXA          |                              |
+| 0048 - Exibir mensagens de erro ao tentar pagar sem preencher o campo Documento do Titular (CNPJ) do Cartão de Débito Virtual CAIXA         |                              |
+| 0049 - Exibir mensagens de erro ao tentar pagar sem preencher o campo E-mail do Cartão de Débito Virtual CAIXA                              |                              |
+| 0050 - Cartão de Crédito, validação e exibição da bandeira “Mastercard” ao inserir um cartão válido                                         |                              |
+| 0051 - Cartão de Crédito, inserir número de cartão com número incompleto da bandeira Mastercard                                             |                              |
+| 0052 - Cartão de Crédito, validação e exibição da bandeira “Visa” ao inserir um cartão válido                                               |                              |
+| 0053 - Cartão de Crédito, inserir número de cartão com número incompleto da bandeira Visa                                                   |                              |
+| 0054 - Validação e exibição da bandeira “American Express” ao inserir um cartão válido                                                      |                              |
+| 0055 - Cartão de Crédito, inserir número de cartão com número incompleto da bandeira American Express                                       |                              |
+| 0056 - Inserir código de segurança válido da bandeira de cartão Mastercard                                                                  |                              |
+| 0057 - Inserir código de segurança inválido da bandeira de cartão Mastercard                                                                |                              |
+| 0058 - Inserir código de segurança válido da bandeira de cartão Visa                                                                        |                              |
+| 0059 - Inserir código de segurança inválido da bandeira de cartão Visa                                                                      |                              |
+| 0060 - Inserir código de segurança válido da bandeira de cartão American Express                                                            |                              |
+| 0061 - Inserir código de segurança inválido da bandeira de cartão American Express                                                          |                              |
+| 0062 - Inserir data de vencimento válida de cartão de crédito                                                                               |                              |
+| 0063 - Inserir cartão com data de vencimento expirada de cartão de crédito                                                                  |                              |
+| 0064 - Inserir cartão com data de vencimento incompleto de cartão de crédito                                                                |                              |
+| 0065 - Inserir no campo 'Nome do titular como aparece no cartão' um nome inválido (Com apenas um caractere)                                 |                              |
+| 0066 - Inserir no campo “Nome do titular como aparece no cartão” caracteres especiais                                                       |                              |
+| 0067 - Validar preenchimento do campo com vários tipos de caracteres especiais                                                              |                              |
+| 0068 - Validar preenchimento correto do campo CPF                                                                                           |                              |
+| 0069 - Validar preenchimento incorreto do campo CPF                                                                                         |                              |
+| 0070 - Validar preenchimento correto do campo CNPJ                                                                                          |                              |
+| 0071 - Validar preenchimento incorreto do campo CNPJ                                                                                        |                              |
+| 0072 - Validar preenchimento incorreto do campo E-mail                                                                                      |                              |
+| 0073 - Validar preenchimento correto do campo E-mail                                                                                        |                              |
+| 0074 - Cartão de Débito Virtual CAIXA, inserir no campo “Nome do titular como aparece no cartão” um nome inválido (Com apenas um caractere) |                              |
+| 0075 - Cartão de Débito Virtual CAIXA, inserir no campo “Nome do titular como aparece no cartão” caracteres especiais                       |                              |
+| 0076 - Cartão de Débito Virtual CAIXA, validar preenchimento do campo com vários tipos de caracteres especiais                              |                              |
+| 0077 - Cartão de Débito Virtual CAIXA, validar preenchimento correto do campo CPF                                                           |                              |
+| 0078 - Cartão de Débito Virtual CAIXA, validar preenchimento incorreto do campo CPF                                                         |                              |
+| 0079 - Cartão de Débito Virtual CAIXA, validar preenchimento correto do campo CNPJ                                                          |                              |
+| 0080 - Cartão de Débito Virtual CAIXA, validar preenchimento incorreto do campo CNPJ                                                        |                              |
+| 0081 - Cartão de Débito Virtual CAIXA, validar preenchimento incorreto do campo E-mail                                                      |                              |
+| 0082 - Cartão de Débito Virtual CAIXA, validar preenchimento correto do campo E-mail                                                        |                              |
+| 0083 - Pagamento via PIX preenchendo o campo e-mail                                                                                         |                              |
+| 0084 - Pagamento via PIX não preenchendo o campo e-mail                                                                                     |                              |
+| 0085 - Exibir erro ao tentar pagar via PIX com e-mails inválidos                                                                            |                              |
+| 0086 - Exibição de erros ao tentar pagar via PIX com e-mails inválidos (caracteres especiais + números)                                     |                              |
+| 0087 - Bloquear preenchimento do e-mail PIX apenas com espaços em branco                                                                    |                              |
+| 0088 - Validar remoção automática de espaços no e-mail PIX                                                                                  |                              |
+| 0089 - Validar limite máximo de caracteres no campo E-mail via forma de pagamento PIX                                                       |                              |
+| 0090 - Validar proteção contra scripts no campo e-mail PIX                                                                                  |                              |
+| 0091 - Validar proteção contra SQL Injection no campo e-mail PIX                                                                            |                              |
+| 0092 - Validar interação com métodos de pagamento na página de pedido                                                                       |                              |
+| 0093 - Pix, evitar múltiplas submissões ao clicar repetidamente no botão pagar                                                              |                              |
+| 0094 - Pix, evitar múltiplas submissões ao clicar repetidamente no botão pagar utilizando e-mails inválidos                                 |                              |
+| 0095 - Pix, evitar múltiplas submissões ao clicar repetidamente no botão pagar com e-mail válido                                            |                              |
+| 0096 - Desabilitar botão pagar durante o processamento do pagamento                                                                         |                              |
+| 0097 - Recarregar checkout durante pagamento PIX com e-mail válido                                                                          |                              |
+| 0098 - Recarregar checkout durante pagamento PIX com e-mail inválido                                                                        |                              |
+| 0099 - Exibir mensagem de sucesso ao clicar no botão Copiar chave PIX                                                                       |                              |
+| 0100 - Exibir mensagem de sucesso ao clicar no campo “Ou copie a chave”                                                                     |                              |
+| 0101 - Evitar múltiplos eventos ao clicar repetidamente em 'Copiar chave'                                                                   |                              |
+| 0102 - Validar renderização correta do QR Code após pagamento PIX                                                                           |                              |
+| 0103 - Expiração de pagamento PIX no checkout, exibir mensagem ao expirar pagamento PIX                                                     |                              |
+| 0104 - Validar que cada pagamento PIX gere um QR Code único                                                                                 |                              |
+| 0105 - Bloquear múltiplas cobranças PIX                                                                                                     |                              |
+| 0106 - Validar tempo de 5 segundos para exibição do QR Code PIX                                                                             |                              |
+| 0107 - Validar desaparecimento automático do toast 'Código copiado para a área de transferência!'                                           |                              |
+| 0108 - Realizar logout após selecionar ingressos                                                                                            |                              |
+| 0109 - Retornar para a página do evento e acessar novamente o checkout                                                                      |                              |
+| 0110 - Atualizar página na etapa de pagamento                                                                                               |                              |
+| 0111 - Validar persistência do pedido ao sair e retornar ao checkout                                                                        |                              |
+| 0112 - Checkout sessão expirada durante o fluxo de compra (10 minutos)                                                                      |                              |
+| 0113 - Refresh próximo da expiração do checkout                                                                                             |                              |
+| 0114 - Abrir checkout em nova aba do navegador                                                                                              |                              |
+| 0115 - Atualizar múltiplas vezes a página do checkout                                                                                       |                              |
+| 0116 - Logout em outra aba durante o checkout                                                                                               |                              |
+| 0117 - Validar sincronização do contador do checkout                                                                                        |                              |
+| 0118 - Validar persistência indevida do checkout após logout                                                                                |                              |
+| 0119 - Utilizar botão voltar durante pagamento                                                                                              |                              |
+| 0120 - Abrir o mesmo checkout em múltiplas abas                                                                                             |                              |
+| 0121 - Expiração do checkout em múltiplas abas simultaneamente                                                                              |                              |
+| 0122 - Validar persistência do subtotal após refresh                                                                                        |                              |
+| 0123 - Validar criação de novo pedido após carrinho expirado                                                                                |                              |
+| 0124 - Validar comportamento do checkout após hard refresh                                                                                  |                              |
+| 0125 - Validar bloqueio de checkout após múltiplas expirações consecutivas                                                                  |                              |
+| 0126 - Validar que o botão 'Pagar' não seja duplicado após alternar abas e retornar ao checkout                                             |                              |
+| 0127 - Garantir que elementos do checkout não sejam duplicados após alternar abas do navegador                                              |                              |
+| **Total**                                                                                                                                   | **127 testes automatizados** |
 
 
+## 📌 Dimensões de cobertura
+
+| Dimensão | Categorias | Objetivo |
+| --- | --- | --- |
+| **Escopo** | E2E | Validar jornadas completas de compra, checkout e pagamento, atravessando diferentes etapas e componentes |
+| **Objetivo funcional** | Funcionais, Validação de Dados, Integridade | Verificar comportamentos esperados, validações, dados apresentados e consistência das informações durante a compra |
+| **Qualidade da aplicação** | UI, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais |
+| **Condição / técnica de teste** | Estresse | Exercitar a aplicação sob múltiplas interações, cliques, reloads, abas e tentativas consecutivas |
+| **Resiliência** | Recuperação de Estado, Persistência de Estado | Avaliar o comportamento do checkout diante de refresh, logout, expiração de sessão, troca de abas e retorno ao fluxo |
+| **Segurança** | Validação contra manipulação de valores, XSS e SQL Injection | Verificar mecanismos de proteção relacionados ao checkout e aos dados informados pelo usuário |
+| **Concorrência / Multiaba** | Múltiplas abas e sessões de checkout | Validar o comportamento do fluxo de compra quando o mesmo checkout é manipulado em diferentes abas |
+| **Finalidade de execução** | Regressão | Reexecutar os cenários existentes para identificar impactos de alterações no fluxo de compra e pagamento |
+
+> ⚠️ **Importante:** A suíte apresenta ampla cobertura funcional, de validação, segurança, estabilidade e resiliência. Não foram considerados como cobertos, por ausência de cenários específicos, testes de **Cross-Browser**, **Responsividade**, **Acessibilidade**, **SEO/Metadados**, **Analytics** ou **Monitoramento de Erros/Console**.
+
+---
+
+## 🧪 Cobertura funcional e E2E
+
+### Testes Funcionais
+
+**Exemplos:**
+
+- **0001–0012:** acesso ao evento, seleção de ingressos e validação das quantidades permitidas;
+- **0013–0025:** validações da criação do pedido, cálculo de valores, autenticação, persistência da seleção e comportamento do carrinho;
+- **0026–0049:** preenchimento, validação e processamento dos dados de pagamento por cartão de crédito e Cartão de Débito Virtual CAIXA;
+- **0050–0082:** validação das bandeiras, código de segurança, vencimento, CPF, CNPJ, nome do titular e e-mail;
+- **0083–0107:** fluxo de pagamento via PIX, validação do e-mail, geração do QR Code, cópia da chave, múltiplas submissões e expiração;
+- **0108–0125:** comportamento do checkout diante de logout, retorno ao evento, refresh, expiração, múltiplas abas e recuperação da sessão;
+- **0126–0127:** validação da integridade dos elementos do checkout após alternância entre abas.
+
+### Testes End-to-End (E2E)
+
+**Exemplos:**
+
+- **0001–0005:** acesso ao evento → seleção de ingressos → tentativa de compra → autenticação → continuidade do fluxo;
+- **0008–0017:** seleção dos diferentes tipos de ingresso → criação do pedido → validação de request, response, payload, valores e dados enviados;
+- **0026–0037:** checkout → preenchimento dos dados do cartão → validações dos campos obrigatórios → tentativa de pagamento;
+- **0038–0049:** checkout → seleção do Cartão de Débito Virtual CAIXA → preenchimento e validação dos dados → tentativa de pagamento;
+- **0083–0107:** checkout → seleção de PIX → preenchimento do e-mail → processamento → geração do QR Code → cópia da chave → validação de expiração e submissões;
+- **0108–0125:** alterações de estado durante o checkout → logout, refresh, expiração, retorno, múltiplas abas e criação de novo pedido.
+
+> **Observação:** assim como na feature de referência, E2E representa o **escopo da jornada**, e não uma categoria isolada de teste.
+
+---
+
+## 🧭 Testes de Navegação
+
+**Exemplos:**
+
+- **0001–0005:** navegação entre evento, seleção de ingressos e autenticação;
+- **0008–0019:** navegação entre seleção de ingressos, login e criação do pedido;
+- **0108–0111:** retorno à página do evento, acesso novamente ao checkout e navegação durante o processo de pagamento;
+- **0114:** abertura do checkout em nova aba;
+- **0116:** logout realizado em outra aba durante o checkout;
+- **0119:** utilização do botão voltar durante o pagamento;
+- **0120–0121:** abertura e expiração do mesmo checkout em múltiplas abas;
+- **0126–0127:** alternância entre abas e retorno ao checkout para validar a integridade dos elementos.
+
+> **Observação:** os cenários cobrem **compatibilidade de navegação**, especialmente histórico, retorno, refresh, novas abas e múltiplas abas. Isso não equivale a **Cross-Browser**, pois não há cenários específicos utilizando Chrome, Edge, Firefox e Safari.
+
+---
+
+## 🖥️ Testes de Interface (UI)
+
+**Exemplos:**
+
+- **0001–0012:** controles de quantidade, tipos de ingresso e limites de seleção;
+- **0028–0037:** mensagens e estados de validação dos campos de pagamento com cartão;
+- **0040–0049:** mensagens e estados de validação dos campos do Cartão de Débito Virtual CAIXA;
+- **0050–0061:** exibição das bandeiras dos cartões e comportamento visual relacionado ao código de segurança;
+- **0062–0082:** campos de vencimento, nome, CPF, CNPJ e e-mail;
+- **0083–0107:** campo de e-mail PIX, botão de pagamento, QR Code, chave PIX e mensagens de sucesso/erro;
+- **0126–0127:** integridade dos elementos do checkout após alternância entre abas.
+
+---
+
+## 🔄 Testes de Estabilidade
+
+**Exemplos:**
+
+- **0018:** múltiplos cliques no botão de compra para verificar ausência de pedidos duplicados;
+- **0047–0049:** repetição de preenchimentos e validações no fluxo do Cartão de Débito Virtual CAIXA;
+- **0093–0098:** múltiplas submissões, processamento do pagamento e reload durante o fluxo PIX;
+- **0101:** múltiplos cliques consecutivos em "Copiar chave";
+- **0107:** controle do desaparecimento automático do toast;
+- **0110–0115:** refresh, hard refresh, múltiplas atualizações e abertura do checkout em nova aba;
+- **0117–0125:** sincronização, expiração, múltiplas abas e múltiplas expirações do checkout;
+- **0126–0127:** estabilidade e integridade dos elementos após alternância entre abas.
+
+---
+
+## 🔥 Testes de Estresse (Stress Testing)
+
+A Feature apresenta cobertura de estresse principalmente por meio de **interações repetitivas, múltiplos cliques, submissões consecutivas, reloads e utilização simultânea de abas**.
+
+**Exemplos:**
+
+- **0007:** múltiplas tentativas de diminuir a quantidade de ingressos abaixo de zero;
+- **0018:** múltiplos cliques no botão de compra para verificar criação de pedidos duplicados;
+- **0047–0049:** repetição de tentativas e preenchimentos nos campos de pagamento;
+- **0093–0095:** múltiplos cliques e submissões consecutivas durante o pagamento PIX;
+- **0101:** múltiplos cliques consecutivos em "Copiar chave PIX";
+- **0110:** atualização da página durante a etapa de pagamento;
+- **0115:** múltiplas atualizações do checkout;
+- **0120–0121:** utilização e expiração do checkout em múltiplas abas;
+- **0125:** múltiplas expirações consecutivas do checkout;
+- **0126–0127:** alternância repetida entre abas e validação da não duplicação de componentes.
+
+> ⚠️ **Importante:** esses cenários caracterizam testes de robustez e estresse de interação da aplicação. Eles não substituem testes de carga ou performance com múltiplos usuários reais, realizados por ferramentas especializadas de performance/load testing.
+
+---
+
+## 🛡️ Testes de Robustez
+
+**Exemplos:**
+
+- **0006–0007:** valores nos limites superior e inferior da quantidade de ingressos;
+- **0018:** múltiplos cliques no processo de compra;
+- **0028–0037:** dados inválidos ou ausentes nos campos de pagamento por cartão;
+- **0040–0049:** dados inválidos ou ausentes nos campos do Cartão de Débito Virtual CAIXA;
+- **0051, 0053, 0055:** números incompletos de cartões de diferentes bandeiras;
+- **0057, 0059, 0061:** códigos de segurança inválidos;
+- **0063–0064:** cartão expirado ou data de vencimento incompleta;
+- **0065–0067:** entradas inválidas e caracteres especiais no nome do titular;
+- **0069, 0071–0072:** CPF, CNPJ e e-mail inválidos;
+- **0084–0091:** entradas inválidas, espaços, limite de caracteres, scripts e SQL Injection no e-mail PIX;
+- **0093–0098:** múltiplas submissões e reload durante pagamento;
+- **0112–0125:** expiração, refresh, logout e manipulação do checkout em diferentes estados.
+
+---
+
+## 🔎 Testes de Validação de Dados
+
+**Exemplos:**
+
+- **0006–0012:** validação da quantidade mínima e máxima de ingressos;
+- **0013–0017:** validação de request, response, payload, valor total e correspondência entre UI e dados enviados;
+- **0028–0037:** validação dos dados obrigatórios e inválidos do cartão de crédito;
+- **0040–0049:** validação dos dados obrigatórios e inválidos do Cartão de Débito Virtual CAIXA;
+- **0050–0064:** validação de bandeiras, números de cartão, CVV e vencimento;
+- **0065–0082:** validação de nome, caracteres especiais, CPF, CNPJ e e-mail;
+- **0083–0091:** validação do e-mail utilizado no pagamento PIX;
+- **0099–0107:** validação das respostas e estados relacionados à geração e utilização do QR Code PIX;
+- **0117–0125:** validação do contador, expiração e estado do checkout.
+
+---
+
+## 🔐 Testes de Segurança
+
+A Feature possui cenários específicos destinados à validação de comportamentos relacionados à segurança do processo de compra e pagamento.
+
+**Exemplos:**
+
+- **0016:** validação dos headers de autenticação na requisição de compra;
+- **0024:** tentativa de manipulação do valor durante o checkout;
+- **0090:** validação contra utilização de scripts no campo de e-mail PIX;
+- **0091:** validação contra SQL Injection no campo de e-mail PIX;
+- **0105:** validação contra múltiplas cobranças PIX;
+- **0118:** validação da persistência indevida do checkout após logout;
+- **0121:** validação da expiração do checkout em múltiplas abas.
+
+> **Observação:** esses cenários demonstram **validações de segurança específicas**. Eles não representam uma auditoria completa de segurança, pentest ou avaliação abrangente de vulnerabilidades.
+
+---
+
+## 🔐 Testes de Integridade
+
+**Exemplos:**
+
+- **0013–0017:** comparação entre request, response, payload, valores e dados exibidos na interface;
+- **0018:** validação da integridade do pedido diante de múltiplos cliques;
+- **0019:** persistência dos ingressos selecionados após autenticação;
+- **0021:** consistência do cálculo do valor total com a taxa de conveniência;
+- **0022:** validação do estado da seleção após atualização da página;
+- **0050–0061:** consistência das informações relacionadas às bandeiras e códigos de segurança dos cartões;
+- **0102:** validação da correta renderização do QR Code PIX;
+- **0104:** validação de unicidade do QR Code gerado para cada pagamento;
+- **0105:** validação contra geração de múltiplas cobranças;
+- **0117–0125:** consistência do estado do checkout durante sincronização, expiração, refresh e múltiplas abas;
+- **0126–0127:** validação contra duplicação de botões e elementos do checkout.
+
+---
+
+## 🎨 Testes de Integridade Visual
+
+**Exemplos:**
+
+- **0050, 0052, 0054:** exibição das bandeiras Mastercard, Visa e American Express após identificação do cartão;
+- **0102:** renderização correta do QR Code PIX;
+- **0106:** validação do tempo estabelecido para disponibilização do QR Code;
+- **0107:** desaparecimento automático do toast de confirmação;
+- **0126–0127:** validação da integridade visual/estrutural dos elementos do checkout após alternância entre abas.
+
+> **Observação:** a cobertura está relacionada à integridade dos elementos visuais especificamente exercitados pelos cenários. Não há evidência, nesta Feature, de uma suíte completa de validação visual, como comparação pixel a pixel ou validação de layout em diferentes resoluções.
+
+---
+
+## 🔄 Recuperação e Estado da Aplicação
+
+**Exemplos:**
+
+- **0022:** reset da seleção de ingressos após atualização da página;
+- **0025:** reset do carrinho após falha de login;
+- **0097–0098:** recuperação do checkout após reload durante pagamento PIX;
+- **0108:** comportamento do checkout após logout depois da seleção dos ingressos;
+- **0109:** retorno ao evento e novo acesso ao checkout;
+- **0110:** atualização da página durante a etapa de pagamento;
+- **0111:** persistência do pedido ao sair e retornar ao checkout;
+- **0112–0113:** expiração do checkout e refresh próximo da expiração;
+- **0115:** múltiplos reloads da página;
+- **0116:** logout em outra aba durante o checkout;
+- **0118:** validação da persistência do checkout após logout;
+- **0119:** utilização do botão voltar durante o pagamento;
+- **0121:** expiração simultânea do checkout em múltiplas abas;
+- **0122:** persistência do subtotal após refresh;
+- **0123:** criação de novo pedido após expiração do carrinho;
+- **0124:** comportamento após hard refresh;
+- **0125:** comportamento após múltiplas expirações consecutivas.
+
+---
+
+## 💾 Testes de Persistência de Estado
+
+**Exemplos:**
+
+- **0019:** persistência dos ingressos selecionados após login;
+- **0022:** comportamento da seleção após atualização da página;
+- **0025:** estado do carrinho após falha de autenticação;
+- **0108–0111:** comportamento do pedido e checkout após logout, retorno ao evento e nova entrada no fluxo;
+- **0111:** persistência do pedido ao sair e retornar ao checkout;
+- **0117:** sincronização do contador do checkout;
+- **0118:** validação de persistência indevida após logout;
+- **0122:** persistência do subtotal após refresh;
+- **0123:** criação de novo pedido após expiração do carrinho;
+- **0124:** comportamento do estado após hard refresh.
+
+---
+
+## ⏱️ Testes relacionados a Tempo de Resposta
+
+A Feature possui uma cobertura **pontual** relacionada ao tempo de processamento, concentrada no fluxo de geração do QR Code PIX.
+
+**Exemplo:**
+
+- **0106:** validação do tempo de 5 segundos para exibição do QR Code PIX.
+
+> **Observação:** esse cenário representa uma validação temporal específica do fluxo PIX. Não caracteriza, isoladamente, uma suíte completa de **Testes de Performance**, pois não há cenários abrangentes de throughput, latência, carga, concorrência de usuários ou consumo de recursos.
+
+---
+
+## 🔄 Compatibilidade de Navegação
+
+A Feature apresenta cobertura de compatibilidade relacionada ao comportamento do fluxo quando o usuário utiliza diferentes mecanismos de navegação do navegador.
+
+**Exemplos:**
+
+- **0114:** abertura do checkout em uma nova aba;
+- **0116:** logout realizado em outra aba durante o checkout;
+- **0119:** utilização do botão voltar durante o pagamento;
+- **0120:** abertura do mesmo checkout em múltiplas abas;
+- **0121:** expiração do checkout em múltiplas abas simultaneamente;
+- **0126–0127:** alternância entre abas e retorno ao checkout.
+
+> **Observação:** a cobertura acima trata de **navegação, histórico e múltiplas abas**. Não foram identificados cenários específicos de **Cross-Browser**, portanto não é possível considerar Chrome, Edge, Firefox e Safari como cobertos por esta Feature.
+
+---
+
+## 🔁 Regressão
+
+A **regressão não representa um conjunto separado de cenários**.
+
+Os **127 cenários** podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após alterações relacionadas a:
+
+- fluxo de seleção e quantidade de ingressos;
+- autenticação durante a compra;
+- criação e processamento de pedidos;
+- cálculo de valores e taxa de conveniência;
+- checkout;
+- pagamentos com cartão de crédito;
+- pagamentos com Cartão de Débito Virtual CAIXA;
+- pagamento via PIX;
+- geração e exibição do QR Code;
+- expiração de checkout;
+- gerenciamento de sessão;
+- comportamento após refresh;
+- navegação entre abas;
+- prevenção de pedidos ou cobranças duplicadas;
+- validações de segurança;
+- alterações nos componentes da página de pagamento.
+
+### Exemplo de estratégia
+
+```text
+Alteração no sistema
+        ↓
+Execução dos testes relacionados
+        ↓
+Execução da suíte de regressão
+        ↓
+Comparação dos resultados
+        ↓
+Identificação de possíveis regressões
+        ↓
+RCA / Bug Report
+
+
+## 📊 Matriz de cobertura da suíte
+
+| Dimensão | Cenários principais | Cobertura |
+| --- | --- | --- |
+| **E2E** | 0001–0005, 0008–0017, 0026–0037, 0038–0049, 0083–0107, 0108–0125 | 🟢 |
+| **Funcional** | 0001–0025, 0026–0082, 0083–0107, 0108–0127 | 🟢 |
+| **Regressão** | 0001–0127 | 🟢 |
+| **Navegação** | 0001–0005, 0008–0019, 0108–0111, 0114, 0116, 0119–0121, 0126–0127 | 🟢 |
+| **UI** | 0001–0012, 0028–0037, 0040–0049, 0050–0061, 0062–0082, 0083–0107, 0126–0127 | 🟢 |
+| **Responsividade** | — | 🔴 não coberta nesta feature |
+| **Acessibilidade** | — | 🔴 não coberta nesta feature |
+| **Performance** | 0106 | 🟡 cobertura pontual |
+| **Estabilidade** | 0018, 0047–0049, 0093–0098, 0101, 0107, 0110–0115, 0117–0125, 0126–0127 | 🟢 |
+| **Estresse** | 0007, 0018, 0047–0049, 0093–0095, 0101, 0110, 0115, 0120–0121, 0125–0127 | 🟢 |
+| **Robustez** | 0006–0007, 0018, 0028–0037, 0040–0049, 0051, 0053, 0055, 0057, 0059, 0061, 0063–0064, 0065–0067, 0069, 0071–0072, 0084–0091, 0093–0098, 0112–0125 | 🟢 |
+| **Validação de Dados** | 0006–0017, 0028–0037, 0040–0049, 0050–0064, 0065–0082, 0083–0091, 0099–0107, 0117–0125 | 🟢 |
+| **Segurança** | 0016, 0024, 0090–0091, 0105, 0118, 0121 | 🟢 |
+| **Integridade** | 0013–0019, 0021–0022, 0050–0061, 0102, 0104–0105, 0117–0125, 0126–0127 | 🟢 |
+| **Compatibilidade de Navegação** | 0114, 0116, 0119–0121, 0126–0127 | 🟢 |
+| **Monitoramento de Erros** | — | 🔴 não coberta nesta feature |
+| **Integridade Visual** | 0050, 0052, 0054, 0102, 0106–0107, 0126–0127 | 🟡 cobertura pontual |
+| **Recuperação/Estado** | 0022, 0025, 0097–0098, 0108–0111, 0112–0113, 0115–0116, 0118–0119, 0121–0125 | 🟢 |
+| **Persistência de Estado** | 0019, 0022, 0025, 0108–0111, 0117–0118, 0122–0124 | 🟢 |
+| **Tempo de Resposta** | 0106 | 🟡 cobertura pontual |
+| **Cross-Browser** | — | 🔴 não coberta nesta feature |
+| **Analytics** | — | 🔴 não coberta nesta feature |
+| **SEO / Metadados** | — | 🔴 não coberta nesta feature |
+
+### Legenda
+
+| Indicador | Classificação |
+| --- | --- |
+| 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
+| 🟡 | Cobertura presente, porém pontual e passível de expansão |
+| 🔴 | Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex.: Acessibilidade/Responsividade já cobertas em outras áreas da suíte) |
 
 
 
