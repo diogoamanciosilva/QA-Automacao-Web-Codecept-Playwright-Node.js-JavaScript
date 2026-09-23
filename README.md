@@ -515,7 +515,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 ---
 
-### 🔍 Feature  Suporte e Ajuda
+### 🔍 Feature Explorar Eventos
 
 
 | Feature | 
