@@ -1320,8 +1320,12 @@ RCA / Bug Report
 | **Segurança** | 0075 | 🟡 |
 
 **Legenda:**
-🟢 Cobertura claramente demonstrada pelos cenários analisados
-🟡 Cobertura presente, porém pontual e passível de expansão
+
+| Indicador | Classificação |
+| ------------------------- | ------------------------- |
+| 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
+| 🟡 | Cobertura presente, porém pontual e passível de expansão |
+
 
 ---
 
@@ -1665,9 +1669,12 @@ RCA / Bug Report
 | **Segurança** | 0052–0054 | 🟢 |
 
 **Legenda:**
-🟢 Cobertura claramente demonstrada pelos cenários analisados
-🟡 Cobertura presente, porém pontual e passível de expansão
-🔴 Cobertura não observada nos cenários desta feature
+
+| Indicador | Classificação |
+| ------------------------- | ------------------------- |
+| 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
+| 🟡 | Cobertura presente, porém pontual e passível de expansão |
+| 🔴 | Cobertura não observada nos cenários desta feature |
 
 > ⚠️ **Importante:** 
 
