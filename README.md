@@ -243,7 +243,7 @@ Em seguida:
 npm -v
 ```
 
-> ⚠️ **Importante:** se ambos os comandos retornarem uma versão, a instalação foi concluída com sucesso.
+> ⚠️ **Importante:** Se ambos os comandos retornarem uma versão, a instalação foi concluída com sucesso.
 
 ### 📍 3. Criar o projeto
 
@@ -1669,7 +1669,7 @@ RCA / Bug Report
 🟡 Cobertura presente, porém pontual e passível de expansão
 🔴 Cobertura não observada nos cenários desta feature
 
-> **Nota comparativa:** 
+> ⚠️ **Importante:** 
 
 A ausência de cenários de **Compatibilidade de Navegação na Feature Tela Inicial** representa uma lacuna de cobertura, decorrente do escopo e das condições de teste. 
 
