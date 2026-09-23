@@ -2029,10 +2029,23 @@ RCA / Bug Report
 | **Controle de Acesso (RBAC)** | 0090–0098 | 🟢 |
 | **Concorrência Multiusuário** | 0072 | 🟡 |
 
-**Legenda:**
-🟢 Cobertura claramente demonstrada pelos cenários analisados
-🟡 Cobertura presente, porém pontual e passível de expansão
-🔴 Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex: Acessibilidade/Responsividade já cobertas na Explorar Eventos e Suporte e Ajuda)
+
+| Feature |
+| ------------------------- |
+| Feature_Publicar Eventos |
+| 0001 - Acessar a página de Publicar Eventos pela página principal |
+| 0002 - Clicar na página Publicar Eventos via login do Gmail |
+| 0003 - Inserir o e-mail de login por meio do login do Gmail |
+| 0004 - Inserir o e-mail de login por meio do login da Apple |
+| 0005 - Acessar a página de Publicar Eventos e realizar o Login |
+
+
+
+
+  **Legenda:**
+  🟢 Cobertura claramente demonstrada pelos cenários analisados
+  🟡 Cobertura presente, porém pontual e passível de expansão
+  🔴 Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex: Acessibilidade/Responsividade já cobertas na Explorar Eventos e Suporte e Ajuda)
 
 ---
 
