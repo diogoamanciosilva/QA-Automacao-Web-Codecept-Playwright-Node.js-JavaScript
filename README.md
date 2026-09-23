@@ -878,7 +878,7 @@ Nos cenários analisados, existem testes relacionados à manutenção e recupera
 
 ---
 
-# 🔁 Regressão
+## 🔁 Regressão
 
 A **regressão não representa um conjunto separado de cenários**.
 
@@ -912,7 +912,7 @@ RCA / Bug Report
 ```
 ---
 
-# 📊 Matriz de cobertura da suíte
+## 📊 Matriz de cobertura da suíte
 
 Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz resumida:
 
@@ -936,9 +936,12 @@ Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz re
 | **Integridade Visual**           | 0051, 0054, 0062, 0070                           | 🟢        |
 | **Recuperação/Estado**           | 0049–0050, 0057, 0065–0066                       | 🟢        |
 
-**Legenda:**
-🟢 Cobertura claramente demonstrada pelos cenários analisados
-🟡 Cobertura presente, porém pontual e passível de expansão
+### Legenda
+
+| Indicador | Classificação |
+| ------------------------- | ------------------------- |
+| 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
+| 🟡 | Cobertura presente, porém pontual e passível de expansão |
 
 ---
 
@@ -1319,7 +1322,7 @@ RCA / Bug Report
 | **SEO / Metadados** | 0070–0073 | 🟢 |
 | **Segurança** | 0075 | 🟡 |
 
-**Legenda:**
+### Legenda
 
 | Indicador | Classificação |
 | ------------------------- | ------------------------- |
@@ -1668,7 +1671,7 @@ RCA / Bug Report
 | **SEO / Metadados** | 0049–0051 | 🟢 |
 | **Segurança** | 0052–0054 | 🟢 |
 
-**Legenda:**
+### Legenda
 
 | Indicador | Classificação |
 | ------------------------- | ------------------------- |
