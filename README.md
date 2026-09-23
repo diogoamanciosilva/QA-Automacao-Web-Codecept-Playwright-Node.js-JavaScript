@@ -468,11 +468,11 @@ Esse escopo combina e-commerce, gestão de conteúdo publicado por terceiros e o
 
 | Feature                     | Testes Automatizados | Papel na jornada |
 | ---------------------------- | --------------------: | --- |
-| Feature_Tela Inicial         |                   164 | Ponto de entrada — maior raio de impacto de qualquer instabilidade |
+| Feature_Tela Inicial         |                   164 | Ponto de entrada, maior raio de impacto de qualquer instabilidade |
 | Feature_Comprar Ingressos    |                   127 | Fluxo que gera receita diretamente |
 | Feature_Publicar Eventos     |                    98 | Ferramenta de gestão para produtores |
 | Feature_Suporte e Ajuda      |                    75 | Canal de contato, SEO e institucional |
-| Feature_Explorar Eventos     |                    70 | Busca e navegação por carrossel |
+| Feature_Explorar Eventos     |                    70 | Busca e navegação por carrossel de eventos divulgados na page|
 | Feature_Criar Conta          |                    52 | Onboarding de novos usuários |
 | **Total**                    |               **586** | — |
 
