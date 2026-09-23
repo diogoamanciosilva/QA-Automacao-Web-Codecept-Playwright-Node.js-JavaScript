@@ -2510,6 +2510,9 @@ Comparação dos resultados
 Identificação de possíveis regressões
         ↓
 RCA / Bug Report
+```
+
+
 
 
 ## 📊 Matriz de cobertura da suíte
