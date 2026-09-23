@@ -2868,10 +2868,13 @@ RCA / Bug Report
 | **Integração com Provedores Externos** | 0012–0013, 0051–0052 | 🟢 |
 | **Internacionalização (i18n)** | 0019–0025, 0027–0028, 0031–0034, 0036, 0044–0045, 0050 | 🟢 |
 
-**Legenda:**
-🟢 Cobertura claramente demonstrada pelos cenários analisados
-🟡 Cobertura presente, porém pontual e passível de expansão
-🔴 Não coberta pelos cenários desta feature (Responsividade e Performance já cobertas em outras Features da suíte)
+### Legenda
+
+| Indicador | Classificação |
+| --- | --- |
+| 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
+| 🟡 | Cobertura presente, porém pontual e passível de expansão |
+| 🔴 | Não coberta pelos cenários desta feature (pode ser coberta em outra Feature, ex.: Acessibilidade/Responsividade já cobertas em outras áreas da suíte) |
 
 
 ## 💡 Observações finais comparando com as outras Features
