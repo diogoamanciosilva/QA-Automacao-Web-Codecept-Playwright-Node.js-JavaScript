@@ -520,7 +520,7 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 ---
 
-### 🔍 Feature Explorar Eventos
+##  🔍 Feature Explorar Eventos
 
 
 | Feature | 
