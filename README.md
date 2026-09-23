@@ -35,6 +35,15 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🔍 Feature Publicar Eventos ](#-feature-publicar-eventos)
 - [🔍 Feature Comprar Ingressos ](#-feature-comprar-ingressos)
 - [🔍 Feature Criar Conta ](#-feature-criar-conta)
+- [🐞 Bugs Encontrados](#-bugs-encontrados)
+- [🔗 Bug × Feature × Causa Raiz](#-bug--feature--causa-raiz)
+- [📊 Análise da Suíte de Testes](#-análise-da-suíte-de-testes)
+- [🕵🏻‍♂️ Root Cause Analysis (RCA)](#%E2%80%8D%EF%B8%8F-root-cause-analysis-rca)
+- [🧪 Metodologia de teste](#-metodologia-de-teste)
+- [🚧 Limitações e escopo](#-limitações-e-escopo)
+- [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)
+- [💡 Aprendizados técnicos](#-aprendizados-técnicos)
+- [✅ Contato](#-contato)
 
 
 - ---
@@ -2076,5 +2085,11 @@ RCA / Bug Report
 
 
 ---
+
+
+
+
+
+
 
 
