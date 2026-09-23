@@ -2058,3 +2058,23 @@ RCA / Bug Report
 2. **Uso extensivo de dados dinâmicos**: Vários cenários (0095, 0097, 0098) descobrem as seções disponíveis via DOM em tempo de execução em vez de usar uma lista fixa, isso torna os testes mais resilientes a mudanças de conteúdo, mas também significa que a suíte depende da estrutura do DOM permanecer semanticamente consistente (`label`/`for`).
 3. **Tratamento maduro de bloqueios de terceiros**: Os cenários de login social (0003, 0004) são um exemplo de boa prática de QA, reconhecem que um bloqueio antibot do Google/Apple é um resultado esperado em ambiente automatizado, evitando falsos negativos.
 4. **Lacunas em relação às outras Features**: Responsividade, Acessibilidade, Performance, Compatibilidade de Navegação e Monitoramento de Erros bem cobertas na Explorar Eventos e/ou Suporte e Ajuda não aparecem nesta Feature. Dado o alto número de campos de formulário e modais complexos aqui, a ausência de testes de acessibilidade (navegação por teclado, foco) é a lacuna mais relevante a considerar para expansão futura.
+
+---
+
+## 🔍 Feature Comprar Ingressos
+
+
+
+
+
+
+
+
+---
+
+## 🔍 Feature Criar Conta
+
+
+---
+
+
