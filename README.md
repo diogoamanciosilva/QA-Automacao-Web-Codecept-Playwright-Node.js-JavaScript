@@ -1651,7 +1651,7 @@ Também não foram realizados testes Cross-Browser envolvendo Chrome, Edge, Fire
 Portanto, o GAP não caracteriza um defeito da aplicação, mas uma oportunidade de ampliação da cobertura da suíte, mantendo a distinção entre Compatibilidade de Navegação e Compatibilidade entre Navegadores (Cross-Browser).
 
 
-
+---
 
 ## 🔍 Feature Publicar Eventos
 
