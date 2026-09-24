@@ -3035,7 +3035,7 @@ A análise abaixo foi construída a partir dos comportamentos observados nos cen
 
 ### 🫆 Causa Raiz 1: Validação de entrada
 
-![Distribuição de Bugs por Causa Raiz](./rca_bugs_por_causa_raiz_fastix.png)
+<img width="1781" height="1059" alt="rca_bugs_por_causa_raiz_fastix (1)" src="https://github.com/user-attachments/assets/98d3e194-dc9f-416c-8449-2584462f2aa9" />
 
 * **Validação de entrada:** concentra o maior número de ocorrências (**3 bugs: BUG-01, BUG-02 e BUG-03**).
 
@@ -3051,7 +3051,8 @@ Essa é a causa raiz provável com maior número de ocorrências dentro do conju
 
 ### 🫆 Causa Raiz 2: Gerenciamento e preservação de estado
 
-![Root Cause Analysis — Relação Causa Raiz × Bugs](./rca_causa_raiz_bugs_fastix.png)
+<img width="2141" height="1242" alt="rca_causa_raiz_bugs_fastix" src="https://github.com/user-attachments/assets/e9d9ecae-1efc-4cf1-aabe-a063aca57569" />
+
 
 * **Gerenciamento e preservação de estado:** agrupa **BUG-05 e BUG-06**, ambos relacionados à perda, duplicação ou alteração inesperada de informações previamente selecionadas pelo usuário.
 
@@ -3100,12 +3101,6 @@ A distribuição demonstra que **a maior concentração de ocorrências está re
 * **Nenhuma das três causas deve ser considerada tecnicamente confirmada apenas com base nos testes funcionais.** Para transformar essas hipóteses em uma RCA definitiva, seria necessário complementar a investigação com código-fonte, logs, arquitetura, traces, comportamento das APIs e análise do fluxo de estado da aplicação.
 
 Dessa maneira, a análise evita tratar cada bug como um caso isolado e direciona a investigação para **padrões sistêmicos de validação, gerenciamento de estado e controle de componentes**, mantendo a distinção entre **comportamento observado, hipótese de causa e causa raiz tecnicamente comprovada**.
-
-
-
-
-
-
 
 ---
 
