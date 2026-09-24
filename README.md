@@ -3027,6 +3027,79 @@ Esse cruzamento permitiria identificar não apenas onde os bugs foram encontrado
 
 ##  🕵🏻‍♂️ Root Cause Analysis (RCA) 
 
+## 🕵🏻‍♂️ Root Cause Analysis (RCA)
+
+Os **6 bugs documentados na suíte** apresentam diferentes padrões de comportamento e podem ser agrupados em **3 causas raiz prováveis**, cada uma indicando uma possível lacuna em validação de entrada, gerenciamento de estado ou controle de componentes da interface.
+
+A análise abaixo foi construída a partir dos comportamentos observados nos cenários de teste. Como não houve acesso ao código-fonte, arquitetura ou logs completos da aplicação, as causas apresentadas devem ser tratadas como **hipóteses de causa raiz**, e não como causas técnicas definitivamente confirmadas.
+
+### 🫆 Causa Raiz 1: Validação de entrada
+
+![Distribuição de Bugs por Causa Raiz](./rca_bugs_por_causa_raiz_fastix.png)
+
+* **Validação de entrada:** concentra o maior número de ocorrências (**3 bugs: BUG-01, BUG-02 e BUG-03**).
+
+* O **BUG-01** apresenta comportamento inconsistente na pesquisa de eventos por local: ao pesquisar por `"Fabrique"` ou `"Fabrique Club"`, o sistema retorna **"Nenhum evento encontrado"**, apesar da existência de eventos associados ao local.
+
+* O **BUG-02** está relacionado ao comportamento do campo **"Nome"** diante de uma entrada superior ao limite esperado de caracteres, indicando uma possível ausência ou insuficiência de validação do tamanho máximo permitido.
+
+* O **BUG-03** apresenta comportamento semelhante no campo **E-mail** do pagamento via PIX, permitindo a inserção de até **510 caracteres**, acima do limite esperado de 255 caracteres.
+
+* Os três problemas possuem em comum o tratamento inadequado ou insuficiente de entradas fornecidas pelo usuário. Entretanto, **não é possível afirmar, apenas pelos testes, se a falha está localizada no frontend, backend, camada de validação ou combinação dessas camadas**.
+
+Essa é a causa raiz provável com maior número de ocorrências dentro do conjunto analisado, representando **50% dos bugs identificados**.
+
+### 🫆 Causa Raiz 2: Gerenciamento e preservação de estado
+
+![Root Cause Analysis — Relação Causa Raiz × Bugs](./rca_causa_raiz_bugs_fastix.png)
+
+* **Gerenciamento e preservação de estado:** agrupa **BUG-05 e BUG-06**, ambos relacionados à perda, duplicação ou alteração inesperada de informações previamente selecionadas pelo usuário.
+
+* No **BUG-05**, após a alternância entre abas do navegador, o sistema pode apresentar **duplicação do modal de pagamento**, incluindo opções e botões de pagamento. O cenário também registra a ocorrência de mensagem de erro após a interação com o segundo modal.
+
+* No **BUG-06**, a seleção realizada no campo **"Template"** não é preservada quando uma permissão de seção é alterada. O valor previamente selecionado pode ser substituído por **"Templates"**.
+
+* Embora os dois comportamentos sejam diferentes, ambos apresentam indícios de problemas relacionados à **manutenção do estado da interface durante mudanças de contexto ou interação**.
+
+* No caso do BUG-05, entretanto, existem evidências adicionais de comportamento relacionado ao DOM, console e componentes do fluxo de pagamento. Essas evidências ajudam a direcionar a investigação, mas **não comprovam isoladamente qual componente ou camada é responsável pela causa raiz**.
+
+Assim como no exemplo de referência, essa causa deve ser tratada com cautela: o comportamento observado pode resultar de uma falha de implementação, de sincronização de estado ou de uma condição específica do fluxo. A confirmação deve ser realizada pelo time técnico.
+
+### 🫆 Causa Raiz 3: Controle de componentes e notificações
+
+* **Controle de componentes e notificações:** está associado ao **BUG-04**, relacionado à geração de múltiplos Toasts ao clicar repetidamente no botão **"Copiar chave"** durante o pagamento via PIX.
+
+* O comportamento indica que cada interação dispara uma nova notificação sem que exista, aparentemente, um mecanismo adequado de controle, deduplicação ou bloqueio de chamadas repetidas.
+
+* Diferentemente de uma simples inconsistência visual, o comportamento sugere uma possível oportunidade de melhoria no gerenciamento do ciclo de vida do componente de notificação ou no tratamento de interações repetitivas.
+
+* Entretanto, novamente, o cenário de teste **não permite determinar se a origem está no componente Toast, no handler do botão, na camada de estado ou na lógica que dispara a notificação**.
+
+Essa causa representa **1 dos 6 bugs identificados (16,7%)**.
+
+### 📊 Distribuição das causas raiz
+
+```text
+Validação de entrada          → 3 bugs — 50%
+Gerenciamento de estado       → 2 bugs — 33,3%
+Controle de componentes       → 1 bug  — 16,7%
+```
+
+A distribuição demonstra que **a maior concentração de ocorrências está relacionada ao tratamento de entradas do usuário**, seguida por problemas associados ao gerenciamento de estado.
+
+### 🫆 Conclusão
+
+* Das três causas raiz prováveis identificadas, **a Validação de entrada** concentra a maior quantidade de ocorrências, reunindo BUG-01, BUG-02 e BUG-03. Os problemas apresentam comportamentos distintos, mas possuem em comum a necessidade de tratamento mais consistente das informações fornecidas pelo usuário.
+
+* O **Gerenciamento e preservação de estado** aparece como o segundo agrupamento, reunindo BUG-05 e BUG-06. Ambos apresentam comportamentos de perda, duplicação ou substituição inesperada de informações durante mudanças de contexto ou interação.
+
+* Já o **Controle de componentes e notificações** está associado exclusivamente ao BUG-04, relacionado à geração repetida de Toasts durante interações consecutivas.
+
+* Diferentemente de uma RCA baseada exclusivamente em sintomas, essa análise permite identificar **padrões que podem atingir diferentes partes da aplicação**. Por exemplo, problemas de validação aparecem em Features distintas, enquanto problemas de estado também aparecem em contextos diferentes.
+
+* **Nenhuma das três causas deve ser considerada tecnicamente confirmada apenas com base nos testes funcionais.** Para transformar essas hipóteses em uma RCA definitiva, seria necessário complementar a investigação com código-fonte, logs, arquitetura, traces, comportamento das APIs e análise do fluxo de estado da aplicação.
+
+Dessa maneira, a análise evita tratar cada bug como um caso isolado e direciona a investigação para **padrões sistêmicos de validação, gerenciamento de estado e controle de componentes**, mantendo a distinção entre **comportamento observado, hipótese de causa e causa raiz tecnicamente comprovada**.
 
 
 
