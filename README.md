@@ -2905,7 +2905,8 @@ A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por
 
 ### 📈 Distribuição de Bugs por Feature
 
-![Distribuição de Bugs por Feature](./bugs_por_feature_fastix.png)
+<img width="1781" height="1060" alt="bugs_por_feature_fastix" src="https://github.com/user-attachments/assets/b4d8f1d7-b661-498f-b556-4a8ea2442196" />
+
 
 ### 📈 Análise Bugs por Feature
 
@@ -2940,7 +2941,9 @@ Para uma análise quantitativa mais completa, seria necessário relacionar **qua
 
 ### 📈 Bugs por Severidade
 
-![Bugs por Severidade](./bugs_por_severidade_fastix.png)
+<img width="1781" height="1058" alt="bugs_por_severidade_fastix" src="https://github.com/user-attachments/assets/b90eea87-fdfd-4310-8645-402c3c800cce" />
+
+
 
 ### 📈 Análise Bugs Encontrados por Severidade
 
@@ -3019,14 +3022,7 @@ Feature × Testes Executados × Bugs × Severidade × Causa Raiz × Impacto
 Esse cruzamento permitiria identificar não apenas onde os bugs foram encontrados, mas também **onde existe maior concentração de problemas em relação ao esforço de teste**, reduzindo o risco de conclusões baseadas exclusivamente na quantidade absoluta de bugs.
 
 
-
-
-
-
-
 ---
-
-
 
 
 ##  🕵🏻‍♂️ Root Cause Analysis (RCA) 
