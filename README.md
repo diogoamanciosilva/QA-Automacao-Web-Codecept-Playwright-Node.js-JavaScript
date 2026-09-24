@@ -2903,6 +2903,126 @@ A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por
 ## 📊 Análise da Suíte de Testes
 
 
+### 📈 Distribuição de Bugs por Feature
+
+![Distribuição de Bugs por Feature](./bugs_por_feature_fastix.png)
+
+### 📈 Análise Bugs por Feature
+
+O gráfico apresenta **6 bugs encontrados**, distribuídos entre quatro Features da plataforma FasTix.
+
+```text
+A maior concentração está em Comprar Ingressos (3 bugs — 50%), enquanto Explorar Eventos, Suporte e Ajuda e Publicar Eventos possuem 1 bug cada (aproximadamente 17% cada).
+```
+
+A Feature **Comprar Ingressos** concentra metade dos bugs identificados no conjunto analisado. Os três problemas estão relacionados a diferentes comportamentos do checkout: limite de caracteres no campo E-mail durante o pagamento via PIX, geração duplicada de notificações ao copiar a chave PIX e duplicação do modal de pagamento após alternância de abas.
+
+```text
+Explorar Eventos: 1 bug — 17%
+Suporte e Ajuda: 1 bug — 17%
+Comprar Ingressos: 3 bugs — 50%
+Publicar Eventos: 1 bug — 17%
+```
+
+Essa distribuição demonstra que **Comprar Ingressos foi a Feature com maior concentração de problemas dentro do conjunto de bugs analisado**. Entretanto, esse dado não deve ser interpretado isoladamente como prova de que a Feature apresenta maior taxa de defeitos, pois não temos, neste conjunto, a quantidade total de testes executados em cada Feature.
+
+**Do ponto de vista de Root Cause Analysis, a quantidade de bugs por Feature representa a concentração dos achados identificados dentro do escopo analisado, e não necessariamente a qualidade absoluta de cada Feature.**
+
+A análise também mostra que os problemas encontrados possuem naturezas diferentes: falhas de validação de entrada, problemas de gerenciamento/preservação de estado, duplicação de componentes/notificações e comportamento incorreto de busca.
+
+### 📈 Conclusão
+
+A distribuição evidencia uma concentração de **50% dos bugs na Feature Comprar Ingressos**, enquanto os demais problemas estão distribuídos entre diferentes pontos da jornada da plataforma.
+
+Para uma análise quantitativa mais completa, seria necessário relacionar **quantidade total de testes executados por Feature × bugs encontrados × severidade × causa raiz**, permitindo calcular, por exemplo, a concentração de bugs em relação ao esforço de teste.
+
+---
+
+### 📈 Bugs por Severidade
+
+![Bugs por Severidade](./bugs_por_severidade_fastix.png)
+
+### 📈 Análise Bugs Encontrados por Severidade
+
+O gráfico apresenta **6 bugs encontrados**, distribuídos em três níveis de severidade:
+
+```text
+Média: 3 bugs — 50%
+Alta: 2 bugs — 33,3%
+Baixa: 1 bug — 16,7%
+```
+
+**A maior concentração está na categoria Média, responsável por metade dos bugs identificados. Outros 33,3% foram classificados como Alta e 16,7% como Baixa.**
+
+Os dois bugs classificados como **Alta** estão relacionados a jornadas relevantes da plataforma:
+
+```text
+BUG-01 — Falha na busca de eventos por local — Explorar Eventos
+BUG-05 — Duplicação do modal de pagamento após alternância de abas — Comprar Ingressos
+```
+
+O BUG-01 impede que uma busca por um local com eventos associados apresente os resultados esperados. O cenário registra que tanto `"Fabrique"` quanto `"Fabrique Club"` retornam **"Nenhum evento encontrado"**.
+
+O BUG-05 apresenta um comportamento mais complexo, relacionado à duplicação do modal de pagamento após a alternância entre abas do navegador. O cenário também registra evidências de DOM, Console e comportamento do Payment Brick, além da ocorrência da mensagem de erro após a interação com o segundo modal.
+
+Os três bugs classificados como **Média** estão relacionados a:
+
+```text
+BUG-02 — Limitação/validação do campo Nome — Suporte e Ajuda
+BUG-03 — Limite de caracteres do E-mail no PIX — Comprar Ingressos
+BUG-06 — Perda da seleção do Template ao alterar permissões — Publicar Eventos
+```
+
+Já o **BUG-04**, classificado como Baixa, está relacionado à geração de múltiplos toasts ao clicar repetidamente em **"Copiar chave"** durante o pagamento via PIX.
+
+Sob a perspectiva de Root Cause Analysis, os problemas não apresentam uma única origem aparente. Os cenários apontam para diferentes áreas de investigação:
+
+```text
+Validação de dados → BUG-01, BUG-02 e BUG-03
+Gerenciamento de estado → BUG-05 e BUG-06
+Controle de componentes/notificações → BUG-04
+```
+
+É importante destacar que essas classificações representam **causas raiz prováveis/inferidas a partir dos comportamentos observados**, e não causas técnicas definitivamente comprovadas. A confirmação exigiria análise de código, logs, arquitetura ou evidências adicionais de implementação.
+
+### 📈 Conclusão
+
+**Dos 6 bugs identificados, 5 estão nas categorias Alta ou Média (83,3%), enquanto 1 está classificado como Baixa (16,7%).**
+
+O resultado demonstra que a suíte foi capaz de identificar problemas que ultrapassam inconsistências puramente visuais, abrangendo **busca, validação de dados, checkout, gerenciamento de estado, permissões e comportamento de componentes da interface**.
+
+A distribuição de severidade deve, entretanto, ser interpretada em conjunto com **impacto, frequência, alcance, possibilidade de reprodução e criticidade da jornada afetada**, e não apenas pela quantidade de ocorrências.
+
+---
+
+### Análise Relação entre os dois gráficos
+
+Os gráficos, analisados em conjunto, mostram duas dimensões diferentes dos achados:
+
+```text
+Gráfico Bugs por Feature → Onde os bugs foram concentrados.
+Gráfico Bugs por Severidade → Qual foi o perfil de severidade dos problemas encontrados.
+```
+
+A análise conjunta demonstra que **Comprar Ingressos concentra 50% dos bugs identificados**, e dois desses três problemas estão relacionados a comportamentos do fluxo de pagamento. Entretanto, não é possível concluir que essa Feature possua a maior taxa de defeitos da plataforma, pois não foi fornecida a quantidade total de testes executados em cada Feature para estabelecer uma relação entre **bugs encontrados e cobertura de testes**.
+
+O conjunto analisado também demonstra que a severidade não está necessariamente relacionada à quantidade de bugs de uma Feature. Por exemplo, Comprar Ingressos possui três ocorrências, com severidades **Alta, Média e Baixa**, enquanto Explorar Eventos possui uma única ocorrência classificada como **Alta**.
+
+Dessa maneira, a quantidade de bugs deve ser analisada conjuntamente com a severidade e a causa raiz. O board **Bug × Feature × Causa Raiz** complementa essa visão ao demonstrar que os problemas estão associados principalmente a padrões relacionados a **validação de dados, gerenciamento de estado e controle de componentes da interface**.
+
+Para uma análise de causa raiz mais completa, o próximo passo seria cruzar os dados em uma matriz:
+
+```text
+Feature × Testes Executados × Bugs × Severidade × Causa Raiz × Impacto
+```
+
+Esse cruzamento permitiria identificar não apenas onde os bugs foram encontrados, mas também **onde existe maior concentração de problemas em relação ao esforço de teste**, reduzindo o risco de conclusões baseadas exclusivamente na quantidade absoluta de bugs.
+
+
+
+
+
+
 
 ---
 
