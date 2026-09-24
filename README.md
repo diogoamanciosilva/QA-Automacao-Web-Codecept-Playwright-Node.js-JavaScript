@@ -1352,7 +1352,7 @@ Exemplos:
 Observação: E2E representa o escopo da jornada, e não uma categoria funcional isolada. Um mesmo cenário pode ser simultaneamente E2E, funcional, de navegação, de integridade ou de observabilidade.
 
 
-🧭 Testes de Navegação
+## 🧭 Testes de Navegação
 
 Validam a movimentação do usuário entre páginas, componentes, links e diferentes pontos de acesso da aplicação.
 
@@ -1366,7 +1366,7 @@ Exemplos:
 
 Observação: os cenários desta Feature não contemplam explicitamente a utilização dos comandos Back/Forward, histórico do navegador ou retorno entre múltiplas páginas utilizando o histórico. Essa lacuna é tratada na dimensão Compatibilidade de Navegação.
 
-🖥️ Testes de Interface (UI)
+## 🖥️ Testes de Interface (UI)
 
 Avaliam a presença, interação e comportamento dos principais componentes visuais da interface.
 
@@ -1379,7 +1379,8 @@ Exemplos:
 0055: padronização visual dos botões CTA;
 0056: consistência dos links do footer;
 0063: comportamento da interface quando as imagens não são carregadas.
-📱 Testes de Responsividade
+
+## 📱 Testes de Responsividade
 
 Avaliam o comportamento da Home em diferentes dimensões de viewport.
 
@@ -1396,7 +1397,7 @@ As resoluções utilizadas no cenário 0043 são:
 
 A cobertura de responsividade está concentrada principalmente nos cenários 0043–0044, sendo suficiente para demonstrar a dimensão, porém ainda passível de expansão para outros componentes e resoluções.
 
-♿ Testes de Acessibilidade
+## ♿ Testes de Acessibilidade
 
 Avaliam mecanismos de interação alternativos ao mouse e aspectos estruturais relacionados à acessibilidade.
 
@@ -1411,7 +1412,7 @@ Exemplos:
 
 A cobertura contempla navegação por teclado, foco, contraste, estrutura semântica e texto alternativo. Não representa, isoladamente, uma auditoria completa de conformidade WCAG.
 
-⚡ Testes de Performance
+## ⚡ Testes de Performance
 
 Avaliam o comportamento da aplicação em relação ao tempo de resposta e à eficiência de determinadas operações.
 
@@ -1422,7 +1423,7 @@ Exemplos:
 
 A cobertura de Performance é pontual. Os cenários não caracterizam uma estratégia completa de load testing, stress de infraestrutura, throughput ou teste de múltiplos usuários concorrentes.
 
-🔄 Testes de Estabilidade
+## 🔄 Testes de Estabilidade
 
 Avaliam se a aplicação permanece funcional após repetição de operações, múltiplas interações ou alterações de condições durante a execução.
 
@@ -1446,7 +1447,7 @@ Exemplos:
 
 Importante: esses cenários representam estresse de componentes e interações da aplicação. Não devem ser apresentados como testes formais de carga ou performance de infraestrutura, pois não simulam múltiplos usuários ou carga concorrente.
 
-🛡️ Testes de Robustez
+## 🛡️ Testes de Robustez
 
 Avaliam a capacidade da aplicação de lidar com entradas inesperadas, inválidas, repetitivas ou condições incomuns de execução.
 
@@ -1457,7 +1458,8 @@ Exemplos:
 0063: comportamento da interface sem carregamento das imagens;
 0054: tratamento de acesso a URL inexistente com apresentação de mensagem amigável;
 0060: comportamento da busca durante digitação contínua.
-🔎 Testes de Validação de Dados
+
+## 🔎 Testes de Validação de Dados
 
 Verificam se dados inseridos, retornados, apresentados ou utilizados pelos componentes da aplicação são tratados corretamente.
 
@@ -1481,7 +1483,8 @@ Exemplos:
 0056: integridade dos links do footer;
 0062: consistência da resposta da API utilizada para disponibilizar os eventos;
 0063: integridade funcional da interface quando imagens não são carregadas.
-🌐 Testes de Compatibilidade de Navegação
+
+## 🌐 Testes de Compatibilidade de Navegação
 
 Verificam o comportamento da aplicação diante de diferentes mecanismos e contextos de navegação.
 
@@ -1504,7 +1507,7 @@ Portanto:
 
 Precisão técnica: Compatibilidade de Navegação e Cross-Browser são dimensões diferentes. A utilização de diferentes mecanismos de interação, como teclado, cliques, abas ou resoluções, não comprova compatibilidade entre Chrome, Edge, Firefox ou Safari.
 
-🚨 Testes de Monitoramento de Erros
+## 🚨 Testes de Monitoramento de Erros
 
 Monitoram sinais de falha durante a execução e verificam se erros técnicos não são indevidamente expostos ao usuário.
 
@@ -1515,7 +1518,7 @@ Exemplos:
 
 O cenário 0037 não deve ser classificado como Monitoramento de Erros, pois seu objetivo está relacionado à estrutura, landmarks e atributos da Home.
 
-🎨 Testes de Integridade Visual
+## 🎨 Testes de Integridade Visual
 
 Avaliam se os elementos visuais permanecem consistentes após diferentes condições e interações.
 
@@ -1538,7 +1541,7 @@ O cenário verifica se a preferência de idioma permanece após o refresh ou se 
 
 Precisão técnica: esse cenário demonstra comportamento de estado/preferência após reload, mas não comprova, isoladamente, persistência em banco de dados, sessão, cookie ou armazenamento local.
 
-🔍 Observabilidade e Contrato — Analytics
+## 🔍 Observabilidade e Contrato — Analytics
 
 Avaliam se ações relevantes do usuário geram eventos de rastreamento esperados.
 
@@ -1548,7 +1551,7 @@ Exemplo:
 
 A cobertura é pontual. O cenário demonstra a existência do evento relacionado à interação, mas não caracteriza uma validação completa de contrato do Analytics contendo todos os campos, tipos, valores e schemas possíveis.
 
-🔍 Testes de SEO e Metadados
+## 🔍 Testes de SEO e Metadados
 
 Avaliam a presença e a estrutura dos principais metadados da página.
 
@@ -1559,7 +1562,7 @@ Exemplos:
 
 O cenário 0051, relacionado ao atributo alt, permanece principalmente na dimensão de Acessibilidade. Embora o atributo também possua relevância para SEO, sua validação nesta Feature está diretamente associada à acessibilidade das imagens.
 
-🔒 Testes de Segurança
+## 🔒 Testes de Segurança
 
 Avaliam a ausência de informações sensíveis e de mensagens técnicas indevidamente expostas no frontend.
 
@@ -1570,7 +1573,7 @@ Exemplos:
 
 Esses cenários representam verificações automatizadas de exposição no frontend. Não caracterizam, isoladamente, um teste completo de segurança da aplicação.
 
-🔁 Regressão
+## 🔁 Regressão
 
 A regressão não representa um conjunto separado de cenários.
 
@@ -1588,6 +1591,7 @@ mudanças nas tags de SEO;
 alterações na instrumentação de Analytics;
 mudanças na estrutura ou carregamento dos eventos.
 
+```text
 Exemplo de estratégia
 
 Alteração no sistema
@@ -1601,6 +1605,7 @@ Comparação dos resultados
 Identificação de regressões
         ↓
 RCA / Bug Report
+```
 
 ## 📊 Matriz de cobertura da suíte
 
