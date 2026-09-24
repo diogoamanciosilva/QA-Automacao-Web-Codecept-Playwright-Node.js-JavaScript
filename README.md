@@ -2872,22 +2872,34 @@ O BUG-06 também apresenta impacto sobre a configuração de permissões, uma ve
 
 As informações utilizadas neste board foram mantidas de acordo com os cenários, resultados atuais e resultados esperados apresentados nos testes analisados.
 ```
-
-
-
 ---
 
 ## 🔗 Bug × Feature × Causa Raiz
 
+| Bug    | Feature           | Severidade | Causa Raiz                                                                     |
+| ------ | ----------------- | ---------- | ------------------------------------------------------------------------------ |
+| BUG-01 | Explorar Eventos  | Alta       | Falha na normalização e/ou filtragem da busca por local                        |
+| BUG-02 | Suporte e Ajuda   | Média      | Ausência ou falha na validação do limite máximo de caracteres                  |
+| BUG-03 | Comprar Ingressos | Média      | Ausência de validação do limite máximo do campo E-mail                         |
+| BUG-04 | Comprar Ingressos | Baixa      | Falha no controle/deduplicação das notificações Toast                          |
+| BUG-05 | Comprar Ingressos | Alta       | Falha na preservação do estado do checkout após alternância de abas            |
+| BUG-06 | Publicar Eventos  | Média      | Falha na persistência do estado do template durante a alteração das permissões |
+
+Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra três dos seis bugs identificados**, sendo também a única Feature com mais de uma ocorrência no conjunto analisado. Os demais bugs estão distribuídos entre **Explorar Eventos, Suporte e Ajuda e Publicar Eventos**.
+
+Em relação às causas raiz, os problemas estão associados principalmente a **validação de dados, gerenciamento de estado e controle de componentes da interface**. O BUG-02 e o BUG-03 apresentam um padrão relacionado à ausência ou insuficiência de validação de limites de entrada, enquanto o BUG-05 e o BUG-06 envolvem problemas relacionados à preservação do estado da aplicação.
+
+### 🔗 Conclusão
+
+A análise demonstra que os bugs não estão concentrados exclusivamente em problemas visuais. O conjunto apresenta diferentes padrões técnicos, envolvendo **processamento de dados de busca, validação de entradas, gerenciamento de notificações e persistência de estado**.
+
+A Feature **Comprar Ingressos** merece atenção especial na análise de RCA por concentrar **três ocorrências distintas**, incluindo um problema relacionado ao estado do checkout após alternância de abas. Já os BUG-02 e BUG-03 indicam uma oportunidade de fortalecer as validações de limites de entrada em diferentes pontos da plataforma.
+
+> **Nota de RCA:** as causas apresentadas neste board representam a **causa raiz provável/inferida a partir dos comportamentos observados nos cenários de teste**. A confirmação da causa raiz técnica exigiria análise do código, logs, arquitetura ou evidências adicionais de implementação.
+
 
 ---
 
-
-
-
-
-
----
 ## 📊 Análise da Suíte de Testes
 
 
