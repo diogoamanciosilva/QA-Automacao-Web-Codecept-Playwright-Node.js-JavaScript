@@ -531,102 +531,103 @@ O conjunto completo funciona como base de regressão contínua: qualquer altera�
 
 ---
 
-##  🔍 Feature Explorar Eventos
+# Suíte de Testes Automatizados — FasTix (Parte 1)
 
+> 📌 **Nota de revisão:** este documento aplica as correções de coerência e padronização identificadas na revisão geral da suíte — tabelas de cenários corrigidas para coluna única, nomes de dimensão unificados entre título de seção e matriz, nível de heading padronizado (H2 para todas as seções de "Regressão" e "Matriz de cobertura"), e legendas padronizadas em formato de tabela.
 
-| Feature | 
-| ------------------------- | 
-| Feature_Explorar Eventos | 
-| 0001 - Acessar a página de eventos (Botão: Explorar eventos) | |
-| 0002 - Acessar a página de eventos (segunda opção de acesso via ícone fast-forward) | |
-| 0003 - Acessar a página de eventos (Botão: Explorar eventos) e verificar a navegação por scroll | |
-| 0004 - Acessar a página de eventos (segunda opção de acesso via ícone fast-forward) e verificar a navegação por scroll | |
-| 0005 - Buscar uma cidade (São Paulo) no campo de pesquisa por evento (Botão: Explorar eventos) | |
-| 0006 - Buscar uma cidade (São Paulo) no campo de pesquisa por evento (segunda opção de acesso via ícone fast-forward) | |
-| 0007 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (Botão: Explorar eventos) | |
-| 0008 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) | |
-| 0009 - Buscar um local (Fabrique Club) no campo de pesquisa (Botão: Explorar eventos) | |
-| 0010 - Buscar um local (Cine Joia) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) | |
-| 0011 - Buscar um evento (Buffalo Tom em São Paulo) e visualizar suas informações no campo de pesquisa (Botão: Explorar eventos) | |
-| 0012 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) | |
-| 0013 - Visualizar os campos 'Sobre o evento', clicar em 'Leia mais' e 'Mostrar menos' | |
-| 0014 - Acessar o campo 'Localização' e abrir o endereço clicando em 'Abrir no Google Maps' | |
-| 0015 - Acessar o endereço no Google Maps e retornar para a página do evento (Buffalo Tom em São Paulo) | |
-| 0016 - Acessar o campo 'Localização', clicar em 'Ver mais' e acessar a página | |
-| 0017 - Acessar a página 'Ver mais' e clicar no ícone abaixo do evento para retornar à página do evento | |
-| 0018 - Acessar a página do evento (Buffalo Tom em São Paulo) e clicar no ícone do Google Maps ao lado do título 'Cine Joia' | |
-| 0019 - Acessar a página do Google Maps, depois, retornar para a página do evento (Buffalo Tom em São Paulo) | |
-| 0020 - Acessar a página de Política de Compra (via acesso superior da página) e verificar a navegação por scroll | |
-| 0021 - Acessar a página de Termos de Uso (via acesso superior da página) e verificar a navegação por scroll | |
-| 0022 - Acessar a página de Política de Compra (via acesso inferior da página) e verificar a navegação por scroll | |
-| 0023 - Acessar a página de Termos de Uso (via acesso inferior da página) e verificar a navegação por scroll | |
-| 0024 - Acessar a página de Meia-Entrada e verificar a navegação por scroll | |
-| 0025 - Acessar a página de Guia Check-in e verificar a navegação por scroll | |
-| 0026 - Acessar as opções 'App Fastix (Recomendado)' e 'Web' do 'Guia Check-in' | |
-| 0027 - Acesso simultâneo entre os campos 'Meia Entrada', 'Política de Compra', 'Termos de Uso' | |
-| 0028 - No campo 'Termos de Uso', acessar o tópico '2. Aceite dos Termos' e acessar o link 'Política de Compra' | |
-| 0029 - No campo 'Termos de Uso', acessar o tópico '2. Aceite dos Termos' e acessar o link 'Política de Meia-entrada e ingressos Acessíveis' | |
-| 0030 - No campo 'Termos de Uso', acessar o tópico '9. Operação, Isenções e Limitação de Responsabilidade' e acessar o link 'Política de Compra' | |
-| 0031 - No campo 'Termos de Uso', acessar o tópico '13. Comunicações Eletrônicas' e acessar o link 'Política de Compra' | |
-| 0032 - No campo 'Política de Compra', acessar o tópico '1. INTRODUÇÃO' e acessar o link 'Termos de Uso' | |
-| 0033 - No campo 'Política de Compra', acessar o tópico '1. INTRODUÇÃO' e acessar o link 'Política de Meia-Entrada e Ingressos Acessíveis' | |
-| 0034 - No campo 'Política de Compra', acessar o tópico '2. SUA CONTA E REGISTRO' e acessar o link 'Termos de Uso' | |
-| 0035 - Validar campo de pesquisa por evento, local e cidade utilizando termo inexistente: 'Testando Fastix' | |
-| 0036 - Validar campo de pesquisa por evento, local e cidade utilizando caracteres especiais | |
-| 0037 - Validar o campo de pesquisa por evento, local e cidade utilizando 10 vezes cada caractere especial | |
-| 0038 - Validar o campo de pesquisa por evento, local e cidade utilizando números | |
-| 0039 - Validar o campo de pesquisa por evento, local e cidade com variações de caracteres especiais | |
-| 0040 - Validar o campo de pesquisa por evento, local e cidade com combinação de números e caracteres especiais | |
-| 0041 - Navegação entre eventos no carrossel utilizando o botão de controle por ícone (Botão voltar) | |
-| 0042 - Navegação entre eventos no carrossel utilizando o botão de controle por ícone (Botão avançar) | |
-| 0043 - Navegação entre eventos no carrossel utilizando os botões de voltar e avançar (10x voltar + 10x avançar) | |
-| 0044 - Navegação de Stress no carrossel + acesso ao evento 'Buffalo Tom em São Paulo' | |
-| 0045 - Navegação de stress no carrossel, acesso ao evento e retorno à home page | |
-| 0046 - Validar estabilidade da busca sob stress | |
-| 0047 - Validar comportamento do sistema sob duplo clique e múltiplos cliques consecutivos | |
-| 0048 - Validar navegação utilizando back e forward do navegador | |
-| 0049 - Validar recuperação da aplicação após refresh durante interação | |
-| 0050 - Stress de refresh durante interação contínua | |
-| 0051 - Validar responsividade da aplicação em dispositivos mobile, tablet e desktop ultrawide | |
-| 0052 - Validar navegação utilizando apenas teclado | |
-| 0053 - Validar atualização correta dos conteúdos do carrossel | |
-| 0054 - Validar comportamento visual, navegação, estabilidade, integridade e stress do carrossel de eventos | |
-| 0055 - Validar acessos simultâneos dos links institucionais, aplicativos e redes sociais no rodapé do evento | |
-| 0056 - Validar abertura e navegação entre múltiplas abas externas e internas | |
-| 0057 - Validar a recuperação do sistema após uma busca inválida e sem resultados | |
-| 0058 - Input extremo: validar comportamento da busca com entradas extremas | |
-| 0059 - Validar tempo de resposta da aplicação | |
-| 0060 - Validar estabilidade da aplicação durante scroll agressivo | |
-| 0061 - Validar integridade do conteúdo dinâmico dos cards de eventos | |
-| 0062 - Validar a integridade das imagens da plataforma na página 'Explorar Eventos' | |
-| 0063 - Validar ausência de erros críticos no console da aplicação | |
-| 0064 - Validar estabilidade da aplicação durante sessão longa | |
-| 0065 - Validar estabilidade da aplicação após múltiplos reloads consecutivos | |
-| 0066 - Validar comportamento da página de explorar eventos após interrupções inesperadas | |
-| 0067 - Validar gerenciamento correto de foco da aplicação na página de 'Explorar eventos' | |
-| 0068 - Validar navegação utilizando apenas TAB na página 'Explorar Eventos' | |
-| 0069 - Validar filtros e navegação da página 'Explorar Eventos' | |
-| 0070 - Validar integridade do footer após múltiplas interações | |
-| **Total** | **70** |
+## 🔍 Feature Explorar Eventos
+
+| Feature |
+| --- |
+| Feature_Explorar Eventos |
+| 0001 - Acessar a página de eventos (Botão: Explorar eventos) |
+| 0002 - Acessar a página de eventos (segunda opção de acesso via ícone fast-forward) |
+| 0003 - Acessar a página de eventos (Botão: Explorar eventos) e verificar a navegação por scroll |
+| 0004 - Acessar a página de eventos (segunda opção de acesso via ícone fast-forward) e verificar a navegação por scroll |
+| 0005 - Buscar uma cidade (São Paulo) no campo de pesquisa por evento (Botão: Explorar eventos) |
+| 0006 - Buscar uma cidade (São Paulo) no campo de pesquisa por evento (segunda opção de acesso via ícone fast-forward) |
+| 0007 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (Botão: Explorar eventos) |
+| 0008 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) |
+| 0009 - Buscar um local (Fabrique Club) no campo de pesquisa (Botão: Explorar eventos) |
+| 0010 - Buscar um local (Cine Joia) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) |
+| 0011 - Buscar um evento (Buffalo Tom em São Paulo) e visualizar suas informações no campo de pesquisa (Botão: Explorar eventos) |
+| 0012 - Buscar um evento (Buffalo Tom em São Paulo) no campo de pesquisa (segunda opção de acesso via ícone fast-forward) |
+| 0013 - Visualizar os campos 'Sobre o evento', clicar em 'Leia mais' e 'Mostrar menos' |
+| 0014 - Acessar o campo 'Localização' e abrir o endereço clicando em 'Abrir no Google Maps' |
+| 0015 - Acessar o endereço no Google Maps e retornar para a página do evento (Buffalo Tom em São Paulo) |
+| 0016 - Acessar o campo 'Localização', clicar em 'Ver mais' e acessar a página |
+| 0017 - Acessar a página 'Ver mais' e clicar no ícone abaixo do evento para retornar à página do evento |
+| 0018 - Acessar a página do evento (Buffalo Tom em São Paulo) e clicar no ícone do Google Maps ao lado do título 'Cine Joia' |
+| 0019 - Acessar a página do Google Maps, depois, retornar para a página do evento (Buffalo Tom em São Paulo) |
+| 0020 - Acessar a página de Política de Compra (via acesso superior da página) e verificar a navegação por scroll |
+| 0021 - Acessar a página de Termos de Uso (via acesso superior da página) e verificar a navegação por scroll |
+| 0022 - Acessar a página de Política de Compra (via acesso inferior da página) e verificar a navegação por scroll |
+| 0023 - Acessar a página de Termos de Uso (via acesso inferior da página) e verificar a navegação por scroll |
+| 0024 - Acessar a página de Meia-Entrada e verificar a navegação por scroll |
+| 0025 - Acessar a página de Guia Check-in e verificar a navegação por scroll |
+| 0026 - Acessar as opções 'App Fastix (Recomendado)' e 'Web' do 'Guia Check-in' |
+| 0027 - Acesso simultâneo entre os campos 'Meia Entrada', 'Política de Compra', 'Termos de Uso' |
+| 0028 - No campo 'Termos de Uso', acessar o tópico '2. Aceite dos Termos' e acessar o link 'Política de Compra' |
+| 0029 - No campo 'Termos de Uso', acessar o tópico '2. Aceite dos Termos' e acessar o link 'Política de Meia-entrada e ingressos Acessíveis' |
+| 0030 - No campo 'Termos de Uso', acessar o tópico '9. Operação, Isenções e Limitação de Responsabilidade' e acessar o link 'Política de Compra' |
+| 0031 - No campo 'Termos de Uso', acessar o tópico '13. Comunicações Eletrônicas' e acessar o link 'Política de Compra' |
+| 0032 - No campo 'Política de Compra', acessar o tópico '1. INTRODUÇÃO' e acessar o link 'Termos de Uso' |
+| 0033 - No campo 'Política de Compra', acessar o tópico '1. INTRODUÇÃO' e acessar o link 'Política de Meia-Entrada e Ingressos Acessíveis' |
+| 0034 - No campo 'Política de Compra', acessar o tópico '2. SUA CONTA E REGISTRO' e acessar o link 'Termos de Uso' |
+| 0035 - Validar campo de pesquisa por evento, local e cidade utilizando termo inexistente: 'Testando Fastix' |
+| 0036 - Validar campo de pesquisa por evento, local e cidade utilizando caracteres especiais |
+| 0037 - Validar o campo de pesquisa por evento, local e cidade utilizando 10 vezes cada caractere especial |
+| 0038 - Validar o campo de pesquisa por evento, local e cidade utilizando números |
+| 0039 - Validar o campo de pesquisa por evento, local e cidade com variações de caracteres especiais |
+| 0040 - Validar o campo de pesquisa por evento, local e cidade com combinação de números e caracteres especiais |
+| 0041 - Navegação entre eventos no carrossel utilizando o botão de controle por ícone (Botão voltar) |
+| 0042 - Navegação entre eventos no carrossel utilizando o botão de controle por ícone (Botão avançar) |
+| 0043 - Navegação entre eventos no carrossel utilizando os botões de voltar e avançar (10x voltar + 10x avançar) |
+| 0044 - Navegação de Stress no carrossel + acesso ao evento 'Buffalo Tom em São Paulo' |
+| 0045 - Navegação de stress no carrossel, acesso ao evento e retorno à home page |
+| 0046 - Validar estabilidade da busca sob stress |
+| 0047 - Validar comportamento do sistema sob duplo clique e múltiplos cliques consecutivos |
+| 0048 - Validar navegação utilizando back e forward do navegador |
+| 0049 - Validar recuperação da aplicação após refresh durante interação |
+| 0050 - Stress de refresh durante interação contínua |
+| 0051 - Validar responsividade da aplicação em dispositivos mobile, tablet e desktop ultrawide |
+| 0052 - Validar navegação utilizando apenas teclado |
+| 0053 - Validar atualização correta dos conteúdos do carrossel |
+| 0054 - Validar comportamento visual, navegação, estabilidade, integridade e stress do carrossel de eventos |
+| 0055 - Validar acessos simultâneos dos links institucionais, aplicativos e redes sociais no rodapé do evento |
+| 0056 - Validar abertura e navegação entre múltiplas abas externas e internas |
+| 0057 - Validar a recuperação do sistema após uma busca inválida e sem resultados |
+| 0058 - Input extremo: validar comportamento da busca com entradas extremas |
+| 0059 - Validar tempo de resposta da aplicação |
+| 0060 - Validar estabilidade da aplicação durante scroll agressivo |
+| 0061 - Validar integridade do conteúdo dinâmico dos cards de eventos |
+| 0062 - Validar a integridade das imagens da plataforma na página 'Explorar Eventos' |
+| 0063 - Validar ausência de erros críticos no console da aplicação |
+| 0064 - Validar estabilidade da aplicação durante sessão longa |
+| 0065 - Validar estabilidade da aplicação após múltiplos reloads consecutivos |
+| 0066 - Validar comportamento da página de explorar eventos após interrupções inesperadas |
+| 0067 - Validar gerenciamento correto de foco da aplicação na página de 'Explorar eventos' |
+| 0068 - Validar navegação utilizando apenas TAB na página 'Explorar Eventos' |
+| 0069 - Validar filtros e navegação da página 'Explorar Eventos' |
+| 0070 - Validar integridade do footer após múltiplas interações |
+| **Total: 70 cenários** |
 
 Todos os testes foram classificados considerando diferentes dimensões de teste. Essa abordagem evita tratar conceitos distintos como E2E, Regressão, Acessibilidade e Stress como se fossem categorias equivalentes.
 
 ### 📌 Dimensões de cobertura
 
-| Dimensão                        | Categorias                                                                                  | Objetivo                                                                                              |
-| ------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Escopo**                      | E2E                                                                                         | Validar jornadas completas atravessando diferentes páginas e componentes                              |
-| **Objetivo funcional**          | Funcionais, Validação de Dados, Integridade                                                 | Verificar comportamentos esperados, dados apresentados e consistência das informações                 |
-| **Qualidade da aplicação**      | UI, Responsividade, Acessibilidade, Performance, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais                                       |
-| **Condição / técnica de teste** | Estresse, Compatibilidade de Navegação                                                      | Exercitar a aplicação sob condições repetitivas, intensivas ou diferentes formas de navegação         |
-| **Resiliência**                 | Monitoramento de Erros, Recuperação de Estado                                               | Avaliar comportamento diante de erros, reloads, interrupções e operações inesperadas                  |
-| **Finalidade de execução**      | Regressão                                                                                   | Reexecutar cenários existentes para identificar possíveis impactos causados por alterações no sistema |
+| Dimensão | Categorias | Objetivo |
+| --- | --- | --- |
+| **Escopo** | E2E | Validar jornadas completas atravessando diferentes páginas e componentes |
+| **Objetivo funcional** | Funcionais, Validação de Dados, Integridade | Verificar comportamentos esperados, dados apresentados e consistência das informações |
+| **Qualidade da aplicação** | UI, Responsividade, Acessibilidade, Performance, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais |
+| **Condição / técnica de teste** | Estresse, Compatibilidade de Navegação | Exercitar a aplicação sob condições repetitivas, intensivas ou diferentes formas de navegação |
+| **Resiliência** | Monitoramento de Erros, Recuperação de Estado | Avaliar comportamento diante de erros, reloads, interrupções e operações inesperadas |
+| **Finalidade de execução** | Regressão | Reexecutar cenários existentes para identificar possíveis impactos causados por alterações no sistema |
 
----
+### 🧪 Cobertura funcional e E2E
 
-## 🧪 Cobertura funcional e E2E
-
-### Testes Funcionais
+#### Testes Funcionais
 
 Validam se as funcionalidades disponíveis na aplicação apresentam o comportamento esperado.
 
@@ -640,7 +641,7 @@ Validam se as funcionalidades disponíveis na aplicação apresentam o comportam
 * **0041–0043:** interação com os controles do carrossel;
 * **0069:** filtragem e navegação.
 
-### Testes End-to-End (E2E)
+#### Testes End-to-End (E2E)
 
 Validam jornadas completas envolvendo múltiplos componentes ou páginas da aplicação.
 
@@ -654,9 +655,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas da apli
 
 > **Observação:** E2E representa o **escopo da jornada**, e não uma categoria funcional isolada. Um mesmo cenário E2E também pode ser funcional, de navegação, de robustez ou de recuperação.
 
----
-
-## 🧭 Testes de Navegação
+### 🧭 Testes de Navegação
 
 Validam a movimentação do usuário entre páginas, componentes, links, histórico do navegador e diferentes pontos de acesso.
 
@@ -670,9 +669,7 @@ Validam a movimentação do usuário entre páginas, componentes, links, histór
 * **0055–0056:** navegação através de links e múltiplas abas;
 * **0067–0068:** navegação utilizando foco e teclado.
 
----
-
-## 🖥️ Testes de Interface (UI)
+### 🖥️ Testes de Interface (UI)
 
 Avaliam a presença, interação e comportamento dos principais componentes da interface.
 
@@ -686,9 +683,7 @@ Avaliam a presença, interação e comportamento dos principais componentes da i
 * **0062:** imagens;
 * **0070:** integridade dos elementos do footer.
 
----
-
-## 📱 Testes de Responsividade
+### 📱 Testes de Responsividade
 
 Avaliam o comportamento da aplicação em diferentes dimensões de viewport.
 
@@ -698,21 +693,9 @@ O cenário **0051** realiza uma validação específica utilizando:
 * **768 × 1024 — Tablet**
 * **2560 × 1440 — Desktop Ultrawide**
 
-Durante a execução são avaliados elementos como:
+Durante a execução são avaliados elementos como: visibilidade de eventos, carrossel, navegação, overflow, componentes da interface, footer, acesso à página do evento, refresh, e ausência de mensagens de erro.
 
-* visibilidade de eventos;
-* carrossel;
-* navegação;
-* overflow;
-* componentes da interface;
-* footer;
-* acesso à página do evento;
-* refresh;
-* ausência de mensagens de erro.
-
----
-
-## ♿ Testes de Acessibilidade
+### ♿ Testes de Acessibilidade
 
 Avaliam a capacidade de interação com a aplicação utilizando mecanismos alternativos ao mouse.
 
@@ -722,19 +705,9 @@ Avaliam a capacidade de interação com a aplicação utilizando mecanismos alte
 * **0067:** gerenciamento e comportamento do foco;
 * **0068:** navegação utilizando exclusivamente TAB.
 
-Os cenários verificam elementos como:
+Os cenários verificam elementos como foco, sequência de navegação, utilização de TAB, Shift+TAB, Enter, Space, e interação com elementos da interface sem depender exclusivamente do mouse.
 
-* foco;
-* sequência de navegação;
-* utilização de TAB;
-* Shift + TAB;
-* Enter;
-* Space;
-* interação com elementos da interface sem depender exclusivamente do mouse.
-
----
-
-## ⚡ Testes de Performance
+### ⚡ Testes de Performance
 
 Avaliam o comportamento da aplicação em relação ao tempo de resposta durante operações específicas.
 
@@ -744,9 +717,7 @@ Avaliam o comportamento da aplicação em relação ao tempo de resposta durante
 
 > A suíte possui uma cobertura de performance **pontual**, não caracterizando uma estratégia completa de performance/load testing. Para um projeto futuro, poderiam ser adicionados testes específicos de carga, volume e throughput.
 
----
-
-## 🔄 Testes de Estabilidade
+### 🔄 Testes de Estabilidade
 
 Avaliam se a aplicação permanece funcional após repetição de operações, múltiplas interações, reloads ou períodos prolongados de utilização.
 
@@ -761,9 +732,7 @@ Avaliam se a aplicação permanece funcional após repetição de operações, m
 * **0065:** múltiplos reloads;
 * **0066:** recuperação após interrupção inesperada.
 
----
-
-## 🔥 Testes de Estresse (Stress Testing)
+### 🔥 Testes de Estresse (Stress Testing)
 
 Submetem determinados componentes a operações repetitivas ou intensivas para verificar seu comportamento sob condições mais agressivas.
 
@@ -779,9 +748,7 @@ Submetem determinados componentes a operações repetitivas ou intensivas para v
 
 > **Importante:** esses cenários caracterizam stress/robustez de componentes da aplicação. Eles não devem ser apresentados como um teste formal de **load/performance**, pois não simulam múltiplos usuários ou carga concorrente de infraestrutura.
 
----
-
-## 🛡️ Testes de Robustez
+### 🛡️ Testes de Robustez
 
 Avaliam a capacidade da aplicação de lidar com entradas inesperadas, inválidas, extremas ou sequências incomuns de interação.
 
@@ -797,9 +764,7 @@ Avaliam a capacidade da aplicação de lidar com entradas inesperadas, inválida
 * **0058:** entrada extrema;
 * **0066:** interrupção inesperada.
 
----
-
-## 🔎 Testes de Validação de Dados
+### 🔎 Testes de Validação de Dados
 
 Verificam se os dados inseridos, pesquisados, retornados ou apresentados pela aplicação são tratados corretamente.
 
@@ -813,9 +778,7 @@ Verificam se os dados inseridos, pesquisados, retornados ou apresentados pela ap
 * **0061:** validação dos dados exibidos nos cards;
 * **0069:** filtros e resultados.
 
----
-
-## 🔐 Testes de Integridade
+### 🔐 Testes de Integridade
 
 Avaliam se os dados e componentes permanecem consistentes após diferentes operações.
 
@@ -827,9 +790,7 @@ Avaliam se os dados e componentes permanecem consistentes após diferentes opera
 * **0062:** integridade das imagens;
 * **0070:** integridade do footer após múltiplas interações.
 
----
-
-## 🌐 Testes de Compatibilidade de Navegação
+### 🌐 Testes de Compatibilidade de Navegação
 
 Verificam se diferentes mecanismos de navegação continuam funcionando corretamente em diferentes contextos de interação.
 
@@ -844,9 +805,7 @@ Verificam se diferentes mecanismos de navegação continuam funcionando corretam
 
 > Essa categoria representa **compatibilidade entre diferentes mecanismos de navegação**, e não compatibilidade entre diferentes browsers. A suíte atual não demonstra, pelos cenários analisados, uma estratégia completa de cross-browser testing.
 
----
-
-## 🚨 Testes de Monitoramento de Erros
+### 🚨 Testes de Monitoramento de Erros
 
 Monitoram sinais de falhas durante a execução e verificam a ausência de mensagens de erro conhecidas.
 
@@ -857,9 +816,7 @@ Monitoram sinais de falhas durante a execução e verificam a ausência de mensa
 * **0053–0054:** ausência de mensagens como `Application error`, `Internal Server Error` e `Unexpected error`;
 * **0063:** monitoramento de erros no console.
 
----
-
-## 🎨 Testes de Integridade Visual
+### 🎨 Testes de Integridade Visual
 
 Avaliam se elementos visuais permanecem íntegros após diferentes interações.
 
@@ -870,9 +827,7 @@ Avaliam se elementos visuais permanecem íntegros após diferentes interações.
 * **0062:** validação da integridade das imagens;
 * **0070:** integridade visual do footer.
 
----
-
-## 🔄 Recuperação e Estado da Aplicação
+### 🔄 Recuperação e Estado da Aplicação
 
 Nos cenários analisados, existem testes relacionados à manutenção e recuperação do estado da aplicação após determinadas operações.
 
@@ -886,26 +841,15 @@ Nos cenários analisados, existem testes relacionados à manutenção e recupera
 
 > **Precisão técnica:** esses cenários são melhor descritos como **testes de recuperação/resiliência e gerenciamento de estado**. Eles não comprovam, isoladamente, persistência de dados de negócio em banco, sessão ou armazenamento local.
 
----
-
-## 🔁 Regressão
+### 🔁 Regressão
 
 A **regressão não representa um conjunto separado de cenários**.
 
-Os 70 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após:
-
-* novas funcionalidades;
-* alterações de UI;
-* alterações de navegação;
-* correções de bugs;
-* alterações no carrossel;
-* alterações de responsividade;
-* alterações de componentes;
-* mudanças estruturais nas páginas.
+Os 70 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após: novas funcionalidades; alterações de UI; alterações de navegação; correções de bugs; alterações no carrossel; alterações de responsividade; alterações de componentes; mudanças estruturais nas páginas.
 
 A ideia é verificar se uma alteração introduzida no sistema provocou efeitos colaterais em comportamentos que anteriormente funcionavam.
 
-### Exemplo de estratégia
+**Exemplo de estratégia:**
 
 ```text
 Alteração no sistema
@@ -920,36 +864,33 @@ Identificação de regressões
         ↓
 RCA / Bug Report
 ```
----
 
-## 📊 Matriz de cobertura da suíte
+### 📊 Matriz de cobertura da suíte
 
-Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz resumida:
+| Dimensão | Cenários principais | Cobertura |
+| --- | --- | --- |
+| **E2E** | 0001, 0011, 0015, 0045, 0057 | 🟢 |
+| **Funcional** | 0001–0045, 0069 | 🟢 |
+| **Regressão** | 0001–0070 | 🟢 |
+| **Navegação** | 0001–0004, 0014–0034, 0041–0048, 0055–0056 | 🟢 |
+| **UI** | 0013, 0026, 0041–0043, 0051, 0061–0062, 0070 | 🟢 |
+| **Responsividade** | 0051 | 🟢 |
+| **Acessibilidade** | 0052, 0067–0068 | 🟢 |
+| **Performance** | 0059 | 🟡 |
+| **Estabilidade** | 0046, 0049–0050, 0054, 0060, 0064–0066 | 🟢 |
+| **Estresse** | 0044–0047, 0050, 0054, 0058 | 🟢 |
+| **Robustez** | 0035–0040, 0046–0050, 0057–0058, 0060, 0064–0066 | 🟢 |
+| **Validação de Dados** | 0005–0012, 0035–0040, 0057–0058, 0061, 0069 | 🟢 |
+| **Integridade** | 0053–0054, 0061–0062, 0070 | 🟢 |
+| **Compatibilidade de Navegação** | 0048, 0051–0052, 0055–0056, 0067–0068 | 🟢 |
+| **Monitoramento de Erros** | 0039–0040, 0053–0054, 0063 | 🟢 |
+| **Integridade Visual** | 0051, 0054, 0062, 0070 | 🟢 |
+| **Recuperação/Estado** | 0049–0050, 0057, 0065–0066 | 🟢 |
 
-| Dimensão                         | Cenários principais                              | Cobertura |
-| -------------------------------- | ------------------------------------------------ | --------- |
-| **E2E**                          | 0001, 0011, 0015, 0045, 0057                     | 🟢        |
-| **Funcional**                    | 0001–0045, 0069                                  | 🟢        |
-| **Regressão**                    | 0001–0070                                        | 🟢        |
-| **Navegação**                    | 0001–0004, 0014–0034, 0041–0048, 0055–0056       | 🟢        |
-| **UI**                           | 0013, 0026, 0041–0043, 0051, 0061–0062, 0070     | 🟢        |
-| **Responsividade**               | 0051                                             | 🟢        |
-| **Acessibilidade**               | 0052, 0067–0068                                  | 🟢        |
-| **Performance**                  | 0059                                             | 🟡        |
-| **Estabilidade**                 | 0046, 0049–0050, 0054, 0060, 0064–0066           | 🟢        |
-| **Estresse**                     | 0044–0047, 0050, 0054, 0058                      | 🟢        |
-| **Robustez**                     | 0035–0040, 0046–0050, 0057–0058, 0060, 0064–0066 | 🟢        |
-| **Validação de Dados**           | 0005–0012, 0035–0040, 0057–0058, 0061, 0069      | 🟢        |
-| **Integridade**                  | 0053–0054, 0061–0062, 0070                       | 🟢        |
-| **Compatibilidade de Navegação** | 0048, 0051–0052, 0055–0056, 0067–0068            | 🟢        |
-| **Monitoramento de Erros**       | 0039–0040, 0053–0054, 0063                       | 🟢        |
-| **Integridade Visual**           | 0051, 0054, 0062, 0070                           | 🟢        |
-| **Recuperação/Estado**           | 0049–0050, 0057, 0065–0066                       | 🟢        |
-
-### Legenda
+**Legenda:**
 
 | Indicador | Classificação |
-| ------------------------- | ------------------------- |
+| --- | --- |
 | 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
 | 🟡 | Cobertura presente, porém pontual e passível de expansão |
 
@@ -958,7 +899,7 @@ Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz re
 ## 🔍 Feature Suporte e Ajuda
 
 | Feature |
-| ------------------------- |
+| --- |
 | Feature_Suporte e Ajuda |
 | 0001 - Acessar a página de Suporte e Ajuda pela página principal |
 | 0002 - Acessar a página de Suporte e Ajuda e navegar até o footer |
@@ -1035,7 +976,7 @@ Para deixar o seu portfólio ainda mais profissional, eu incluiria uma matriz re
 | 0073 - Validar consistência das OG tags entre browser e crawler headless |
 | 0074 - Garantir acessibilidade básica dos campos do formulário (label ou ARIA) |
 | 0075 - Validar exposição de scripts e possíveis leaks de dados sensíveis no HTML |
-| **Total** | **75** |
+| **Total: 75 cenários** |
 
 Assim como na Feature Explorar Eventos, todos os testes foram classificados considerando diferentes dimensões de teste, evitando tratar conceitos distintos (E2E, Regressão, Acessibilidade, Stress, SEO, Segurança) como categorias equivalentes.
 
@@ -1048,15 +989,14 @@ Assim como na Feature Explorar Eventos, todos os testes foram classificados cons
 | **Qualidade da aplicação** | UI, Responsividade, Acessibilidade, Performance, Estabilidade, Robustez, Integridade Visual | Avaliar características de qualidade além das regras funcionais |
 | **Condição / técnica de teste** | Estresse, Compatibilidade de Navegação | Exercitar a aplicação sob condições repetitivas, intensivas ou diferentes formas de navegação |
 | **Resiliência** | Monitoramento de Erros, Recuperação de Estado | Avaliar comportamento diante de erros, reloads e interrupções |
-| **Observabilidade e Contrato** | Analytics (dataLayer), SEO / Metadados | Verificar se dados de rastreamento e metadados de página seguem um contrato/schema esperado — dimensão específica desta feature, ausente na Explorar Eventos |
+| **Observabilidade e Analytics (dataLayer)** | Contrato de eventos | Verificar se dados de rastreamento seguem um schema esperado — dimensão específica desta feature, ausente na Explorar Eventos |
+| **SEO e Metadados** | Title, meta description, keywords, OG tags | Verificar se os metadados da página seguem o esperado — dimensão específica desta feature |
 | **Segurança** | Exposição de dados sensíveis | Verificar ausência de vazamento de credenciais, tokens ou chaves no HTML/scripts renderizados — dimensão específica desta feature |
 | **Finalidade de execução** | Regressão | Reexecutar cenários existentes para identificar impactos causados por alterações no sistema |
 
----
+### 🧪 Cobertura funcional e E2E
 
-## 🧪 Cobertura funcional e E2E
-
-### Testes Funcionais
+#### Testes Funcionais
 
 Validam se as funcionalidades disponíveis na página apresentam o comportamento esperado.
 
@@ -1068,7 +1008,7 @@ Validam se as funcionalidades disponíveis na página apresentam o comportamento
 * **0025–0029:** ícones e links do footer (LinkedIn, Instagram, X, Email, WebSolutionsFL);
 * **0040:** colagem de conteúdo no campo Mensagem.
 
-### Testes End-to-End (E2E)
+#### Testes End-to-End (E2E)
 
 Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
@@ -1080,9 +1020,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
 > **Observação:** assim como na Feature Explorar Eventos, E2E representa o **escopo da jornada**, não uma categoria funcional isolada.
 
----
-
-## 🧭 Testes de Navegação
+### 🧭 Testes de Navegação
 
 **Exemplos:**
 
@@ -1090,9 +1028,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0015–0029:** navegação por cards de ajuda, páginas institucionais e ícones do footer;
 * **0052–0055:** botão voltar do navegador, menu superior, e botões Entrar/Criar Conta.
 
----
-
-## 🖥️ Testes de Interface (UI)
+### 🖥️ Testes de Interface (UI)
 
 **Exemplos:**
 
@@ -1101,18 +1037,14 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0032:** indicação visual de foco;
 * **0059–0060:** integridade visual do footer.
 
----
-
-## 📱 Testes de Responsividade
+### 📱 Testes de Responsividade
 
 **Exemplos:**
 
 * **0047:** validação em 4 resoluções — Desktop (1920×1080), Laptop (1366×768), Tablet (768×1024), Mobile (375×667);
 * **0060:** footer especificamente validado em Desktop (1280×720) e Mobile (375×812).
 
----
-
-## ♿ Testes de Acessibilidade
+### ♿ Testes de Acessibilidade
 
 **Exemplos:**
 
@@ -1122,9 +1054,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0033:** acesso ao footer via TAB (até 120 tabs), validando que links possuem `href` funcional;
 * **0074:** presença de `label`/`aria-label` nos campos do formulário.
 
----
-
-## ⚡ Testes de Performance
+### ⚡ Testes de Performance
 
 **Exemplos:**
 
@@ -1134,9 +1064,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
 > Assim como na feature de referência, a cobertura de performance é **pontual**, focada em tempo de navegação e carregamento — não caracteriza uma estratégia completa de load/stress de infraestrutura.
 
----
-
-## 🔄 Testes de Estabilidade
+### 🔄 Testes de Estabilidade
 
 **Exemplos:**
 
@@ -1147,9 +1075,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0056–0057:** múltiplos acessos consecutivos (5x), incluindo variante com footer e liberação forçada de memória;
 * **0065–0066:** testes anti-flaky do formulário, incluindo cálculo de taxa de flakiness (`flakinessRate`) com limite de 10%.
 
----
-
-## 🔥 Testes de Estresse (Stress Testing)
+### 🔥 Testes de Estresse (Stress Testing)
 
 **Exemplos:**
 
@@ -1162,9 +1088,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
 > **Importante:** assim como na Explorar Eventos, esses cenários caracterizam stress/robustez de componentes da página — não simulam carga concorrente de múltiplos usuários nem substituem uma ferramenta dedicada de load testing.
 
----
-
-## 🛡️ Testes de Robustez
+### 🛡️ Testes de Robustez
 
 **Exemplos:**
 
@@ -1176,9 +1100,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0040:** colagem de conteúdo extenso;
 * **0067:** comportamento da página com todas as imagens bloqueadas (fallback).
 
----
-
-## 🔎 Testes de Validação de Dados
+### 🔎 Testes de Validação de Dados
 
 **Exemplos:**
 
@@ -1187,9 +1109,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0050:** integridade dos `href` de 10 links distintos (Instagram, Email, WhatsApp, iOS, Android, LinkedIn, X/Twitter, WebSolutionsFL);
 * **0069–0070:** schema de eventos do dataLayer e presença de metadados de SEO.
 
----
-
-## 🔐 Testes de Integridade
+### 🔐 Testes de Integridade
 
 **Exemplos:**
 
@@ -1199,9 +1119,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0059–0060:** integridade estrutural do footer (altura, largura, itens renderizados);
 * **0064:** presença de links no footer após o carregamento progressivo (lazy loading).
 
----
-
-## 🌐 Testes de Compatibilidade de Navegação
+### 🌐 Testes de Compatibilidade de Navegação
 
 **Exemplos:**
 
@@ -1211,9 +1129,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
 > Assim como na feature de referência, essa categoria trata de **diferentes mecanismos de navegação** dentro do mesmo navegador — não caracteriza uma estratégia de teste cross-browser.
 
----
-
-## 🚨 Testes de Monitoramento de Erros
+### 🚨 Testes de Monitoramento de Erros
 
 **Exemplos:**
 
@@ -1221,9 +1137,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0056–0057:** ausência de textos como "404", "500", "Application error" após múltiplos acessos;
 * **0061–0062:** monitoramento dedicado de console e falhas de rede (`requestfailed`) em um fluxo único.
 
----
-
-## 🎨 Testes de Integridade Visual
+### 🎨 Testes de Integridade Visual
 
 **Exemplos:**
 
@@ -1232,9 +1146,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 * **0049:** variação de botões/inputs durante scroll contínuo;
 * **0059–0060:** estrutura visual do footer, incluindo responsividade.
 
----
-
-## 🔄 Recuperação e Estado da Aplicação
+### 🔄 Recuperação e Estado da Aplicação
 
 **Exemplos:**
 
@@ -1243,9 +1155,7 @@ Validam jornadas completas envolvendo múltiplos componentes ou páginas.
 
 > **Precisão técnica:** assim como destacado na feature de referência, esses cenários validam **recuperação/resiliência da interface**, não persistência de dados de negócio em backend — o formulário nunca é de fato submetido com sucesso em nenhum cenário desta suíte (o botão permanece desabilitado sem validação humana, cenário 0012).
 
----
-
-## 📊 Observabilidade e Contrato (dimensão nova nesta feature)
+### 📊 Observabilidade e Analytics (dataLayer)
 
 Avaliam se eventos de rastreamento e metadados da página seguem um contrato/schema esperado — categoria não presente na Feature Explorar Eventos.
 
@@ -1254,9 +1164,7 @@ Avaliam se eventos de rastreamento e metadados da página seguem um contrato/sch
 * **0068:** presença de eventos no `dataLayer` relacionados a "Suporte"/"contact" após o clique;
 * **0069:** validação de **schema completo** do evento `gtm.linkClick` (campos obrigatórios `gtm.elementText`, `gtm.elementUrl`, `gtm.triggers`), sequência esperada de eventos (`gtm.js` → `gtm.dom` → `gtm.load` → `gtm.linkClick` → `gtm.historyChange`), e ausência de eventos duplicados.
 
----
-
-## 🔍 Testes de SEO e Metadados (dimensão nova nesta feature)
+### 🔍 Testes de SEO e Metadados
 
 **Exemplos:**
 
@@ -1265,31 +1173,19 @@ Avaliam se eventos de rastreamento e metadados da página seguem um contrato/sch
 * **0072:** presença e tamanho mínimo de tags Open Graph (`og:title`, `og:description`, `og:url`);
 * **0073:** **consistência entre o HTML servido ao navegador e o HTML servido a um crawler** (simulado com User-Agent do Googlebot) — verifica se a aplicação faz pré-renderização correta de metadados para SEO.
 
----
-
-## 🔒 Testes de Segurança (dimensão nova nesta feature)
+### 🔒 Testes de Segurança
 
 **Exemplo:**
 
 * **0075:** varredura do HTML renderizado (na Home e na página de Suporte) em busca de padrões sensíveis (`api_key`, `secret`, `token`, `password`, `bearer`, `jwt`, entre outros) e de scripts inline suspeitos.
 
----
-
-## 🔁 Regressão
+### 🔁 Regressão
 
 A **regressão não representa um conjunto separado de cenários**.
 
-Os 75 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após:
+Os 75 cenários podem ser utilizados como uma **suíte de regressão automatizada**, especialmente após: alterações no formulário de contato ou em suas validações; alterações nos cards da Central de Ajuda; alterações no footer ou em seus links; alterações de navegação entre Suporte e outras páginas do site; mudanças em tags de SEO/Open Graph; mudanças na configuração de eventos de Analytics (dataLayer); alterações estruturais na página que possam impactar acessibilidade.
 
-* alterações no formulário de contato ou em suas validações;
-* alterações nos cards da Central de Ajuda;
-* alterações no footer ou em seus links;
-* alterações de navegação entre Suporte e outras páginas do site;
-* mudanças em tags de SEO/Open Graph;
-* mudanças na configuração de eventos de Analytics (dataLayer);
-* alterações estruturais na página que possam impactar acessibilidade.
-
-### Exemplo de estratégia
+**Exemplo de estratégia:**
 
 ```text
 Alteração no sistema
@@ -1305,9 +1201,7 @@ Identificação de regressões
 RCA / Bug Report
 ```
 
----
-
-## 📊 Matriz de cobertura da suíte
+### 📊 Matriz de cobertura da suíte
 
 | Dimensão | Cenários principais | Cobertura |
 | --- | --- | --- |
@@ -1328,17 +1222,16 @@ RCA / Bug Report
 | **Monitoramento de Erros** | 0044, 0056–0057, 0061–0062 | 🟢 |
 | **Integridade Visual** | 0032, 0045, 0049, 0059–0060 | 🟢 |
 | **Recuperação/Estado** | 0041, 0065–0066 | 🟢 |
-| **Observabilidade / Analytics** | 0068–0069 | 🟢 |
-| **SEO / Metadados** | 0070–0073 | 🟢 |
+| **Observabilidade e Analytics (dataLayer)** | 0068–0069 | 🟢 |
+| **SEO e Metadados** | 0070–0073 | 🟢 |
 | **Segurança** | 0075 | 🟡 |
 
-### Legenda
+**Legenda:**
 
 | Indicador | Classificação |
-| ------------------------- | ------------------------- |
+| --- | --- |
 | 🟢 | Cobertura claramente demonstrada pelos cenários analisados |
 | 🟡 | Cobertura presente, porém pontual e passível de expansão |
-
 
 ---
 
