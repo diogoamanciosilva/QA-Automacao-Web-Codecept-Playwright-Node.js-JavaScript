@@ -3025,8 +3025,6 @@ Esse cruzamento permitiria identificar não apenas onde os bugs foram encontrado
 ---
 
 
-##  🕵🏻‍♂️ Root Cause Analysis (RCA) 
-
 ## 🕵🏻‍♂️ Root Cause Analysis (RCA)
 
 Os **6 bugs documentados na suíte** apresentam diferentes padrões de comportamento e podem ser agrupados em **3 causas raiz prováveis**, cada uma indicando uma possível lacuna em validação de entrada, gerenciamento de estado ou controle de componentes da interface.
