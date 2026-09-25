@@ -3162,14 +3162,47 @@ Não é correto concluir que uma Feature é mais problemática apenas por concen
 
 ## 🧪 Metodologia de teste
 
+A construção da suíte seguiu um processo iterativo, combinando técnicas formais de design de testes com investigação exploratória sempre que o comportamento da plataforma não estava documentado previamente.
 
+**Particionamento de equivalência e análise de valor-limite** foram aplicados de forma sistemática em diferentes Features: campos testados com valores válidos, valores vazios, valores no limite de tamanho e valores fora do padrão esperado (caracteres especiais, texto muito longo, espaços em branco isolados ou combinados).
 
+- **Teste negativo:** utilizado para garantir que a plataforma rejeita corretamente entradas inválidas sem quebrar — credenciais incorretas, buscas sem resultado, campos com excesso de caracteres, tentativas de avançar etapas sem preencher dados obrigatórios e interações em estados inconsistentes da interface.
+
+- **Teste exploratório:** técnica central para descobrir comportamentos não óbvios da plataforma. Bugs como a busca por local sem retorno de resultados e a duplicação do modal de pagamento após alternância de abas não foram encontrados por casos de teste pré-planejados, mas por investigação incremental: cada resultado inesperado gerava uma nova hipótese, testada isoladamente até isolar o padrão do problema.
+
+- **Teste de regressão implícito:** ocorre a cada nova execução completa da suíte, servindo como rede de segurança para identificar quebras de comportamento após alterações na plataforma.
+
+- **Teste de condição de corrida (concorrência):** aplicado em pontos críticos de interação repetida — como cliques consecutivos no botão "Copiar chave" do PIX — para verificar se a plataforma processa múltiplas ações quase simultâneas sem gerar duplicidade de notificações ou submissões indevidas.
+
+- **Teste de limite de caracteres e validação de entrada:** aplicado em campos de formulário (Nome, E-mail, Template) para verificar se a plataforma impõe e comunica corretamente os limites máximos de caracteres aceitos, sem permitir entradas que ultrapassem o esperado sem tratamento adequado.
+
+- **Teste de persistência e gerenciamento de estado:** validou o comportamento da plataforma em situações de mudança de contexto — alternância entre abas do navegador, alteração de permissões dentro de um modal — verificando se as seleções e configurações realizadas pelo usuário são preservadas corretamente.
+
+Essa combinação de técnicas planejadas e exploratórias permitiu não apenas confirmar que as funcionalidades atendem ao comportamento esperado, mas também identificar bugs reais que não estariam cobertos por um roteiro de teste estritamente linear.
+
+> ⚠️ **Observação:** todos os testes foram realizados diretamente em **ambiente de produção**, sem acesso a um ambiente de testes dedicado, logs internos, dados reais de usuários ou histórico de incidentes. Isso reforça o caráter exploratório e observacional da suíte — os comportamentos descritos representam o que foi possível observar e reproduzir a partir da interface pública da plataforma.
 
 ---
 
 ## 🚧 Limitações e escopo
 
+Por se tratar de um projeto realizado integralmente em **ambiente de produção** — sem acesso a um ambiente de testes dedicado, dados internos, logs ou configurações administrativas —, o escopo foi definido exclusivamente a partir do que estava disponível e observável pela interface pública da plataforma FasTix.
 
+Diferente de um ciclo completo de QA, onde o analista tem acesso a logs, dados reais de usuários, histórico de incidentes, variações de cenários trazidas por bugfixes e hotfixes recorrentes, este projeto foi construído com as informações que puderam ser confirmadas manualmente, tela a tela, ao longo da exploração da plataforma em produção.
+
+Isso significa que alguns cenários ficaram intencionalmente fora do escopo por impossibilidade técnica ou falta de acesso:
+
+- **Ciclo E2E completo de compra de ingressos:** não foi possível concluir o fluxo de compra em sua totalidade. As etapas de confirmação de pagamento (PIX e Cartão de Crédito), geração e validação do QR Code, verificação dos dados bancários, disponibilização dos ingressos na plataforma para impressão, e confirmações de compra via e-mail e SMS estão fora do escopo desta suíte por ausência de acesso real ao fluxo transacional completo.
+
+- **Ambiente de testes dedicado:** todos os cenários foram executados diretamente em produção, o que impossibilitou testes destrutivos, simulações de falha, injeção de dados controlados ou qualquer interação que pudesse impactar usuários reais da plataforma.
+
+- **Acesso administrativo e back-office:** funcionalidades de gestão interna de eventos, relatórios, controle de acesso (check-in) e configurações avançadas de produtores não foram testadas por exigirem credenciais administrativas não disponíveis no escopo deste projeto.
+
+- **Confirmação de integrações externas:** o comportamento real de integrações com gateways de pagamento, serviços de e-mail/SMS e sistemas de emissão de ingressos não pôde ser validado de ponta a ponta.
+
+- **Testes de carga e performance em escala:** a ausência de ambiente dedicado impossibilitou simulações de múltiplos usuários simultâneos ou cenários de pico de acesso.
+
+Essas exclusões não representam falhas na cobertura, mas sim **decisões conscientes de escopo**, tomadas com base nas condições reais de acesso disponíveis — uma prática comum e necessária em qualquer ciclo de testes conduzido sem infraestrutura de QA completa.
 
 
 ---
