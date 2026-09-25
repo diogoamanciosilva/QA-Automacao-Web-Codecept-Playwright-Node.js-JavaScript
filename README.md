@@ -3104,11 +3104,58 @@ Dessa maneira, a análise evita tratar cada bug como um caso isolado e direciona
 
 ## 🔗 Bug × Feature × Causa Raiz
 
+| Bug | Feature | Severidade | Causa Raiz |
+|---|---|---|---|
+| BUG-01 | Explorar Eventos | Alta | Validação de entrada — falha na normalização e/ou filtragem da busca por local |
+| BUG-02 | Suporte e Ajuda | Média | Validação de entrada — ausência ou falha na validação do limite máximo de caracteres |
+| BUG-03 | Comprar Ingressos | Média | Validação de entrada — ausência de validação do limite máximo do campo E-mail |
+| BUG-04 | Comprar Ingressos | Baixa | Controle de componentes — falha no controle/deduplicação das notificações Toast |
+| BUG-05 | Comprar Ingressos | Alta | Gerenciamento de estado — falha na preservação do estado do checkout após alternância de abas |
+| BUG-06 | Publicar Eventos | Média | Gerenciamento de estado — falha na persistência do estado do template durante a alteração das permissões |
 
+Essa visão consolidada evidencia que **a Feature Comprar Ingressos concentra três dos seis bugs identificados (50%)**, sendo a única Feature com mais de uma ocorrência no conjunto analisado. Os demais bugs estão distribuídos individualmente entre **Explorar Eventos, Suporte e Ajuda e Publicar Eventos**.
 
+Em relação às causas raiz, diferente do exemplo de referência (onde a mesma causa atravessava múltiplas Features), aqui **cada causa raiz está associada a um padrão técnico distinto**: validação de entrada, gerenciamento de estado e controle de componentes. Os BUG-02 e BUG-03 apresentam um padrão comum de ausência de validação de limites, enquanto BUG-05 e BUG-06 envolvem problemas de preservação de estado em contextos diferentes da aplicação.
+
+> **Nota de RCA:** as causas raiz apresentadas representam a **hipótese provável inferida a partir dos comportamentos observados nos cenários de teste**. A confirmação técnica exigiria análise de código-fonte, logs, arquitetura e traces da aplicação.
 
 ---
+
 ## 📊 Análise da Suíte de Testes
+
+### 📈 Distribuição de Bugs por Feature
+
+O gráfico apresenta **6 bugs encontrados**, distribuídos entre quatro Features da plataforma FasTix:
+
+```text
+Explorar Eventos:   1 bug  — 17%
+Suporte e Ajuda:    1 bug  — 17%
+Comprar Ingressos:  3 bugs — 50%
+Publicar Eventos:   1 bug  — 17%
+```
+
+A Feature **Comprar Ingressos** concentra metade dos bugs identificados. Os três problemas estão relacionados a comportamentos distintos do checkout: limite de caracteres no campo E-mail durante o pagamento via PIX, geração duplicada de notificações ao copiar a chave PIX e duplicação do modal de pagamento após alternância de abas.
+
+**Do ponto de vista de Root Cause Analysis, a quantidade de bugs por Feature representa a concentração dos achados dentro do escopo analisado — não a qualidade absoluta de cada Feature.** A ausência de bugs nas demais Features (Tela Inicial, Criar Conta) indica o escopo dos cenários executados, não necessariamente a ausência de defeitos nessas áreas.
+
+### 📈 Conclusão
+
+A análise demonstra que os bugs não estão concentrados exclusivamente em problemas visuais nem em uma única camada da aplicação. O conjunto apresenta diferentes padrões técnicos envolvendo **processamento de dados de busca, validação de entradas, gerenciamento de notificações e preservação de estado**, confirmando o que a análise de causa raiz já havia sinalizado.
+
+A Feature **Comprar Ingressos** merece atenção especial na evolução da cobertura de testes, por concentrar **três ocorrências distintas** — incluindo um problema de alta severidade relacionado ao estado do checkout após alternância de abas (BUG-05). Já os BUG-02 e BUG-03 indicam uma oportunidade transversal de fortalecer as validações de limites de entrada em diferentes pontos da plataforma, independentemente da Feature onde se manifestam.
+
+---
+
+### Análise da Relação entre os Gráficos
+
+Os gráficos, analisados em conjunto, expõem duas dimensões complementares da estratégia de testes:
+
+```text
+Gráfico Bugs por Feature   → Onde os problemas foram encontrados.
+Análise de Causa Raiz      → Qual o padrão técnico subjacente a cada ocorrência.
+```
+
+Não é correto concluir que uma Feature é mais problemática apenas por concentrar mais bugs — especialmente sem conhecer o total de testes executados por Feature nem o contexto de produção real da plataforma. Para uma análise mais completa, o próximo passo seria construir uma **matriz Feature × quantidade de bugs × severidade × causa raiz**, cruzando também fatores como impacto ao usuário, frequência de reprodução e alcance. Esse cruzamento permitiria identificar onde há maior concentração de risco na aplicação, evitando conclusões baseadas exclusivamente na contagem de ocorrências.
 
 
 ---
