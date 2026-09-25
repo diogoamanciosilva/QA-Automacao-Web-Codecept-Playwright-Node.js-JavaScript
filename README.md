@@ -3204,11 +3204,32 @@ Isso significa que alguns cenários ficaram intencionalmente fora do escopo por 
 
 Essas exclusões não representam falhas na cobertura, mas sim **decisões conscientes de escopo**, tomadas com base nas condições reais de acesso disponíveis — uma prática comum e necessária em qualquer ciclo de testes conduzido sem infraestrutura de QA completa.
 
-
 ---
 
 ## 🚀 Próximos passos (CI/CD)
 
+Atualmente, a suíte é executada manualmente, com os testes disparados via terminal utilizando os comandos `npx codeceptjs run` diretamente na máquina local do desenvolvedor. A automação da execução via **GitHub Actions** foi avaliada como evolução natural do projeto, mas não foi implementada nesta fase por razões técnicas e de escopo, não por falta de planejamento.
+
+Diferente de um stack mobile como o Maestro (que depende de um emulador Android ativo e de uma ponte ADB para funcionar), o CodeceptJS com Playwright oferece uma vantagem estrutural importante para CI/CD: os testes rodam em **modo headless** nativamente, sem necessidade de emulador físico ou ambiente gráfico. Isso torna a integração com GitHub Actions tecnicamente mais simples do que em projetos mobile.
+
+Entretanto, alguns fatores limitaram a implementação nesta fase:
+
+- **Execução realizada em produção:** como todos os testes foram executados diretamente no ambiente de produção da FasTix, a automação via CI exigiria controle cuidadoso sobre quais cenários podem ser disparados automaticamente sem impacto real para usuários da plataforma — especialmente os fluxos que interagem com formulários, buscas e navegação em páginas públicas.
+- **Ausência de ambiente de testes dedicado:** sem um ambiente de staging ou homologação disponível, rodar a suíte completa de forma automatizada e recorrente em produção representa um risco que precisa ser avaliado antes da implementação do pipeline.
+- **Cobertura E2E incompleta:** como o ciclo de compra de ingressos não pôde ser concluído de ponta a ponta (confirmação de pagamento, QR Code, e-mail/SMS de confirmação), a automação de um pipeline que inclua esses cenários parciais exigiria definição clara de quais etapas são seguras para execução automatizada recorrente.
+
+Diante dessas condicionantes, a decisão foi priorizar a qualidade e a cobertura da suíte nesta fase, deixando a automação via CI como **próximo passo declarado** do projeto. Uma futura implementação consideraria:
+
+```text
+1. Configurar um ambiente de staging ou homologação para execução segura e recorrente dos testes.
+2. Criar um workflow no GitHub Actions com gatilho em pull requests e merges para a branch principal.
+3. Separar os cenários seguros para execução automatizada em produção dos que exigem ambiente controlado.
+4. Publicar automaticamente os relatórios de execução do CodeceptJS como artefato do workflow.
+5. Configurar notificações de falhas via integração com Slack ou e-mail.
+6. Avaliar serviços de nuvem para testes de ponta a ponta com suporte a fluxos transacionais reais (como BrowserStack ou Sauce Labs), para viabilizar a cobertura completa do ciclo de compra de ingressos em um ambiente controlado.
+```
+
+Essa análise técnica, por si só, já reflete uma etapa importante do planejamento de qualidade: reconhecer as limitações de infraestrutura e de escopo antes de tentar implementar uma automação que não seria sustentável ou segura nas condições atuais do projeto.
 
 ---
 
